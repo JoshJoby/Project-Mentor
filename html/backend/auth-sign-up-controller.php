@@ -25,7 +25,7 @@ $password = $_POST['password'];
 echo $password;
 $confpassword = $_POST['confpassword'];
 echo $confpassword;
-$sql = "SELECT * FROM users WHERE email='$email'";
+$sql = "SELECT * FROM users WHERE email='$email'"; yeetus
 
 // Execute the query
 $result = $conn->query($sql);
