@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect /filename to /views/filename.php internally
+RewriteRule ^([a-z0-9-]+)$ views/$1.php [L]
+
