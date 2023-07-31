@@ -39,9 +39,9 @@
 /*============================================
 /*  01. Theme Default CSS
 ==============================================*/
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&amp;family=Lexend+Deca:wght@400;500;600;700;800&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800&amp;display=swap");
 :root {
-  --tg-body-font-family: 'Hind', sans-serif;
+  --tg-body-font-family: 'Arial', sans-serif;
   --tg-heading-font-family: 'Lexend Deca', sans-serif;
   --tg-icon-font-family: "Font Awesome 5 Free";
   --tg-body-font-size: 16px;
