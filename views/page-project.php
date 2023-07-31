@@ -1,9 +1,4 @@
-<?php
-if(isset($_GET['id']))
-{
-    echo "<script>alert(".$_GET['id'].")</script>";
-}
-?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -1739,7 +1734,7 @@ if(isset($_GET['id']))
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <!-- <script src="assets/js/backend-bundle.min.js"></©> -->
+    <script src="assets/js/backend-bundle.min.js"></©>
     
     <!-- Table Treeview JavaScript -->
     <script src="assets/js/table-treeview.js"></script>
