@@ -7,8 +7,8 @@
 * NOTE: This file contains the styling for responsive Template.
 *
 */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --iq-primary: #5773FF;
   --iq-secondary: #F35421;
@@ -89,7 +89,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4104,7 +4104,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4189,7 +4189,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7510,7 +7510,7 @@ a.text-white:hover, a.text-white:focus {
   .iq-sidebar-logo .logo-title {
     font-weight: 800;
     text-transform: uppercase;
-    font-family: "Manrope", sans-serif; }
+    font-family: "Lexend Deca", sans-serif; }
 
 .iq-saidbar-logo img {
   width: 60%; }
@@ -7873,7 +7873,7 @@ body.sidebar-main .iq-top-navbar {
       .navbar-list li .caption h6 {
         color: #605C8D;
         font-weight: normal;
-        font-family: "Roboto", sans-serif; }
+        font-family: "Lexend Deca", sans-serif; }
     .navbar-list li .iq-sub-dropdown .sub-card .iq-sub-card {
       padding-bottom: 0; }
     .navbar-list li .iq-sub-dropdown .iq-sub-card {
@@ -9180,7 +9180,7 @@ body.sidebar-main .iq-top-navbar {
 
 .btn {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: #605C8D;
   text-align: center;
@@ -10218,7 +10218,7 @@ input[type="button"].btn-block {
 .circle-progress-primary svg .circle-progress-text {
   fill: #5773FF;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-secondary svg .circle-progress-value {
   stroke: #F35421;
@@ -10230,7 +10230,7 @@ input[type="button"].btn-block {
 .circle-progress-secondary svg .circle-progress-text {
   fill: #F35421;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-success svg .circle-progress-value {
   stroke: #50C6B4;
@@ -10242,7 +10242,7 @@ input[type="button"].btn-block {
 .circle-progress-success svg .circle-progress-text {
   fill: #50C6B4;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-info svg .circle-progress-value {
   stroke: #51BBFE;
@@ -10254,7 +10254,7 @@ input[type="button"].btn-block {
 .circle-progress-info svg .circle-progress-text {
   fill: #51BBFE;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-warning svg .circle-progress-value {
   stroke: #FFCF52;
@@ -10266,7 +10266,7 @@ input[type="button"].btn-block {
 .circle-progress-warning svg .circle-progress-text {
   fill: #FFCF52;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-danger svg .circle-progress-value {
   stroke: #931F1D;
@@ -10278,7 +10278,7 @@ input[type="button"].btn-block {
 .circle-progress-danger svg .circle-progress-text {
   fill: #931F1D;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-light svg .circle-progress-value {
   stroke: #c7cbd3;
@@ -10290,7 +10290,7 @@ input[type="button"].btn-block {
 .circle-progress-light svg .circle-progress-text {
   fill: #c7cbd3;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-dark svg .circle-progress-value {
   stroke: #01041b;
@@ -10302,7 +10302,7 @@ input[type="button"].btn-block {
 .circle-progress-dark svg .circle-progress-text {
   fill: #01041b;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-orange svg .circle-progress-value {
   stroke: #F35421;
@@ -10314,7 +10314,7 @@ input[type="button"].btn-block {
 .circle-progress-orange svg .circle-progress-text {
   fill: #F35421;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-purple svg .circle-progress-value {
   stroke: #4731b6;
@@ -10326,7 +10326,7 @@ input[type="button"].btn-block {
 .circle-progress-purple svg .circle-progress-text {
   fill: #4731b6;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-skyblue svg .circle-progress-value {
   stroke: #158df7;
@@ -10338,7 +10338,7 @@ input[type="button"].btn-block {
 .circle-progress-skyblue svg .circle-progress-text {
   fill: #158df7;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-light-gray svg .circle-progress-value {
   stroke: #f4f5fa;
@@ -10350,7 +10350,7 @@ input[type="button"].btn-block {
 .circle-progress-light-gray svg .circle-progress-text {
   fill: #f4f5fa;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .circle-progress-white svg .circle-progress-value {
   stroke: #fff;
@@ -10362,7 +10362,7 @@ input[type="button"].btn-block {
 .circle-progress-white svg .circle-progress-text {
   fill: #fff;
   font-size: 23px;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 .page-link {
   border-color: #5773FF; }
@@ -18646,7 +18646,7 @@ body.swal2-toast-column .swal2-toast {
   width: 4px !important; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -18666,7 +18666,7 @@ a:hover {
   margin-bottom: 30px !important; }
 
 h1 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   margin: 0px;
   line-height: 1;
@@ -18676,7 +18676,7 @@ h1 {
     color: inherit; }
 
 h2 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   margin: 0px;
   line-height: 1.5;
@@ -18686,7 +18686,7 @@ h2 {
     color: inherit; }
 
 h3 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   margin: 0px;
   line-height: 1.5;
@@ -18695,7 +18695,7 @@ h3 {
     font-size-color: inherit; }
 
 h4 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   margin: 0px;
   line-height: 1;
@@ -18705,7 +18705,7 @@ h4 {
     color: inherit; }
 
 h5 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   margin: 0px;
   line-height: 1.5;
@@ -18715,7 +18715,7 @@ h5 {
     color: inherit; }
 
 h6 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   margin: 0px;
   line-height: 1.5;
@@ -18725,7 +18725,7 @@ h6 {
     color: inherit; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
 
 button:focus {
   outline: none; }
