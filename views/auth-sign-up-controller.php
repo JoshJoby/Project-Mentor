@@ -2,7 +2,7 @@
 // Database credentials
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = ""; 
 $dbname = "gridproject1";
 
 // Create a connection
@@ -40,7 +40,7 @@ if ($result->num_rows == 0) {
         if (mysqli_query($conn, $sql)) {
             echo "Data inserted successfully.";
             echo "User authentication successful!";
-            header("Location: auth-sign-in");
+            header("Location: auth-sign-in.php");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

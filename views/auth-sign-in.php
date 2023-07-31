@@ -1,5 +1,3 @@
-<!doctype html>
-<html lang="en">
 
 <head>
    <meta charset="utf-8">
@@ -7,15 +5,15 @@
    <title>Project Mentor</title>
 
    <!-- Favicon -->
-   <link rel="shortcut icon" href="assets/images/favicon.ico" />
-   <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-   <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
-   <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-   <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
+   <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+   <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+   <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+   <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+   <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
 
-   <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-   <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-   <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">
+   <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+   <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+   <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">
 
    <style>
       .auth-card {
@@ -43,7 +41,7 @@
 </head>
 
 <body class=" "
-   style="background-image: url('assets/images/login/login_overlay.jpg'); background-size: cover; background-position: center;">
+   style="background-image: url('../assets/images/login/login_overlay.jpg'); background-size: cover; background-position: center;">
    <!-- loader Start -->
    <div id="loading">
       <div id="loading-center">
@@ -67,7 +65,7 @@
                               <div class="p-3">
                                  <h2 class="mb-2 text-white">Sign In</h2>
                                  <p>Login to stay connected.</p>
-                                 <form action="auth-sign-in-controller" method="post">
+                                 <form action="auth-sign-in-controller.php" method="post">
                                     <div class="row">
                                        <div class="col-lg-12">
                                           <div class="floating-label form-group">
@@ -102,7 +100,7 @@
                               </div>
                            </div>
                            <div class="col-lg-6 content-right">
-                              <img src="assets/images/login/01.png" class="img-fluid image-right" alt="">
+                              <img src="../assets/images/login/01.png" class="img-fluid image-right" alt="">
                            </div>
                         </div>
                      </div>
@@ -114,23 +112,23 @@
    </div>
 
    <!-- Backend Bundle JavaScript -->
-   <script src="assets/js/backend-bundle.min.js"></script>
+   <script src="../assets/js/backend-bundle.min.js"></script>
 
    <!-- Table Treeview JavaScript -->
-   <script src="assets/js/table-treeview.js"></script>
+   <script src="../assets/js/table-treeview.js"></script>
 
    <!-- Chart Custom JavaScript -->
-   <script src="assets/js/customizer.js"></script>
+   <script src="../assets/js/customizer.js"></script>
 
    <!-- Chart Custom JavaScript -->
-   <script async src="assets/js/chart-custom.js"></script>
+   <script async src="../assets/js/chart-custom.js"></script>
    <!-- Chart Custom JavaScript -->
-   <script async src="assets/js/slider.js"></script>
+   <script async src="../assets/js/slider.js"></script>
 
    <!-- app JavaScript -->
-   <script src="assets/js/app.js"></script>
+   <script src="../assets/js/app.js"></script>
 
-   <script src="assets/vendor/moment.min.js"></script>
+   <script src="../assets/vendor/moment.min.js"></script>
 </body>
 
 </html>
