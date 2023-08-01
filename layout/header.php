@@ -1,6 +1,6 @@
 <div class="iq-sidebar  sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center">
-        <a href="/Project-Mentor-master/index.php" class="header-logo">
+        <a href="/ProjectMentor/" class="header-logo">
             <!-- <img src="../assets/images/logo.svg" alt="logo"> -->
             <h5 class="logo-title light-logo mt-1">Project Mentor</h5>
         </a>
@@ -12,7 +12,7 @@
         <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="iq-menu">
                 <li class="">
-                    <a href="/Project-Mentor-master/index.php" class="svg-icon">
+                    <a href="/ProjectMentor/" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="/Project-Mentor-master/views/page-project.php" class="svg-icon">
+                    <a href="page-project" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="/Project-Mentor-master/views/page-task.php" class="svg-icon">
+                    <a href="page-task" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class=" ">
-                    <a href="/Project-Mentor-master/views/page-employee.php" class="svg-icon">
+                    <a href="page-employee" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -284,7 +284,7 @@
                             <a href="#" class="search-toggle dropdown-toggle  d-flex align-items-center"
                                 id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <img src="/Project-Mentor-master/assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
+                                <img src="assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
                                 <div class="caption ml-1">
                                     <h6 class="mb-0 line-height">Savannah Nguyen<i class="las la-angle-down ml-2"></i>
                                     </h6>
@@ -299,7 +299,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
-                                    <a href="/Project-Mentor-master/views/user-profile.php">My Profile</a>
+                                    <a href="user-profile">My Profile</a>
                                 </li>
                                 <li class="dropdown-item d-flex svg-icon">
                                     <svg class="svg-icon mr-0 text-primary" id="h-02-p" width="20"
@@ -308,7 +308,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                     </svg>
-                                    <a href="/Project-Mentor-master/views/user-profile-edit.php">Edit Profile</a>
+                                    <a href="user-profile-edit">Edit Profile</a>
                                 </li>
                                 <li class="dropdown-item d-flex svg-icon">
                                     <svg class="svg-icon mr-0 text-primary" id="h-03-p" width="20"
@@ -319,7 +319,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
-                                    <a href="/Project-Mentor-master/views/user-account-setting.php">Account Settings</a>
+                                    <a href="user-account-setting">Account Settings</a>
                                 </li>
                                 <li class="dropdown-item d-flex svg-icon">
                                     <svg class="svg-icon mr-0 text-primary" id="h-04-p" width="20"
@@ -328,7 +328,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                     </svg>
-                                    <a href="/Project-Mentor-master/views/user-privacy-setting.php">Privacy Settings</a>
+                                    <a href="user-privacy-setting">Privacy Settings</a>
                                 </li>
                                 <li class="dropdown-item  d-flex svg-icon border-top">
                                     <svg class="svg-icon mr-0 text-primary" id="h-05-p" width="20"
@@ -337,7 +337,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                     </svg>
-                                    <a href="/Project-Mentor-master/views/auth-sign-in.php">Logout</a>
+                                    <a href="auth-sign-in">Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -349,22 +349,14 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Get the current page URL
-            var currentPageUrl = window.location.href;
+       const menuItems = document.querySelectorAll('.iq-menu li');
+        const currentUrl = window.location.href;
 
-            // Get all the sidebar menu items
-            var menuItems = document.querySelectorAll(".iq-menu li");
-
-            // Loop through each sidebar menu item
-            for (var i = 0; i < menuItems.length; i++) {
-            var link = menuItems[i].querySelector("a").getAttribute("href");
-
-            // Check if the current page URL matches the link URL of the menu item
-            if (currentPageUrl.includes(link)) {
-                menuItems[i].classList.add("active"); // Add the 'active' class to the matched menu item
-                break; // Stop the loop if a match is found
-            }
+        // Loop through the menu items to find the active one
+        menuItems.forEach(item => {
+            const link = item.querySelector('a');
+            if (link.href === currentUrl) {
+                item.classList.add('active');
             }
         });
     </script>

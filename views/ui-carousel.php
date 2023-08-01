@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -46,13 +46,13 @@ include '../layout/header.php';
                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                            <div class="carousel-item active">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                         </div>
                      </div>
@@ -71,13 +71,13 @@ include '../layout/header.php';
                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                            <div class="carousel-item active">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -109,13 +109,13 @@ include '../layout/header.php';
                         </ol>
                         <div class="carousel-inner">
                            <div class="carousel-item active">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -148,21 +148,21 @@ include '../layout/header.php';
                            </ol>
                            <div class="carousel-inner">
                               <div class="carousel-item active">
-                                 <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                                 <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                                  <div class="carousel-caption d-none d-md-block">
                                     <h4 class="text-white">First slide label</h4>
                                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                  </div>
                               </div>
                               <div class="carousel-item">
-                                 <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                                 <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                                  <div class="carousel-caption d-none d-md-block">
                                     <h4 class="text-white">Second slide label</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                  </div>
                               </div>
                               <div class="carousel-item">
-                                 <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                                 <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                                  <div class="carousel-caption d-none d-md-block">
                                     <h4 class="text-white">Third slide label</h4>
                                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -194,13 +194,13 @@ include '../layout/header.php';
                      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                            <div class="carousel-item active">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                            <div class="carousel-item">
-                              <img src="../assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
+                              <img src="assets/images/small/img-1.jpg" class="d-block w-100" alt="#">
                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -498,22 +498,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/slider.js"></script>
+    <script async src="assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     
-    <script src="../assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
   </body>
 </html>

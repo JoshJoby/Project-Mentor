@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -39,7 +39,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/04.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/04.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-whatsapp iq-card-btn"> <i class="ri-whatsapp-line m-0"></i>
                            </button>
                         </div>
@@ -59,7 +59,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/05.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/05.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-instagram iq-card-btn"> <i class="ri-instagram-line m-0"></i>
                            </button>
                         </div>
@@ -79,7 +79,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/06.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/06.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-twitter iq-card-btn"> <i class="ri-twitter-line m-0"></i>
                            </button>
                         </div>
@@ -99,7 +99,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/07.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/07.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-facebook iq-card-btn"> <i class="ri-facebook-fill m-0"></i>
                            </button>
                         </div>
@@ -119,7 +119,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/04.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/04.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-whatsapp iq-card-btn"> <i class="ri-whatsapp-line m-0"></i>
                            </button>
                         </div>
@@ -139,7 +139,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/05.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/05.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-instagram iq-card-btn"> <i class="ri-instagram-line m-0"></i>
                            </button>
                         </div>
@@ -159,7 +159,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/06.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/06.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-twitter iq-card-btn"> <i class="ri-twitter-line m-0"></i>
                            </button>
                         </div>
@@ -179,7 +179,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/07.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/07.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-facebook iq-card-btn"> <i class="ri-facebook-fill m-0"></i>
                            </button>
                         </div>
@@ -199,7 +199,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/04.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/04.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-whatsapp iq-card-btn"> <i class="ri-whatsapp-line m-0"></i>
                            </button>
                         </div>
@@ -219,7 +219,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/05.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/05.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-instagram iq-card-btn"> <i class="ri-instagram-line m-0"></i>
                            </button>
                         </div>
@@ -239,7 +239,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/06.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/06.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-twitter iq-card-btn"> <i class="ri-twitter-line m-0"></i>
                            </button>
                         </div>
@@ -259,7 +259,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="subscriber-detail text-center">
                         <div class="image mb-2 position-relative d-inline-block">
-                           <img src="../assets/images/user/07.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
+                           <img src="assets/images/user/07.jpg" alt="profile" class="img-fluid rounded-circle avatar-100 text-center">
                            <button type="button" class="btn btn-icon rounded-circle title-facebook iq-card-btn"> <i class="ri-facebook-fill m-0"></i>
                            </button>
                         </div>
@@ -557,22 +557,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/slider.js"></script>
+    <script async src="assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     
-    <script src="../assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
   </body>
 </html>

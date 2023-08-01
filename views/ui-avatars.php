@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -44,28 +44,28 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="iq-avatars d-flex flex-wrap align-items-center">
                         <div class="iq-avatar">
-                           <img class="avatar-100 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-100 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-90 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-90 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-80 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-80 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-70 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-70 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-60 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-60 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-50 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-50 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-40 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-40 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-30 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-30 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                      </div>
                   </div>
@@ -81,22 +81,22 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="iq-avatars d-flex flex-wrap align-items-center">
                         <div class="iq-avatar">
-                           <img class="avatar-80 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-80 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-70 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-70 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-60 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-60 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-50 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-50 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-40 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-40 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-30 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-30 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                      </div>
                   </div>
@@ -112,22 +112,22 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="iq-avatars d-flex flex-wrap align-items-center">
                         <div class="iq-avatar">
-                           <img class="avatar-80 rounded-small" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-80 rounded-small" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-70 rounded-small" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-70 rounded-small" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-60 rounded-small" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-60 rounded-small" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-50 rounded-small" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-50 rounded-small" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-40 rounded-small" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-40 rounded-small" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-30 rounded-small" src="../assets/images/user/1.png" alt="#" data-original-title="" title="">
+                           <img class="avatar-30 rounded-small" src="assets/images/user/1.png" alt="#" data-original-title="" title="">
                         </div>
                      </div>
                   </div>
@@ -143,28 +143,28 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="iq-avatars d-flex flex-wrap align-items-center">
                         <div class="iq-avatar">
-                           <img class="avatar-100 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-100 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-90 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-90 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-80 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-80 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-70 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-70 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-60 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-60 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-50 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-50 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-40 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-40 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-30 rounded" src="../assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
+                           <img class="avatar-30 rounded" src="assets/images/user/i1.jpg" alt="#" data-original-title="" title="">
                         </div>
                      </div>
                   </div>
@@ -180,22 +180,22 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="iq-avatars d-flex flex-wrap align-items-center">
                         <div class="iq-avatar">
-                           <img class="avatar-80 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="bg-success iq-dots dots-100"></span>
+                           <img class="avatar-80 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="bg-success iq-dots dots-100"></span>
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-70 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="iq-dots dots-90"></span>
+                           <img class="avatar-70 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="iq-dots dots-90"></span>
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-60 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="bg-success iq-dots dots-80"></span>
+                           <img class="avatar-60 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="bg-success iq-dots dots-80"></span>
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-50 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="iq-dots dots-80"></span>
+                           <img class="avatar-50 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="iq-dots dots-80"></span>
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-40 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="bg-success iq-dots dots-80"></span>
+                           <img class="avatar-40 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="bg-success iq-dots dots-80"></span>
                         </div>
                         <div class="iq-avatar">
-                           <img class="avatar-30 rounded" src="../assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="iq-dots dots-80"></span>
+                           <img class="avatar-30 rounded" src="assets/images/user/1.png" alt="#" data-original-title="" title=""> <span class="iq-dots dots-80"></span>
                         </div>
                      </div>
                   </div>
@@ -213,39 +213,39 @@ include '../layout/header.php';
                         <div class="iq-avatar">
                            <div class="iq-media-group">
                               <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-60 rounded" src="../assets/images/user/05.jpg" alt="">
+                                 <img class="img-fluid avatar-60 rounded" src="assets/images/user/05.jpg" alt="">
                               </a>
                               <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-60 rounded" src="../assets/images/user/06.jpg" alt="">
+                                 <img class="img-fluid avatar-60 rounded" src="assets/images/user/06.jpg" alt="">
                               </a>
                               <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-60 rounded" src="../assets/images/user/07.jpg" alt="">
-                              </a>
-                           </div>
-                        </div>
-                        <div class="iq-avatar">
-                           <div class="iq-media-group">
-                              <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-50 rounded" src="../assets/images/user/05.jpg" alt="">
-                              </a>
-                              <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-50 rounded" src="../assets/images/user/06.jpg" alt="">
-                              </a>
-                              <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-50 rounded" src="../assets/images/user/07.jpg" alt="">
+                                 <img class="img-fluid avatar-60 rounded" src="assets/images/user/07.jpg" alt="">
                               </a>
                            </div>
                         </div>
                         <div class="iq-avatar">
                            <div class="iq-media-group">
                               <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-40 rounded" src="../assets/images/user/05.jpg" alt="">
+                                 <img class="img-fluid avatar-50 rounded" src="assets/images/user/05.jpg" alt="">
                               </a>
                               <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-40 rounded" src="../assets/images/user/06.jpg" alt="">
+                                 <img class="img-fluid avatar-50 rounded" src="assets/images/user/06.jpg" alt="">
                               </a>
                               <a href="#" class="iq-media">
-                                 <img class="img-fluid avatar-40 rounded" src="../assets/images/user/07.jpg" alt="">
+                                 <img class="img-fluid avatar-50 rounded" src="assets/images/user/07.jpg" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="iq-avatar">
+                           <div class="iq-media-group">
+                              <a href="#" class="iq-media">
+                                 <img class="img-fluid avatar-40 rounded" src="assets/images/user/05.jpg" alt="">
+                              </a>
+                              <a href="#" class="iq-media">
+                                 <img class="img-fluid avatar-40 rounded" src="assets/images/user/06.jpg" alt="">
+                              </a>
+                              <a href="#" class="iq-media">
+                                 <img class="img-fluid avatar-40 rounded" src="assets/images/user/07.jpg" alt="">
                               </a>
                            </div>
                         </div>
@@ -536,22 +536,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/slider.js"></script>
+    <script async src="assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     
-    <script src="../assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
   </body>
 </html>

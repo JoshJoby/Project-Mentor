@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -44,20 +44,20 @@ include '../layout/header.php';
                   <div class="card-body">
                      <p>Create equal-width columns that span multiple rows by inserting a <code>.w-100</code> where you want the columns to break to a new line. Make the breaks responsive by mixing the <code>.w-100</code> with some <a href="/docs/4.3/utilities/display/">responsive display utilities</a>.</p>
                      <div class="media mb-2">
-                        <img src="../assets/images/page-img/15.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
+                        <img src="assets/images/page-img/15.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
                         <div class="media-body">
                            <h5 class="mt-0">Media heading</h5>
                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
                      </div>
                      <div class="media">
-                        <img src="../assets/images/page-img/16.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
+                        <img src="assets/images/page-img/16.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
                         <div class="media-body">
                            <h5 class="mt-0">Media heading</h5>
                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                            <div class="media mt-3">
                               <a class="mr-3" href="#">
-                              <img src="../assets/images/page-img/17.jpg" alt="#" class="avatar-70 img-fluid rounded">
+                              <img src="assets/images/page-img/17.jpg" alt="#" class="avatar-70 img-fluid rounded">
                               </a>
                               <div class="media-body">
                                  <h5 class="mt-0">Media heading</h5>
@@ -81,21 +81,21 @@ include '../layout/header.php';
                            <h5 class="mt-0 mb-1">Media object</h5>
                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
-                        <img src="../assets/images/page-img/18.jpg" class="ml-3 avatar-70 img-fluid rounded" alt="#">
+                        <img src="assets/images/page-img/18.jpg" class="ml-3 avatar-70 img-fluid rounded" alt="#">
                      </div>
                      <div class="media mb-5">
                         <div class="media-body">
                            <h5 class="mt-0 mb-1">Center-aligned media</h5>
                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
-                        <img src="../assets/images/page-img/19.jpg" class="align-self-center mr-3 avatar-70 img-fluid rounded" alt="#">
+                        <img src="assets/images/page-img/19.jpg" class="align-self-center mr-3 avatar-70 img-fluid rounded" alt="#">
                      </div>
                      <div class="media">
                         <div class="media-body">
                            <h5 class="mt-0 mb-1">Bottom-aligned media</h5>
                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
-                        <img src="../assets/images/page-img/20.jpg" class="align-self-end mr-3 avatar-70 img-fluid rounded" alt="#">
+                        <img src="assets/images/page-img/20.jpg" class="align-self-end mr-3 avatar-70 img-fluid rounded" alt="#">
                      </div>
                   </div>
                </div>
@@ -110,21 +110,21 @@ include '../layout/header.php';
                   <div class="card-body">
                      <p>The images or other media can be aligned top, middle, or bottom. The default is top aligned.</p>
                      <div class="media mb-4">
-                        <img src="../assets/images/page-img/21.jpg" class="align-self-start mr-3 avatar-70 img-fluid rounded" alt="#">
+                        <img src="assets/images/page-img/21.jpg" class="align-self-start mr-3 avatar-70 img-fluid rounded" alt="#">
                         <div class="media-body">
                            <h5 class="mt-0">Top-aligned media</h5>
                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                         </div>
                      </div>
                      <div class="media mb-4">
-                        <img src="../assets/images/page-img/22.jpg" class="align-self-center rounded mr-3 avatar-70 rounded" alt="#">
+                        <img src="assets/images/page-img/22.jpg" class="align-self-center rounded mr-3 avatar-70 rounded" alt="#">
                         <div class="media-body">
                            <h5 class="mt-0">Center-aligned media</h5>
                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                         </div>
                      </div>
                      <div class="media">
-                        <img src="../assets/images/page-img/23.jpg" class="align-self-end rounded mr-3 avatar-70 rounded" alt="#">
+                        <img src="assets/images/page-img/23.jpg" class="align-self-end rounded mr-3 avatar-70 rounded" alt="#">
                         <div class="media-body">
                            <h5 class="mt-0">Bottom-aligned media</h5>
                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -142,21 +142,21 @@ include '../layout/header.php';
                      <p>Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>, add the <code>.list-unstyled</code> to remove any browser default list styles, and then apply <code>.media</code> to your <code>&lt;li&gt;</code>s. As always, use spacing utilities wherever needed to fine tune.</p>
                      <ul class="list-unstyled mb-0">
                         <li class="media">
-                           <img src="../assets/images/page-img/24.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
+                           <img src="assets/images/page-img/24.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
                            <div class="media-body">
                               <h5 class="mt-0 mb-1">List-based media object</h5>
                               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                            </div>
                         </li>
                         <li class="media my-4">
-                           <img src="../assets/images/page-img/15.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
+                           <img src="assets/images/page-img/15.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
                            <div class="media-body">
                               <h5 class="mt-0 mb-1">List-based media object</h5>
                               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                            </div>
                         </li>
                         <li class="media">
-                           <img src="../assets/images/page-img/16.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
+                           <img src="assets/images/page-img/16.jpg" class="mr-3 avatar-70 img-fluid rounded" alt="#">
                            <div class="media-body">
                               <h5 class="mt-0 mb-1">List-based media object</h5>
                               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -449,22 +449,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/slider.js"></script>
+    <script async src="assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     
-    <script src="../assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
   </body>
 </html>

@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -36,7 +36,7 @@ include '../layout/header.php';
          <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-3">
                <div class="card">
-                  <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                   <div class="card-body">
                      <h4 class="card-title">Card title</h4>
                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
@@ -46,7 +46,7 @@ include '../layout/header.php';
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
                <div class="card">
-                  <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                   <div class="card-body">
                      <h4 class="card-title">Card title</h4>
                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
@@ -58,7 +58,7 @@ include '../layout/header.php';
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
                <div class="card">
-                  <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                   <div class="card-body">
                      <h4 class="card-title">Card title</h4>
                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
@@ -71,7 +71,7 @@ include '../layout/header.php';
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
                <div class="card">
-                  <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                   <div class="card-body">
                      <h4 class="card-title">Card title</h4>
                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -178,7 +178,7 @@ include '../layout/header.php';
          <div class="row">
             <div class="col-md-6 col-lg-4 col-sm-6">
                <div class="card">
-                  <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                   <div class="card-body">
                      <h4 class="card-title">Card title</h4>
                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -193,12 +193,12 @@ include '../layout/header.php';
                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
-                  <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                </div>
             </div>
             <div class="col-md-6 col-lg-4 col-sm-6">
                <div class="card bg-dark text-white">
-                  <img src="../assets/images/page-img/07.jpg" class="card-img" alt="#">
+                  <img src="assets/images/page-img/07.jpg" class="card-img" alt="#">
                   <div class="card-img-overlay">
                      <h4 class="card-title text-white">Card title</h4>
                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -215,7 +215,7 @@ include '../layout/header.php';
                <div class="card mb-2">
                   <div class="row no-gutters">
                      <div class="col-md-6 col-lg-4">
-                        <img src="../assets/images/page-img/08.jpg" class="card-img" alt="#">
+                        <img src="assets/images/page-img/08.jpg" class="card-img" alt="#">
                      </div>
                      <div class="col-md-6 col-lg-8">
                         <div class="card-body">
@@ -231,7 +231,7 @@ include '../layout/header.php';
                <div class="card">
                   <div class="row no-gutters flex-row-reverse">
                      <div class="col-md-6 col-lg-4">
-                        <img src="../assets/images/page-img/09.jpg" class="card-img" alt="#">
+                        <img src="assets/images/page-img/09.jpg" class="card-img" alt="#">
                      </div>
                      <div class="col-md-6 col-lg-8">
                         <div class="card-body text-right">
@@ -375,7 +375,7 @@ include '../layout/header.php';
             <div class="col-sm-12">
                <div class="card-group">
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -383,7 +383,7 @@ include '../layout/header.php';
                      </div>
                   </div>
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -391,7 +391,7 @@ include '../layout/header.php';
                      </div>
                   </div>
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -403,7 +403,7 @@ include '../layout/header.php';
             <div class="col-sm-12">
                <div class="card-group">
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -413,7 +413,7 @@ include '../layout/header.php';
                      </div>
                   </div>
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -423,7 +423,7 @@ include '../layout/header.php';
                      </div>
                   </div>
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -438,7 +438,7 @@ include '../layout/header.php';
                <h3 class="mb-3">Card Masonry Columns</h3>
                <div class="card-columns">
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title that wraps to a new line</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -455,7 +455,7 @@ include '../layout/header.php';
                      </blockquote>
                   </div>
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                      <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -480,7 +480,7 @@ include '../layout/header.php';
                      </div>
                   </div>
                   <div class="card">
-                     <img src="../assets/images/page-img/07.jpg" class="card-img-top" alt="#">
+                     <img src="assets/images/page-img/07.jpg" class="card-img-top" alt="#">
                   </div>
                   <div class="card text-right">
                      <blockquote class="blockquote card-body mb-0">
@@ -784,22 +784,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/slider.js"></script>
+    <script async src="assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     
-    <script src="../assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
   </body>
 </html>

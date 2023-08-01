@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class=" color-light ">
     <!-- loader Start -->
     <div id="loading">
@@ -57,7 +57,7 @@ include '../layout/header.php';
                            <tbody>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/01.jpg"  class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/01.jpg"  class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Anna Sthesia</td>
                                  <td>annasthesia@gmail.com</td>
@@ -87,7 +87,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/02.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/02.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Brock Lee</td>
                                  <td>brocklee@gmail.com</td>
@@ -117,7 +117,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/03.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/03.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Dan Druff</td>
                                  <td>dandruff@gmail.com</td>
@@ -147,7 +147,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/04.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/04.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Hans Olo</td>
                                  <td>hansolo@gmail.com</td>
@@ -177,7 +177,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/05.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/05.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Lynn Guini</td>
                                  <td>lynnguini@gmail.com</td>
@@ -207,7 +207,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/06.jpg"  class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/06.jpg"  class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Eric Shun</td>
                                  <td>ericshun@gmail.com</td>
@@ -237,7 +237,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/07.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/07.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>aaronottix</td>
                                  <td>budwiser@ymail.com</td>
@@ -267,7 +267,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/08.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/08.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Marge Arita</td>
                                  <td>margearita@gmail.com</td>
@@ -297,7 +297,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/09.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/09.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>Bill Dabear</td>
                                  <td>billdabear@gmail.com</td>
@@ -327,7 +327,7 @@ include '../layout/header.php';
                               </tr>
                               <tr>
                                  <td>
-                                    <img src="../assets/images/user/10.jpg" class="rounded avatar-40 img-fluid" alt="">
+                                    <img src="assets/images/user/10.jpg" class="rounded avatar-40 img-fluid" alt="">
                                  </td>
                                  <td>John Doe</td>
                                  <td>Johndoe@gmail.com</td>
@@ -644,22 +644,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/slider.js"></script>
+    <script async src="assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     
-    <script src="../assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
   </body>
 </html>
