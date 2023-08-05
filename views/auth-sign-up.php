@@ -45,7 +45,7 @@
 </head>
 
 <body class=" "
-   style="background-image: url('/Project-Mentor-master/assets/images/login/login_overlay.jpg'); background-size: cover; background-position: center;">
+   style="background-image: url('assets/images/login/login_overlay.jpg'); background-size: cover; background-position: center;">
    <!-- loader Start -->
    <div id="loading">
       <div id="loading-center">
@@ -68,7 +68,7 @@
                               <div class="p-3">
                                  <h2 class="mb-2 text-white">Sign Up</h2>
                                  <p>Create your Webkit account.</p>
-                                 <form action="auth-sign-up-controller.php" method="post">
+                                 <form action="auth-sign-up-controller" method="post">
                                     <div class="row">
                                        <div class="col-lg-6">
                                           <div class="floating-label form-group">
