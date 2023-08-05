@@ -40,7 +40,7 @@ if ($result->num_rows == 0) {
         if (mysqli_query($conn, $sql)) {
             echo "Data inserted successfully.";
             echo "User authentication successful!";
-            header("Location: auth-sign-in.php");
+            header("Location: auth-sign-in");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

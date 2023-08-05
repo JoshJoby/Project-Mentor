@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {
     if ($password === $hashedPassword) {
         // Password is correct, user authentication successful
         echo "User authentication successful!";
-        header("Location: ../index.php");
+        header("Location: ../ProjectMentor");
         exit();
     } else {
         // Password is incorrect
