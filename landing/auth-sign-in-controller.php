@@ -37,13 +37,13 @@ if ($result->num_rows > 0) {
     } else {
         // Password is incorrect
         $_SESSION['login_notification'] = 'Incorrect password!';
-        header("Location: index.php"); // Redirect back to the login page with notification
+        header("Location: index"); // Redirect back to the login page with notification
         exit();
     }
 } else {
     // User does not exist
     $_SESSION['login_notification'] = 'User not found!';
-    header("Location: index.php"); // Redirect back to the login page with notification
+    header("Location: index"); // Redirect back to the login page with notification
     exit();
 }
 

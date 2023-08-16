@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:39 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/courses   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:39 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -82,7 +82,7 @@
                         <div class="tgmenu__wrap">
                             <nav class="tgmenu__nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__categories d-none d-md-block">
                                     <div class="dropdown">
@@ -105,41 +105,41 @@
                                     <ul class="navigation">
                                         <li class="menu-item-has-children"><a href="#">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
+                                                <li><a href="index  ">Home One</a></li>
+                                                <li><a href="index-2  ">Home Two</a></li>
+                                                <li><a href="index-3  ">Home Three</a></li>
                                             </ul>
                                         </li>
                                         <li class="active menu-item-has-children"><a href="#">Courses</a>
                                             <ul class="sub-menu">
-                                                <li class="active"><a href="courses.html">All Courses</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
+                                                <li class="active"><a href="courses  ">All Courses</a></li>
+                                                <li><a href="course-details  ">Course Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Pages</a>
                                             <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="instructors.html">Our Instructors</a></li>
-                                                <li><a href="instructor-details.html">Instructor Details</a></li>
-                                                <li><a href="mentors.html">Our Mentors</a></li>
-                                                <li><a href="events.html">Our Events</a></li>
-                                                <li><a href="events-details.html">Event Details</a></li>
-                                                <li><a href="faq.html">Asked Question</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="contact.html">contact</a></li>
+                                                <li><a href="about-us  ">About Us</a></li>
+                                                <li><a href="instructors  ">Our Instructors</a></li>
+                                                <li><a href="instructor-details  ">Instructor Details</a></li>
+                                                <li><a href="mentors  ">Our Mentors</a></li>
+                                                <li><a href="events  ">Our Events</a></li>
+                                                <li><a href="events-details  ">Event Details</a></li>
+                                                <li><a href="faq  ">Asked Question</a></li>
+                                                <li><a href="404  ">404 Page</a></li>
+                                                <li><a href="contact  ">contact</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop Page</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                                <li><a href="shop  ">Shop Page</a></li>
+                                                <li><a href="shop-details  ">Shop Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Blog</a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="blog-grid  ">Blog Grid</a></li>
+                                                <li><a href="blog  ">Blog Standard</a></li>
+                                                <li><a href="blog-details  ">Blog Details</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -153,12 +153,12 @@
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
                                         <li class="mini-cart-icon">
-                                            <a href="shop.html" class="cart-count">
+                                            <a href="shop  " class="cart-count">
                                                 <img src="assets/img/icons/cart.svg" alt="cart">
                                                 <span class="mini-cart-count">0</span>
                                             </a>
                                         </li>
-                                        <li class="header-btn"><a href="contact.html" class="btn">Sign Up</a></li>
+                                        <li class="header-btn"><a href="contact  " class="btn">Sign Up</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -168,7 +168,7 @@
                             <nav class="tgmobile__menu-box">
                                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmobile__search">
                                     <form action="#">
@@ -219,7 +219,7 @@
                             <h3 class="title">Our Courses</h3>
                             <nav class="breadcrumb">
                                 <span property="itemListElement" typeof="ListItem">
-                                    <a href="index.html">Home</a>
+                                    <a href="index  ">Home</a>
                                 </span>
                                 <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
                                 <span property="itemListElement" typeof="ListItem">All Courses</span>
@@ -581,7 +581,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb01.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -590,7 +590,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #E8F9EF; color: #04BC53;">Graphic Design</a>
-                                                <h5 class="title"><a href="course-details.html">Bigener Adobe Illustrator for
+                                                <h5 class="title"><a href="course-details  ">Bigener Adobe Illustrator for
                                                 Graphic Design</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 05</li>
@@ -612,7 +612,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb02.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -621,7 +621,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F7EEFA; color: #BC18E4;">Marketing</a>
-                                                <h5 class="title"><a href="course-details.html">How to Market Yourself as a
+                                                <h5 class="title"><a href="course-details  ">How to Market Yourself as a
                                                 Coach or Consultant</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 08</li>
@@ -643,7 +643,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb03.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -652,7 +652,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF0F9; color: #FF109F;">Finance</a>
-                                                <h5 class="title"><a href="course-details.html">Become a Certified JavaScript Web Developer</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Become a Certified JavaScript Web Developer</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 12</li>
                                                     <li><i class="flaticon-timer"></i> 19h 30m</li>
@@ -673,7 +673,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb04.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -682,7 +682,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF3D3; color: #F5B204;">Development</a>
-                                                <h5 class="title"><a href="course-details.html">Web Development
+                                                <h5 class="title"><a href="course-details  ">Web Development
                                                 Fully Complete Guideline</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 08</li>
@@ -704,7 +704,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb05.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -713,7 +713,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F5F0FF; color: #560EF0;">Photography</a>
-                                                <h5 class="title"><a href="course-details.html">Photography
+                                                <h5 class="title"><a href="course-details  ">Photography
                                                 training for the Artist in you</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 10</li>
@@ -735,7 +735,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb06.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -744,7 +744,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #E8F9EF; color: #04BC53;">Graphic Design</a>
-                                                <h5 class="title"><a href="course-details.html">The Complete Guide to the
+                                                <h5 class="title"><a href="course-details  ">The Complete Guide to the
                                                 Global Markets</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 09</li>
@@ -766,7 +766,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb07.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -775,7 +775,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF3D3; color: #F5B204;">Business</a>
-                                                <h5 class="title"><a href="course-details.html">Bigener Adobe Illustrator for Graphic Design</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Bigener Adobe Illustrator for Graphic Design</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 19</li>
                                                     <li><i class="flaticon-timer"></i> 10h 30m</li>
@@ -796,7 +796,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb08.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -805,7 +805,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #DEF3FF; color: #0496E9;">Technology</a>
-                                                <h5 class="title"><a href="course-details.html">Bigener Adobe Illustrator for Graphic Design</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Bigener Adobe Illustrator for Graphic Design</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 16</li>
                                                     <li><i class="flaticon-timer"></i> 12h 00m</li>
@@ -826,7 +826,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb09.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -835,7 +835,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F5F0FF; color: #560EF0;">Web Design</a>
-                                                <h5 class="title"><a href="course-details.html">Become a Certified JavaScript Web Developer</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Become a Certified JavaScript Web Developer</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 16</li>
                                                     <li><i class="flaticon-timer"></i> 12h 00m</li>
@@ -856,7 +856,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb10.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -865,7 +865,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F7EEFA; color: #BC18E4;">Marketing</a>
-                                                <h5 class="title"><a href="course-details.html">How to Market Yourself as a
+                                                <h5 class="title"><a href="course-details  ">How to Market Yourself as a
                                                         Coach or Consultant</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 08</li>
@@ -887,7 +887,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb11.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -896,7 +896,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F5F0FF; color: #560EF0;">Photography</a>
-                                                <h5 class="title"><a href="course-details.html">Photography
+                                                <h5 class="title"><a href="course-details  ">Photography
                                                         training for the Artist in you</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 10</li>
@@ -918,7 +918,7 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb12.jpg" alt="img">
                                                 </a>
                                                 <div class="author">
@@ -927,7 +927,7 @@
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF3D3; color: #F5B204;">Development</a>
-                                                <h5 class="title"><a href="course-details.html">Web Development
+                                                <h5 class="title"><a href="course-details  ">Web Development
                                                         Fully Complete Guideline</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 08</li>
@@ -950,10 +950,10 @@
                                 <nav class="pagination__wrap mt-30">
                                     <ul class="list-wrap">
                                         <li class="active"><a href="#">1</a></li>
-                                        <li><a href="courses.html">2</a></li>
-                                        <li><a href="courses.html">3</a></li>
-                                        <li><a href="courses.html">...</a></li>
-                                        <li><a href="courses.html">5</a></li>
+                                        <li><a href="courses  ">2</a></li>
+                                        <li><a href="courses  ">3</a></li>
+                                        <li><a href="courses  ">...</a></li>
+                                        <li><a href="courses  ">5</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -962,13 +962,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb01.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #E8F9EF; color: #04BC53;">Graphic Design</a>
-                                                <h5 class="title"><a href="course-details.html">Bigener Adobe Illustrator for Graphic Design</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Bigener Adobe Illustrator for Graphic Design</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 05</li>
                                                     <li><i class="flaticon-timer"></i> 12h 30m</li>
@@ -998,13 +998,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb02.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F7EEFA; color: #BC18E4;">Marketing</a>
-                                                <h5 class="title"><a href="course-details.html">How to Market Yourself as a Coach or Consultant</a></h5>
+                                                <h5 class="title"><a href="course-details  ">How to Market Yourself as a Coach or Consultant</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 08</li>
                                                     <li><i class="flaticon-timer"></i> 16h 30m</li>
@@ -1032,13 +1032,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb03.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF0F9; color: #FF109F;">Finance</a>
-                                                <h5 class="title"><a href="course-details.html">Become a Certified JavaScript Web Developer</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Become a Certified JavaScript Web Developer</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 12</li>
                                                     <li><i class="flaticon-timer"></i> 19h 30m</li>
@@ -1066,13 +1066,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb04.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF3D3; color: #F5B204;">Development</a>
-                                                <h5 class="title"><a href="course-details.html">Web Development Fully Complete Guideline</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Web Development Fully Complete Guideline</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 08</li>
                                                     <li><i class="flaticon-timer"></i> 20h 00m</li>
@@ -1100,13 +1100,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb05.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #F5F0FF; color: #560EF0;">Photography</a>
-                                                <h5 class="title"><a href="course-details.html">Photography training for the Artist in you</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Photography training for the Artist in you</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 10</li>
                                                     <li><i class="flaticon-timer"></i> 20h 00m</li>
@@ -1134,13 +1134,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb06.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #E8F9EF; color: #04BC53;">Graphic Design</a>
-                                                <h5 class="title"><a href="course-details.html">The Complete Guide to the Global Markets</a></h5>
+                                                <h5 class="title"><a href="course-details  ">The Complete Guide to the Global Markets</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 09</li>
                                                     <li><i class="flaticon-timer"></i> 16h 30m</li>
@@ -1168,13 +1168,13 @@
                                     <div class="col">
                                         <div class="courses__item-two shine__animate-item">
                                             <div class="courses__item-two-thumb">
-                                                <a href="course-details.html" class="shine__animate-link">
+                                                <a href="course-details  " class="shine__animate-link">
                                                     <img src="assets/img/courses/course_thumb07.jpg" alt="img">
                                                 </a>
                                             </div>
                                             <div class="courses__item-two-content">
                                                 <a href="#" class="courses__item-tag" style="background-color: #FFF3D3; color: #F5B204;">Business</a>
-                                                <h5 class="title"><a href="course-details.html">Bigener Adobe Illustrator for Graphic Design</a></h5>
+                                                <h5 class="title"><a href="course-details  ">Bigener Adobe Illustrator for Graphic Design</a></h5>
                                                 <ul class="courses__item-meta list-wrap">
                                                     <li><i class="flaticon-file"></i> 19</li>
                                                     <li><i class="flaticon-timer"></i> 10h 30m</li>
@@ -1203,10 +1203,10 @@
                                 <nav class="pagination__wrap mt-30">
                                     <ul class="list-wrap">
                                         <li class="active"><a href="#">1</a></li>
-                                        <li><a href="courses.html">2</a></li>
-                                        <li><a href="courses.html">3</a></li>
-                                        <li><a href="courses.html">...</a></li>
-                                        <li><a href="courses.html">5</a></li>
+                                        <li><a href="courses  ">2</a></li>
+                                        <li><a href="courses  ">3</a></li>
+                                        <li><a href="courses  ">...</a></li>
+                                        <li><a href="courses  ">5</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -1231,7 +1231,7 @@
                         <div class="footer-widget">
                             <div class="footer__about">
                                 <div class="footer__logo logo">
-                                    <a href="index.html"><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
+                                    <a href="index  "><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
                                 </div>
                                 <p>when an unknown printer took galley of type and scrambled it to make pspecimen bookt has.</p>
                                 <ul class="list-wrap m-0 p-0">
@@ -1252,9 +1252,9 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Resources</h4>
                             <ul class="list-wrap">
-                                <li><a href="about-us.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="contact.html">Help Center</a></li>
+                                <li><a href="about-us  ">About</a></li>
+                                <li><a href="contact  ">Contact</a></li>
+                                <li><a href="contact  ">Help Center</a></li>
                                 <li><a href="#">Refund</a></li>
                                 <li><a href="#">Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
@@ -1265,12 +1265,12 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Courses</h4>
                             <ul class="list-wrap">
-                                <li><a href="courses.html">Life Coach</a></li>
-                                <li><a href="courses.html">Business Coach</a></li>
-                                <li><a href="courses.html">Health Coach</a></li>
-                                <li><a href="courses.html">Development</a></li>
-                                <li><a href="courses.html">Web Design</a></li>
-                                <li><a href="courses.html">SEO Optimize</a></li>
+                                <li><a href="courses  ">Life Coach</a></li>
+                                <li><a href="courses  ">Business Coach</a></li>
+                                <li><a href="courses  ">Health Coach</a></li>
+                                <li><a href="courses  ">Development</a></li>
+                                <li><a href="courses  ">Web Design</a></li>
+                                <li><a href="courses  ">SEO Optimize</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1336,5 +1336,5 @@
 </body>
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:41 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/courses   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:41 GMT -->
 </html>

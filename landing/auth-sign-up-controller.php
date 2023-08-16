@@ -34,19 +34,19 @@ if ($result->num_rows == 0) {
 
         if (mysqli_query($conn, $sql)) {
             $_SESSION['signup_success'] = 'Registration successful!';
-            header("Location: index.php");
+            header("Location: index");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
     } else {
         $_SESSION['signup_error'] = 'Passwords do not match!';
-        header("Location: index.php");
+        header("Location: index");
         exit();
     }
 } else {
     $_SESSION['signup_error'] = 'Email Already taken!';
-    header("Location: index.php");
+    header("Location: index");
     exit();
 }
 

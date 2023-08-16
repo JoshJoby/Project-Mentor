@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/shop-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:52 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/shop-details   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:52 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -82,7 +82,7 @@
                         <div class="tgmenu__wrap">
                             <nav class="tgmenu__nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__categories d-none d-md-block">
                                     <div class="dropdown">
@@ -105,41 +105,41 @@
                                     <ul class="navigation">
                                         <li class="menu-item-has-children"><a href="#">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
+                                                <li><a href="index  ">Home One</a></li>
+                                                <li><a href="index-2  ">Home Two</a></li>
+                                                <li><a href="index-3  ">Home Three</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Courses</a>
                                             <ul class="sub-menu">
-                                                <li><a href="courses.html">All Courses</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
+                                                <li><a href="courses  ">All Courses</a></li>
+                                                <li><a href="course-details  ">Course Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Pages</a>
                                             <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="instructors.html">Our Instructors</a></li>
-                                                <li><a href="instructor-details.html">Instructor Details</a></li>
-                                                <li><a href="mentors.html">Our Mentors</a></li>
-                                                <li><a href="events.html">Our Events</a></li>
-                                                <li><a href="events-details.html">Event Details</a></li>
-                                                <li><a href="faq.html">Asked Question</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="contact.html">contact</a></li>
+                                                <li><a href="about-us  ">About Us</a></li>
+                                                <li><a href="instructors  ">Our Instructors</a></li>
+                                                <li><a href="instructor-details  ">Instructor Details</a></li>
+                                                <li><a href="mentors  ">Our Mentors</a></li>
+                                                <li><a href="events  ">Our Events</a></li>
+                                                <li><a href="events-details  ">Event Details</a></li>
+                                                <li><a href="faq  ">Asked Question</a></li>
+                                                <li><a href="404  ">404 Page</a></li>
+                                                <li><a href="contact  ">contact</a></li>
                                             </ul>
                                         </li>
                                         <li class="active menu-item-has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop Page</a></li>
-                                                <li class="active"><a href="shop-details.html">Shop Details</a></li>
+                                                <li><a href="shop  ">Shop Page</a></li>
+                                                <li class="active"><a href="shop-details  ">Shop Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Blog</a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="blog-grid  ">Blog Grid</a></li>
+                                                <li><a href="blog  ">Blog Standard</a></li>
+                                                <li><a href="blog-details  ">Blog Details</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -153,12 +153,12 @@
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
                                         <li class="mini-cart-icon">
-                                            <a href="shop.html" class="cart-count">
+                                            <a href="shop  " class="cart-count">
                                                 <img src="assets/img/icons/cart.svg" alt="cart">
                                                 <span class="mini-cart-count">0</span>
                                             </a>
                                         </li>
-                                        <li class="header-btn"><a href="contact.html" class="btn">Sign Up</a></li>
+                                        <li class="header-btn"><a href="contact  " class="btn">Sign Up</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -168,7 +168,7 @@
                             <nav class="tgmobile__menu-box">
                                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmobile__search">
                                     <form action="#">
@@ -219,7 +219,7 @@
                             <h3 class="title">Shop Details</h3>
                             <nav class="breadcrumb">
                                 <span property="itemListElement" typeof="ListItem">
-                                    <a href="index.html">Home</a>
+                                    <a href="index  ">Home</a>
                                 </span>
                                 <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
                                 <span property="itemListElement" typeof="ListItem">SEO Tricks & Tips</span>
@@ -293,8 +293,8 @@
                                 <div class="cart-plus-minus">
                                     <input type="text" value="1">
                                 </div>
-                                <a href="shop-details.html" class="cart-btn btn">Add To Cart</a>
-                                <a href="shop-details.html" class="wishlist-btn"><i class="far fa-heart"></i></a>
+                                <a href="shop-details  " class="cart-btn btn">Add To Cart</a>
+                                <a href="shop-details  " class="wishlist-btn"><i class="far fa-heart"></i></a>
                             </div>
                             <div class="shop-details-bottom">
                                 <ul class="list-wrap">
@@ -304,12 +304,12 @@
                                     </li>
                                     <li class="sd-category">
                                         <span class="title">Categories:</span>
-                                        <a href="shop-details.html">Business & Marketing</a>
+                                        <a href="shop-details  ">Business & Marketing</a>
                                     </li>
                                     <li class="sd-tag">
                                         <span class="title">Tags:</span>
-                                        <a href="shop-details.html">Coaching,</a>
-                                        <a href="shop-details.html">Education</a>
+                                        <a href="shop-details  ">Coaching,</a>
+                                        <a href="shop-details  ">Education</a>
                                     </li>
                                     <li class="sd-share">
                                         <span class="title">Share This Product:</span>
@@ -363,16 +363,16 @@
                         <div class="col-lg-4">
                             <div class="shop-item">
                                 <div class="shop-thumb">
-                                    <a href="shop-details.html"><img src="assets/img/shop/shop_img01.jpg" alt=""></a>
+                                    <a href="shop-details  "><img src="assets/img/shop/shop_img01.jpg" alt=""></a>
                                     <div class="shop-action">
-                                        <a href="shop-details.html"><i class="fas fa-shopping-cart"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-heart"></i></a>
+                                        <a href="shop-details  "><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="shop-details  "><i class="far fa-eye"></i></a>
+                                        <a href="shop-details  "><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
                                 <div class="shop-content">
                                     <h4 class="price">$13.00</h4>
-                                    <h3 class="title"><a href="shop-details.html">SEO Tricks & Tips</a></h3>
+                                    <h3 class="title"><a href="shop-details  ">SEO Tricks & Tips</a></h3>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -386,16 +386,16 @@
                         <div class="col-lg-4">
                             <div class="shop-item">
                                 <div class="shop-thumb">
-                                    <a href="shop-details.html"><img src="assets/img/shop/shop_img02.jpg" alt=""></a>
+                                    <a href="shop-details  "><img src="assets/img/shop/shop_img02.jpg" alt=""></a>
                                     <div class="shop-action">
-                                        <a href="shop-details.html"><i class="fas fa-shopping-cart"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-heart"></i></a>
+                                        <a href="shop-details  "><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="shop-details  "><i class="far fa-eye"></i></a>
+                                        <a href="shop-details  "><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
                                 <div class="shop-content">
                                     <h4 class="price">$15.00</h4>
-                                    <h3 class="title"><a href="shop-details.html">My Book Cover</a></h3>
+                                    <h3 class="title"><a href="shop-details  ">My Book Cover</a></h3>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -409,16 +409,16 @@
                         <div class="col-lg-4">
                             <div class="shop-item">
                                 <div class="shop-thumb">
-                                    <a href="shop-details.html"><img src="assets/img/shop/shop_img03.jpg" alt=""></a>
+                                    <a href="shop-details  "><img src="assets/img/shop/shop_img03.jpg" alt=""></a>
                                     <div class="shop-action">
-                                        <a href="shop-details.html"><i class="fas fa-shopping-cart"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-heart"></i></a>
+                                        <a href="shop-details  "><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="shop-details  "><i class="far fa-eye"></i></a>
+                                        <a href="shop-details  "><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
                                 <div class="shop-content">
                                     <h4 class="price">$17.00</h4>
-                                    <h3 class="title"><a href="shop-details.html">Book Cover Design</a></h3>
+                                    <h3 class="title"><a href="shop-details  ">Book Cover Design</a></h3>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -432,16 +432,16 @@
                         <div class="col-lg-4">
                             <div class="shop-item">
                                 <div class="shop-thumb">
-                                    <a href="shop-details.html"><img src="assets/img/shop/shop_img04.jpg" alt=""></a>
+                                    <a href="shop-details  "><img src="assets/img/shop/shop_img04.jpg" alt=""></a>
                                     <div class="shop-action">
-                                        <a href="shop-details.html"><i class="fas fa-shopping-cart"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-heart"></i></a>
+                                        <a href="shop-details  "><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="shop-details  "><i class="far fa-eye"></i></a>
+                                        <a href="shop-details  "><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
                                 <div class="shop-content">
                                     <h4 class="price">$14.00</h4>
-                                    <h3 class="title"><a href="shop-details.html">EBook Cover Design</a></h3>
+                                    <h3 class="title"><a href="shop-details  ">EBook Cover Design</a></h3>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -455,16 +455,16 @@
                         <div class="col-lg-4">
                             <div class="shop-item">
                                 <div class="shop-thumb">
-                                    <a href="shop-details.html"><img src="assets/img/shop/shop_img05.jpg" alt=""></a>
+                                    <a href="shop-details  "><img src="assets/img/shop/shop_img05.jpg" alt=""></a>
                                     <div class="shop-action">
-                                        <a href="shop-details.html"><i class="fas fa-shopping-cart"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
-                                        <a href="shop-details.html"><i class="far fa-heart"></i></a>
+                                        <a href="shop-details  "><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="shop-details  "><i class="far fa-eye"></i></a>
+                                        <a href="shop-details  "><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
                                 <div class="shop-content">
                                     <h4 class="price">$19.00</h4>
-                                    <h3 class="title"><a href="shop-details.html">Create An EBook Cover</a></h3>
+                                    <h3 class="title"><a href="shop-details  ">Create An EBook Cover</a></h3>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -495,7 +495,7 @@
                         <div class="footer-widget">
                             <div class="footer__about">
                                 <div class="footer__logo logo">
-                                    <a href="index.html"><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
+                                    <a href="index  "><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
                                 </div>
                                 <p>when an unknown printer took galley of type and scrambled it to make pspecimen bookt has.</p>
                                 <ul class="list-wrap m-0 p-0">
@@ -516,9 +516,9 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Resources</h4>
                             <ul class="list-wrap">
-                                <li><a href="about-us.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="contact.html">Help Center</a></li>
+                                <li><a href="about-us  ">About</a></li>
+                                <li><a href="contact  ">Contact</a></li>
+                                <li><a href="contact  ">Help Center</a></li>
                                 <li><a href="#">Refund</a></li>
                                 <li><a href="#">Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
@@ -529,12 +529,12 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Courses</h4>
                             <ul class="list-wrap">
-                                <li><a href="courses.html">Life Coach</a></li>
-                                <li><a href="courses.html">Business Coach</a></li>
-                                <li><a href="courses.html">Health Coach</a></li>
-                                <li><a href="courses.html">Development</a></li>
-                                <li><a href="courses.html">Web Design</a></li>
-                                <li><a href="courses.html">SEO Optimize</a></li>
+                                <li><a href="courses  ">Life Coach</a></li>
+                                <li><a href="courses  ">Business Coach</a></li>
+                                <li><a href="courses  ">Health Coach</a></li>
+                                <li><a href="courses  ">Development</a></li>
+                                <li><a href="courses  ">Web Design</a></li>
+                                <li><a href="courses  ">SEO Optimize</a></li>
                             </ul>
                         </div>
                     </div>
@@ -600,5 +600,5 @@
 </body>
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/shop-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:54 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/shop-details   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:54 GMT -->
 </html>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:42 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/about-us   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:42 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -82,7 +82,7 @@
                         <div class="tgmenu__wrap">
                             <nav class="tgmenu__nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__categories d-none d-md-block">
                                     <div class="dropdown">
@@ -105,41 +105,41 @@
                                     <ul class="navigation">
                                         <li class="menu-item-has-children"><a href="#">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
+                                                <li><a href="index  ">Home One</a></li>
+                                                <li><a href="index-2  ">Home Two</a></li>
+                                                <li><a href="index-3  ">Home Three</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Courses</a>
                                             <ul class="sub-menu">
-                                                <li><a href="courses.html">All Courses</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
+                                                <li><a href="courses  ">All Courses</a></li>
+                                                <li><a href="course-details  ">Course Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="active menu-item-has-children"><a href="#">Pages</a>
                                             <ul class="sub-menu">
-                                                <li class="active"><a href="about-us.html">About Us</a></li>
-                                                <li><a href="instructors.html">Our Instructors</a></li>
-                                                <li><a href="instructor-details.html">Instructor Details</a></li>
-                                                <li><a href="mentors.html">Our Mentors</a></li>
-                                                <li><a href="events.html">Our Events</a></li>
-                                                <li><a href="events-details.html">Event Details</a></li>
-                                                <li><a href="faq.html">Asked Question</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="contact.html">contact</a></li>
+                                                <li class="active"><a href="about-us  ">About Us</a></li>
+                                                <li><a href="instructors  ">Our Instructors</a></li>
+                                                <li><a href="instructor-details  ">Instructor Details</a></li>
+                                                <li><a href="mentors  ">Our Mentors</a></li>
+                                                <li><a href="events  ">Our Events</a></li>
+                                                <li><a href="events-details  ">Event Details</a></li>
+                                                <li><a href="faq  ">Asked Question</a></li>
+                                                <li><a href="404  ">404 Page</a></li>
+                                                <li><a href="contact  ">contact</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop Page</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                                <li><a href="shop  ">Shop Page</a></li>
+                                                <li><a href="shop-details  ">Shop Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Blog</a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="blog-grid  ">Blog Grid</a></li>
+                                                <li><a href="blog  ">Blog Standard</a></li>
+                                                <li><a href="blog-details  ">Blog Details</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -153,12 +153,12 @@
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
                                         <li class="mini-cart-icon">
-                                            <a href="shop.html" class="cart-count">
+                                            <a href="shop  " class="cart-count">
                                                 <img src="assets/img/icons/cart.svg" alt="cart">
                                                 <span class="mini-cart-count">0</span>
                                             </a>
                                         </li>
-                                        <li class="header-btn"><a href="contact.html" class="btn">Sign Up</a></li>
+                                        <li class="header-btn"><a href="contact  " class="btn">Sign Up</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -168,7 +168,7 @@
                             <nav class="tgmobile__menu-box">
                                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmobile__search">
                                     <form action="#">
@@ -219,7 +219,7 @@
                             <h3 class="title">About Us</h3>
                             <nav class="breadcrumb">
                                 <span property="itemListElement" typeof="ListItem">
-                                    <a href="index.html">Home</a>
+                                    <a href="index  ">Home</a>
                                 </span>
                                 <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
                                 <span property="itemListElement" typeof="ListItem">About Us</span>
@@ -244,7 +244,7 @@
                             <p class="fw-medium">Borem ipsum dolor sit amet, consectetur adipiscing eliawe ellus luctus nec ullamcorper mattisBorem</p>
                             <p>Bipsum dolor awtnse awctetur adipis we followelit. Borem.Borem ipsum dolamet consectetur adipiscing eliawe awUt elit ellutnse awcon sectetur adipiscing ectetur.</p>
                             <div class="tg-button-wrap">
-                                <a href="courses.html" class="btn tg-svg"><span class="text">Explore Courses</span> <span class="svg-icon" id="about-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
+                                <a href="courses  " class="btn tg-svg"><span class="text">Explore Courses</span> <span class="svg-icon" id="about-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
                             </div>
                         </div>
                     </div>
@@ -343,7 +343,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="tg-button-wrap justify-content-center justify-content-md-end">
-                                <a href="instructor.html" class="btn btn-border tg-svg"><span class="text">All Instructors</span> <span class="svg-icon" id="mentors-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
+                                <a href="instructor  " class="btn btn-border tg-svg"><span class="text">All Instructors</span> <span class="svg-icon" id="mentors-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
                             </div>
                         </div>
                     </div>
@@ -352,7 +352,7 @@
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="mentors__item">
                             <div class="mentors__img">
-                                <a href="instructor-details.html">
+                                <a href="instructor-details  ">
                                     <img src="assets/img/mentors/mentors01.png" alt="mentor">
                                 </a>
                                 <div class="mentors__social">
@@ -366,7 +366,7 @@
                             </div>
                             <div class="mentors__content">
                                 <div class="mentors__content-top">
-                                    <h4 class="name"><a href="instructor-details.html">Robert Smith</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Robert Smith</a></h4>
                                     <span class="designation">Graphic Design</span>
                                 </div>
                                 <div class="mentors__content-bottom">
@@ -384,7 +384,7 @@
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="mentors__item">
                             <div class="mentors__img">
-                                <a href="instructor-details.html">
+                                <a href="instructor-details  ">
                                     <img src="assets/img/mentors/mentors02.png" alt="mentor">
                                 </a>
                                 <div class="mentors__social">
@@ -398,7 +398,7 @@
                             </div>
                             <div class="mentors__content">
                                 <div class="mentors__content-top">
-                                    <h4 class="name"><a href="instructor-details.html">Olivia Mia</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Olivia Mia</a></h4>
                                     <span class="designation">Web Design</span>
                                 </div>
                                 <div class="mentors__content-bottom">
@@ -416,7 +416,7 @@
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="mentors__item">
                             <div class="mentors__img">
-                                <a href="instructor-details.html">
+                                <a href="instructor-details  ">
                                     <img src="assets/img/mentors/mentors03.png" alt="mentor">
                                 </a>
                                 <div class="mentors__social">
@@ -430,7 +430,7 @@
                             </div>
                             <div class="mentors__content">
                                 <div class="mentors__content-top">
-                                    <h4 class="name"><a href="instructor-details.html">William Hope</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">William Hope</a></h4>
                                     <span class="designation">Digital Marketing</span>
                                 </div>
                                 <div class="mentors__content-bottom">
@@ -448,7 +448,7 @@
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="mentors__item">
                             <div class="mentors__img">
-                                <a href="instructor-details.html">
+                                <a href="instructor-details  ">
                                     <img src="assets/img/mentors/mentors04.png" alt="mentor">
                                 </a>
                                 <div class="mentors__social">
@@ -462,7 +462,7 @@
                             </div>
                             <div class="mentors__content">
                                 <div class="mentors__content-top">
-                                    <h4 class="name"><a href="instructor-details.html">Sophia Ava</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Sophia Ava</a></h4>
                                     <span class="designation">Web Development</span>
                                 </div>
                                 <div class="mentors__content-bottom">
@@ -497,7 +497,7 @@
                             <h2 class="title">50% Offer For Very First 50</h2>
                             <h5 class="sub-title">Student’s & Mentors</h5>
                             <div class="tg-button-wrap justify-content-center">
-                                <a href="contact.html" class="btn tg-svg"><span class="text">Become a Student</span> <span class="svg-icon" id="cta-btn-2" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
+                                <a href="contact  " class="btn tg-svg"><span class="text">Become a Student</span> <span class="svg-icon" id="cta-btn-2" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
                             </div>
                         </div>
                     </div>
@@ -524,7 +524,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="tg-button-wrap justify-content-center justify-content-md-end">
-                                <a href="events.html" class="btn btn-border tg-svg"><span class="text">Our All Events</span> <span class="svg-icon" id="events-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
+                                <a href="events  " class="btn btn-border tg-svg"><span class="text">Our All Events</span> <span class="svg-icon" id="events-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
                             </div>
                         </div>
                     </div>
@@ -533,13 +533,13 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="events__item shine__animate-item">
                             <div class="events__item-thumb">
-                                <a href="events-details.html" class="shine__animate-link">
+                                <a href="events-details  " class="shine__animate-link">
                                     <img src="assets/img/events/event_thumb01.jpg" alt="img">
                                 </a>
                                 <span class="events__date"><i class="flaticon-calendar-date"></i> 25 May, 2023</span>
                             </div>
                             <div class="events__item-content">
-                                <h4 class="title"><a href="events-details.html">Aewe Creating Futures Through
+                                <h4 class="title"><a href="events-details  ">Aewe Creating Futures Through
                                 Technology Conference</a></h4>
                                 <span class="location"><i class="flaticon-pin-1"></i> United Kingdom</span>
                             </div>
@@ -548,13 +548,13 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="events__item shine__animate-item">
                             <div class="events__item-thumb">
-                                <a href="events-details.html" class="shine__animate-link">
+                                <a href="events-details  " class="shine__animate-link">
                                     <img src="assets/img/events/event_thumb02.jpg" alt="img">
                                 </a>
                                 <span class="events__date"><i class="flaticon-calendar-date"></i> 25 May, 2023</span>
                             </div>
                             <div class="events__item-content">
-                                <h4 class="title"><a href="events-details.html">Exactly How Technology Can Make Reading Better</a></h4>
+                                <h4 class="title"><a href="events-details  ">Exactly How Technology Can Make Reading Better</a></h4>
                                 <span class="location"><i class="flaticon-pin-1"></i> Tokyo Japan</span>
                             </div>
                         </div>
@@ -562,13 +562,13 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="events__item shine__animate-item">
                             <div class="events__item-thumb">
-                                <a href="events-details.html" class="shine__animate-link">
+                                <a href="events-details  " class="shine__animate-link">
                                     <img src="assets/img/events/event_thumb03.jpg" alt="img">
                                 </a>
                                 <span class="events__date"><i class="flaticon-calendar-date"></i> 25 May, 2023</span>
                             </div>
                             <div class="events__item-content">
-                                <h4 class="title"><a href="events-details.html">Aewe Creating Futures Through
+                                <h4 class="title"><a href="events-details  ">Aewe Creating Futures Through
                                 Technology Conference</a></h4>
                                 <span class="location"><i class="flaticon-pin-1"></i> New Work</span>
                             </div>
@@ -597,7 +597,7 @@
                         <div class="footer-widget">
                             <div class="footer__about">
                                 <div class="footer__logo logo">
-                                    <a href="index.html"><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
+                                    <a href="index  "><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
                                 </div>
                                 <p>when an unknown printer took galley of type and scrambled it to make pspecimen bookt has.</p>
                                 <ul class="list-wrap m-0 p-0">
@@ -618,10 +618,10 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Resources</h4>
                             <ul class="list-wrap">
-                                <li><a href="about-us.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="contact.html">Help Center</a></li>
-                                <li><a href="contact.html">Refund</a></li>
+                                <li><a href="about-us  ">About</a></li>
+                                <li><a href="contact  ">Contact</a></li>
+                                <li><a href="contact  ">Help Center</a></li>
+                                <li><a href="contact  ">Refund</a></li>
                                 <li><a href="#">Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
@@ -631,12 +631,12 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Courses</h4>
                             <ul class="list-wrap">
-                                <li><a href="courses.html">Life Coach</a></li>
-                                <li><a href="courses.html">Business Coach</a></li>
-                                <li><a href="courses.html">Health Coach</a></li>
-                                <li><a href="courses.html">Development</a></li>
-                                <li><a href="courses.html">Web Design</a></li>
-                                <li><a href="courses.html">SEO Optimize</a></li>
+                                <li><a href="courses  ">Life Coach</a></li>
+                                <li><a href="courses  ">Business Coach</a></li>
+                                <li><a href="courses  ">Health Coach</a></li>
+                                <li><a href="courses  ">Development</a></li>
+                                <li><a href="courses  ">Web Design</a></li>
+                                <li><a href="courses  ">SEO Optimize</a></li>
                             </ul>
                         </div>
                     </div>
@@ -702,5 +702,5 @@
 </body>
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:43 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/about-us   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:43 GMT -->
 </html>

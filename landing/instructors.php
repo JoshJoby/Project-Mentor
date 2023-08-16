@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/instructors.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:43 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/instructors   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:43 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -82,7 +82,7 @@
                         <div class="tgmenu__wrap">
                             <nav class="tgmenu__nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__categories d-none d-md-block">
                                     <div class="dropdown">
@@ -105,41 +105,41 @@
                                     <ul class="navigation">
                                         <li class="menu-item-has-children"><a href="#">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
+                                                <li><a href="index  ">Home One</a></li>
+                                                <li><a href="index-2  ">Home Two</a></li>
+                                                <li><a href="index-3  ">Home Three</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Courses</a>
                                             <ul class="sub-menu">
-                                                <li><a href="courses.html">All Courses</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
+                                                <li><a href="courses  ">All Courses</a></li>
+                                                <li><a href="course-details  ">Course Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="active menu-item-has-children"><a href="#">Pages</a>
                                             <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li class="active"><a href="instructors.html">Our Instructors</a></li>
-                                                <li><a href="instructor-details.html">Instructor Details</a></li>
-                                                <li><a href="mentors.html">Our Mentors</a></li>
-                                                <li><a href="events.html">Our Events</a></li>
-                                                <li><a href="events-details.html">Event Details</a></li>
-                                                <li><a href="faq.html">Asked Question</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="contact.html">contact</a></li>
+                                                <li><a href="about-us  ">About Us</a></li>
+                                                <li class="active"><a href="instructors  ">Our Instructors</a></li>
+                                                <li><a href="instructor-details  ">Instructor Details</a></li>
+                                                <li><a href="mentors  ">Our Mentors</a></li>
+                                                <li><a href="events  ">Our Events</a></li>
+                                                <li><a href="events-details  ">Event Details</a></li>
+                                                <li><a href="faq  ">Asked Question</a></li>
+                                                <li><a href="404  ">404 Page</a></li>
+                                                <li><a href="contact  ">contact</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop Page</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                                <li><a href="shop  ">Shop Page</a></li>
+                                                <li><a href="shop-details  ">Shop Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Blog</a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="blog-grid  ">Blog Grid</a></li>
+                                                <li><a href="blog  ">Blog Standard</a></li>
+                                                <li><a href="blog-details  ">Blog Details</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -153,12 +153,12 @@
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
                                         <li class="mini-cart-icon">
-                                            <a href="shop.html" class="cart-count">
+                                            <a href="shop  " class="cart-count">
                                                 <img src="assets/img/icons/cart.svg" alt="cart">
                                                 <span class="mini-cart-count">0</span>
                                             </a>
                                         </li>
-                                        <li class="header-btn"><a href="contact.html" class="btn">Sign Up</a></li>
+                                        <li class="header-btn"><a href="contact  " class="btn">Sign Up</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -168,7 +168,7 @@
                             <nav class="tgmobile__menu-box">
                                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    <a href="index  "><img src="assets/img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmobile__search">
                                     <form action="#">
@@ -219,7 +219,7 @@
                             <h3 class="title">Top Class instructors</h3>
                             <nav class="breadcrumb">
                                 <span property="itemListElement" typeof="ListItem">
-                                    <a href="index.html">Home</a>
+                                    <a href="index  ">Home</a>
                                 </span>
                                 <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
                                 <span property="itemListElement" typeof="ListItem">Instructors</span>
@@ -239,12 +239,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E2FAFF; border-radius: 135px 0 0 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor01.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor01.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Graphic Design</span>
-                                    <h4 class="name"><a href="instructor-details.html">Robert Smith</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Robert Smith</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -262,12 +262,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E4FFE2; border-radius: 135px 115px 115px 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor02.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor02.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Design</span>
-                                    <h4 class="name"><a href="instructor-details.html">Olivia Mia</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Olivia Mia</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -285,12 +285,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E8EDFF; border-radius: 0 135px 0 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor03.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor03.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Digital Marketing</span>
-                                    <h4 class="name"><a href="instructor-details.html">William Hope</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">William Hope</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -308,12 +308,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #FFE2E2; border-radius: 115px 135px 0 115px;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor04.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor04.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Development</span>
-                                    <h4 class="name"><a href="instructor-details.html">Sophia Ava</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Sophia Ava</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -331,12 +331,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #FFFAE2; border-radius: 0 135px 0 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor05.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor05.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Development</span>
-                                    <h4 class="name"><a href="instructor-details.html">Ronald Richards</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Ronald Richards</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -354,12 +354,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E6E2FF; border-radius: 115px 135px 0 115px;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor06.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor06.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Development</span>
-                                    <h4 class="name"><a href="instructor-details.html">Floyd Miles</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Floyd Miles</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -377,12 +377,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #FFE8F4; border-radius: 135px 0 0 0px;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor07.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor07.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Development</span>
-                                    <h4 class="name"><a href="instructor-details.html">Eleanor Pena</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Eleanor Pena</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -400,12 +400,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E2FFFC; border-radius: 135px 115px 115px 0px;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor08.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor08.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Development</span>
-                                    <h4 class="name"><a href="instructor-details.html">Jacob Jones</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Jacob Jones</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -423,12 +423,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E2FAFF; border-radius: 135px 0 0 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor09.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor09.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Graphic Design</span>
-                                    <h4 class="name"><a href="instructor-details.html">Robert Fox</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Robert Fox</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -446,12 +446,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E4FFE2; border-radius: 135px 115px 115px 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor02.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor02.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Design</span>
-                                    <h4 class="name"><a href="instructor-details.html">Wade Warren</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Wade Warren</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -469,12 +469,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #E8EDFF; border-radius: 0 135px 0 0;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor03.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor03.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Digital Marketing</span>
-                                    <h4 class="name"><a href="instructor-details.html">Guy Hawkins</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Guy Hawkins</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -492,12 +492,12 @@
                         <div class="instructor__item">
                             <div class="instructor__img">
                                 <div class="instructor__shape" style="background-color: #FFE2E2; border-radius: 115px 135px 0 115px;"></div>
-                                <a href="instructor-details.html"><img src="assets/img/instructor/instructor04.png" alt="instructor"></a>
+                                <a href="instructor-details  "><img src="assets/img/instructor/instructor04.png" alt="instructor"></a>
                             </div>
                             <div class="instructor__content">
                                 <div class="left">
                                     <span class="designation">Web Development</span>
-                                    <h4 class="name"><a href="instructor-details.html">Bessie Cooper</a></h4>
+                                    <h4 class="name"><a href="instructor-details  ">Bessie Cooper</a></h4>
                                 </div>
                                 <div class="right">
                                     <span class="share"><i class="flaticon-share"></i></span>
@@ -525,7 +525,7 @@
                             <div class="quick__action-content">
                                 <h4 class="title">Best Instructors from around <br> the world</h4>
                                 <div class="tg-button-wrap">
-                                    <a href="contact.html" class="btn white-btn tg-svg"><span class="text">Register Now</span> <span class="svg-icon" id="reg-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
+                                    <a href="contact  " class="btn white-btn tg-svg"><span class="text">Register Now</span> <span class="svg-icon" id="reg-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -535,7 +535,7 @@
                             <div class="quick__action-content">
                                 <h4 class="title">Get unlimited access to 6,000+ of courses</h4>
                                 <div class="tg-button-wrap">
-                                    <a href="contact.html" class="btn white-btn tg-svg"><span class="text">Discover Now</span> <span class="svg-icon" id="discover-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
+                                    <a href="contact  " class="btn white-btn tg-svg"><span class="text">Discover Now</span> <span class="svg-icon" id="discover-btn" data-svg-icon="assets/img/icons/btn-arrow.svg"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -559,7 +559,7 @@
                         <div class="footer-widget">
                             <div class="footer__about">
                                 <div class="footer__logo logo">
-                                    <a href="index.html"><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
+                                    <a href="index  "><img src="assets/img/logo/secondary_logo.png" alt="img"></a>
                                 </div>
                                 <p>when an unknown printer took galley of type and scrambled it to make pspecimen bookt has.</p>
                                 <ul class="list-wrap m-0 p-0">
@@ -580,9 +580,9 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Resources</h4>
                             <ul class="list-wrap">
-                                <li><a href="about-us.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="contact.html">Help Center</a></li>
+                                <li><a href="about-us  ">About</a></li>
+                                <li><a href="contact  ">Contact</a></li>
+                                <li><a href="contact  ">Help Center</a></li>
                                 <li><a href="#">Refund</a></li>
                                 <li><a href="#">Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
@@ -593,12 +593,12 @@
                         <div class="footer-widget widget_nav_menu">
                             <h4 class="fw-title">Courses</h4>
                             <ul class="list-wrap">
-                                <li><a href="courses.html">Life Coach</a></li>
-                                <li><a href="courses.html">Business Coach</a></li>
-                                <li><a href="courses.html">Health Coach</a></li>
-                                <li><a href="courses.html">Development</a></li>
-                                <li><a href="courses.html">Web Design</a></li>
-                                <li><a href="courses.html">SEO Optimize</a></li>
+                                <li><a href="courses  ">Life Coach</a></li>
+                                <li><a href="courses  ">Business Coach</a></li>
+                                <li><a href="courses  ">Health Coach</a></li>
+                                <li><a href="courses  ">Development</a></li>
+                                <li><a href="courses  ">Web Design</a></li>
+                                <li><a href="courses  ">SEO Optimize</a></li>
                             </ul>
                         </div>
                     </div>
@@ -664,5 +664,5 @@
 </body>
 
 
-<!-- Mirrored from themeadapt.com/tm/eduvalt/instructors.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:45 GMT -->
+<!-- Mirrored from themeadapt.com/tm/eduvalt/instructors   by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Jul 2023 15:32:45 GMT -->
 </html>
