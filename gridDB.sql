@@ -38,7 +38,7 @@ CREATE TABLE `users` (
   `phone_number` varchar(20) DEFAULT NULL,
   `project_id` int DEFAULT NULL,
   `start_date` date DEFAULT NULL,
-  `tech_stack` varchar(255) NOT NULL,
+  `tech_stack` varchar(255) NULL,
   PRIMARY KEY (`user_id`),
   KEY `project_id` (`project_id`),
   CONSTRAINT `users_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `projects` (`project_id`)
