@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
     $_SESSION['meeting_rows'] = $rows;
 }
 else{
-    session_unset();
+    unset($_SESSION['meeting_rows']);
 }
 
 // Close the connection
