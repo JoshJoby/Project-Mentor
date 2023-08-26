@@ -1,6 +1,6 @@
 <div class="iq-sidebar  sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center">
-        <a href="/ProjectMentor/" class="header-logo">
+        <a href="/Project-Mentor/" class="header-logo">
             <!-- <img src="../assets/images/logo.svg" alt="logo"> -->
             <h5 class="logo-title light-logo mt-1">Project Mentor</h5>
         </a>
