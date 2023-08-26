@@ -82,7 +82,7 @@ include 'task-controller.php';
                                         $taskRows = $_SESSION['task_rows'];
                                         foreach ($taskRows as $row) {
 
-                                            echo " <div id='card-onclick' data-toggle='collapse' class='col-lg-12'>
+                                            echo " <div id='card-onclick' data-toggle='collapse' data-target='#collapseEdit1' class='col-lg-12'>
                                 <div class='card card-widget task-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
