@@ -80,9 +80,10 @@ include 'task-controller.php';
                                     <?php
                                     if (isset($_SESSION['task_rows'])) {
                                         $taskRows = $_SESSION['task_rows'];
+                                        $inc=1;//counter variable to increment the number of tasks
                                         foreach ($taskRows as $row) {
-
-                                            echo " <div id='card-onclick' data-toggle='collapse' data-target='#collapseEdit1' class='col-lg-12'>
+                                              
+                                            echo " <div id='card-onclick' data-toggle='collapse' data-target='#collapseEdit'".$inc." class='col-lg-12'>
                                 <div class='card card-widget task-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
@@ -103,7 +104,7 @@ include 'task-controller.php';
                                         </div>  
                                     </div>
                                 </div>                                                                                                        
-                                <div class='collapse' id='collapseEdit1'>                                            
+                                <div class='collapse' id='collapseEdit'".$inc.">                                            
                                     <div class='card card-list task-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div class='header-title'>
@@ -195,7 +196,16 @@ include 'task-controller.php';
                                         </div>
                                     </div>
                                 </div>      
-                            </div>";
+                            </div>
+                            <script>
+                            const myDiv = document.getElementById('card-onclick');
+                          
+                            myDiv.addEventListener('click', function() {
+                              // Replace 'https://www.example.com' with the actual URL you want to open
+                              window.location.href = '#collapseEdit'".$inc.";
+                            });
+                          </script>";
+                            $inc++;
                                         }
                                     } ?>
                                     <!-- <div class='col-lg-12'>
@@ -983,14 +993,7 @@ include 'task-controller.php';
     <script src='assets/js/app.js'></script>
 
     <script src='assets/vendor/moment.min.js'></script>
-    <script>
-  const myDiv = document.getElementById("card-onclick");
-
-  myDiv.addEventListener("click", function() {
-    // Replace 'https://www.example.com' with the actual URL you want to open
-    window.location.href = "#collapseEdit1";
-  });
-</script>
+   
 </body>
 
 </html>
