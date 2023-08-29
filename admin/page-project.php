@@ -1,5 +1,5 @@
 <?php
-include '../layout/header.php';
+include '../layout/admin-header.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,15 +9,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="assets/images/favicon.ico" />
-      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -89,10 +89,10 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-primary link-shadow">High</a>
@@ -112,16 +112,16 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/04.jpg" alt="">
                                     </a>                                                
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/08.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-secondary link-shadow">Medium</a>
@@ -141,13 +141,13 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/01.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/03.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-warning link-shadow">Low</a>
@@ -167,13 +167,13 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-success link-shadow">High</a>
@@ -193,10 +193,10 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-primary link-shadow">High</a>
@@ -216,16 +216,16 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/04.jpg" alt="">
                                     </a>                                                
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/08.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-secondary link-shadow">Medium</a>
@@ -245,13 +245,13 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/01.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/03.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-warning link-shadow">Low</a>
@@ -271,13 +271,13 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-success link-shadow">High</a>
@@ -297,10 +297,10 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-primary link-shadow">High</a>
@@ -320,16 +320,16 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/04.jpg" alt="">
                                     </a>                                                
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/08.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-secondary link-shadow">Medium</a>
@@ -349,13 +349,13 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/01.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/03.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-warning link-shadow">Low</a>
@@ -375,13 +375,13 @@ include '../layout/header.php';
                             <div class="d-flex align-items-center justify-content-between pt-3 border-top">
                                 <div class="iq-media-group">
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                     </a>
                                     <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                        <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                     </a>
                                 </div>
                                 <a class="btn btn-white text-success link-shadow">High</a>
@@ -409,10 +409,10 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-primary link-shadow">High</a>
@@ -437,16 +437,16 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/04.jpg" alt="">
                                         </a>                                                
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/08.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-secondary link-shadow">Medium</a>
@@ -471,13 +471,13 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/01.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/03.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-warning link-shadow">Low</a>
@@ -502,13 +502,13 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-success link-shadow">High</a>
@@ -533,10 +533,10 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-primary link-shadow">High</a>
@@ -561,16 +561,16 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/04.jpg" alt="">
                                         </a>                                                
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/08.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-secondary link-shadow">Medium</a>
@@ -595,13 +595,13 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/01.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/03.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-warning link-shadow">Low</a>
@@ -626,13 +626,13 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-success link-shadow">High</a>
@@ -657,10 +657,10 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-primary link-shadow">High</a>
@@ -685,16 +685,16 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/04.jpg" alt="">
                                         </a>                                                
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/08.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-secondary link-shadow">Medium</a>
@@ -719,13 +719,13 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/01.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/02.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/03.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-warning link-shadow">Low</a>
@@ -750,13 +750,13 @@ include '../layout/header.php';
                                 <div class="col-sm-4 text-sm-right mt-3 mt-sm-0">
                                     <div class="iq-media-group">
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/05.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/06.jpg" alt="">
                                         </a>
                                         <a href="#" class="iq-media">
-                                            <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
+                                            <img class="img-fluid avatar-40 rounded-circle" src="../../assets/images/user/07.jpg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn btn-white text-success  link-shadow">High</a>
@@ -1050,22 +1050,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="assets/js/backend-bundle.min.js"></©>
+    <script src="../assets/js/backend-bundle.min.js"></©>
     
     <!-- Table Treeview JavaScript -->
-    <script src="assets/js/table-treeview.js"></script>
+    <script src="../assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/customizer.js"></script>
+    <script src="../assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/chart-custom.js"></script>
+    <script async src="../assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/slider.js"></script>
+    <script async src="../assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/vendor/moment.min.js"></script>
+    <script src="../assets/vendor/moment.min.js"></script>
   </body>
 </html>

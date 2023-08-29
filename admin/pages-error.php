@@ -1,5 +1,5 @@
 <?php
-include '../layout/header.php';
+include '../layout/admin-header.php';
 ?>
 
 
@@ -11,15 +11,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="assets/images/favicon.ico" />
-      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class=" ">
     <!-- loader Start -->
     <div id="loading">
@@ -33,7 +33,7 @@ include '../layout/header.php';
          <div class="row no-gutters height-self-center">
             <div class="col-sm-12 text-center align-self-center">
                <div class="iq-error position-relative">
-                     <img src="assets/images/error/404.png" class="img-fluid iq-error-img" alt="">
+                     <img src="../assets/images/error/404.png" class="img-fluid iq-error-img" alt="">
                      <h2 class="mb-0 mt-4">Oops! This Page is Not Found.</h2>
                      <p>The requested page dose not exist.</p>
                      <a class="btn btn-primary d-inline-flex align-items-center mt-3" href="/projectmentor.in/"><i class="ri-home-4-line"></i>Back to Home</a>
@@ -44,22 +44,22 @@ include '../layout/header.php';
       </div>
     
     <!-- Backend Bundle JavaScript -->
-    <script src="assets/js/backend-bundle.min.js"></script>
+    <script src="../assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="assets/js/table-treeview.js"></script>
+    <script src="../assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/customizer.js"></script>
+    <script src="../assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/chart-custom.js"></script>
+    <script async src="../assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/slider.js"></script>
+    <script async src="../assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/vendor/moment.min.js"></script>
+    <script src="../assets/vendor/moment.min.js"></script>
   </body>
 </html>

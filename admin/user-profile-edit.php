@@ -1,5 +1,5 @@
 <?php
-include '../layout/header.php';
+include '../layout/admin-header.php';
 ?>
 
 <!doctype html>
@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="assets/images/favicon.ico" />
-      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -82,7 +82,7 @@ include '../layout/header.php';
                                     <div class="col-md-12">
                                        <div class="profile-img-edit">
                                           <div class="crm-profile-img-edit">
-                                             <img class="crm-profile-pic rounded-circle avatar-100" src="assets/images/user/11.png" alt="profile-pic">
+                                             <img class="crm-profile-pic rounded-circle avatar-100" src="../assets/images/user/11.png" alt="profile-pic">
                                              <div class="crm-p-image bg-primary">
                                                 <i class="las la-pen upload-button"></i>
                                                 <input class="file-upload" type="file" accept="image/*">
@@ -583,22 +583,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="assets/js/backend-bundle.min.js"></script>
+    <script src="../assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="assets/js/table-treeview.js"></script>
+    <script src="../assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/customizer.js"></script>
+    <script src="../assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/chart-custom.js"></script>
+    <script async src="../assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/slider.js"></script>
+    <script async src="../assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/vendor/moment.min.js"></script>
+    <script src="../assets/vendor/moment.min.js"></script>
   </body>
 </html>

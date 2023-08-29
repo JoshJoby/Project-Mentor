@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gridproject1";
+$dbname = "projectmentor";
 date_default_timezone_set('Asia/Kolkata');
 
 // Create a connection

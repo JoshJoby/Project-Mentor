@@ -1,5 +1,5 @@
 <?php
-include '../layout/header.php';
+include '../layout/student-header.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,15 +9,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="assets/images/favicon.ico" />
-      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -85,7 +85,7 @@ include '../layout/header.php';
                      <tbody>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/01.jpg" alt="profile"></td>
+                                 src="../assets/images/user/01.jpg" alt="profile"></td>
                            <td>Anna Sthesia</td>
                            <td>(760) 756 7568</td>
                            <td>annasthesia@gmail.com</td>
@@ -106,7 +106,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/02.jpg" alt="profile"></td>
+                                 src="../assets/images/user/02.jpg" alt="profile"></td>
                            <td>Brock Lee</td>
                            <td>+62 5689 458 658</td>
                            <td>brocklee@gmail.com</td>
@@ -127,7 +127,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/03.jpg" alt="profile"></td>
+                                 src="../assets/images/user/03.jpg" alt="profile"></td>
                            <td>Dan Druff</td>
                            <td>+55 6523 456 856</td>
                            <td>dandruff@gmail.com</td>
@@ -148,7 +148,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/04.jpg" alt="profile"></td>
+                                 src="../assets/images/user/04.jpg" alt="profile"></td>
                            <td>Hans Olo</td>
                            <td>+91 2586 253 125</td>
                            <td>hansolo@gmail.com</td>
@@ -169,7 +169,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/05.jpg" alt="profile"></td>
+                                 src="../assets/images/user/05.jpg" alt="profile"></td>
                            <td>Lynn Guini</td>
                            <td>+27 2563 456 589</td>
                            <td>lynnguini@gmail.com</td>
@@ -190,7 +190,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/06.jpg" alt="profile"></td>
+                                 src="../assets/images/user/06.jpg" alt="profile"></td>
                            <td>Eric Shun</td>
                            <td>+55 25685 256 589</td>
                            <td>ericshun@gmail.com</td>
@@ -211,7 +211,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/07.jpg" alt="profile"></td>
+                                 src="../assets/images/user/07.jpg" alt="profile"></td>
                            <td>aaronottix</td>
                            <td>(760) 765 2658</td>
                            <td>budwiser@ymail.com</td>
@@ -232,7 +232,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/08.jpg" alt="profile"></td>
+                                 src="../assets/images/user/08.jpg" alt="profile"></td>
                            <td>Marge Arita</td>
                            <td>+27 5625 456 589</td>
                            <td>margearita@gmail.com</td>
@@ -253,7 +253,7 @@ include '../layout/header.php';
                         </tr>
                         <tr>
                            <td class="text-center"><img class="rounded img-fluid avatar-40"
-                                 src="assets/images/user/09.jpg" alt="profile"></td>
+                                 src="../assets/images/user/09.jpg" alt="profile"></td>
                            <td>Bill Dabear</td>
                            <td>+55 2563 456 589</td>
                            <td>billdabear@gmail.com</td>
@@ -581,22 +581,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="assets/js/backend-bundle.min.js"></script>
+    <script src="../assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="assets/js/table-treeview.js"></script>
+    <script src="../assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/customizer.js"></script>
+    <script src="../assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/chart-custom.js"></script>
+    <script async src="../assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/slider.js"></script>
+    <script async src="../assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/vendor/moment.min.js"></script>
+    <script src="../assets/vendor/moment.min.js"></script>
   </body>
 </html>

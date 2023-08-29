@@ -1,5 +1,5 @@
 <?php
-include '../layout/header.php';
+include '../layout/expert-header.php';
 ?>
 
 <!doctype html>
@@ -10,15 +10,15 @@ include '../layout/header.php';
       <title>Project Mentor</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="assets/images/favicon.ico" />
-      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="assets/vendor/remixicon/fonts/remixicon.css">
+      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
       
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -38,7 +38,7 @@ include '../layout/header.php';
                <div class="card car-transparent">
                   <div class="card-body p-0">
                      <div class="profile-image position-relative">
-                        <img src="assets/images/page-img/profile.png" class="img-fluid rounded w-100" alt="profile-image">
+                        <img src="../assets/images/page-img/profile.png" class="img-fluid rounded w-100" alt="profile-image">
                      </div>
                   </div>
                </div>
@@ -50,7 +50,7 @@ include '../layout/header.php';
                   <div class="card-body">
                      <div class="d-flex align-items-center mb-3">
                         <div class="profile-img position-relative">
-                           <img src="assets/images/user/1.jpg" class="img-fluid rounded avatar-110" alt="profile-image">
+                           <img src="../assets/images/user/1.jpg" class="img-fluid rounded avatar-110" alt="profile-image">
                         </div>
                         <div class="ml-3">
                            <h4 class="mb-1">Ruben Dokidis</h4>
@@ -140,7 +140,7 @@ include '../layout/header.php';
                                  <ul class="list-inline p-0 m-0">
                                     <li class="mb-4">
                                        <div class="d-flex align-items-center pt-2">
-                                          <img src="assets/images/profile/service/01.png" class="img-fluid" alt="image">
+                                          <img src="../assets/images/profile/service/01.png" class="img-fluid" alt="image">
                                           <div class="ml-3 w-100">
                                              <div class="media align-items-center justify-content-between">
                                                 <p class="mb-0">Adobe Photoshop</p>
@@ -154,7 +154,7 @@ include '../layout/header.php';
                                     </li>
                                     <li class="mb-4">
                                        <div class="d-flex align-items-center pt-2">
-                                          <img src="assets/images/profile/service/02.png" class="img-fluid mr-3" alt="image">
+                                          <img src="../assets/images/profile/service/02.png" class="img-fluid mr-3" alt="image">
                                           <div class="ml-3 w-100">
                                              <div class="media align-items-center justify-content-between">
                                                 <p class="mb-0">Figma</p>
@@ -168,7 +168,7 @@ include '../layout/header.php';
                                     </li>
                                     <li>
                                        <div class="d-flex align-items-center pt-2">
-                                          <img src="assets/images/profile/service/03.png" class="img-fluid" alt="image">
+                                          <img src="../assets/images/profile/service/03.png" class="img-fluid" alt="image">
                                           <div class="ml-3 w-100">
                                              <div class="media align-items-center justify-content-between">
                                                 <p class="mb-0">Adobe Photoshop</p>
@@ -186,7 +186,7 @@ include '../layout/header.php';
                                  <ul class="list-inline p-0 m-0">
                                     <li class="mb-4">
                                        <div class="d-flex align-items-center pt-2">
-                                          <img src="assets/images/profile/service/04.png" class="img-fluid" alt="image">
+                                          <img src="../assets/images/profile/service/04.png" class="img-fluid" alt="image">
                                           <div class="ml-3 w-100">
                                              <div class="media align-items-center justify-content-between">
                                                 <p class="mb-0">Adobe Photoshop</p>
@@ -200,7 +200,7 @@ include '../layout/header.php';
                                     </li>
                                     <li class="mb-4">
                                        <div class="d-flex align-items-center pt-2">
-                                          <img src="assets/images/profile/service/05.png" class="img-fluid" alt="image">
+                                          <img src="../assets/images/profile/service/05.png" class="img-fluid" alt="image">
                                           <div class="ml-3 w-100">
                                              <div class="media align-items-center justify-content-between">
                                                 <p class="mb-0">Figma</p>
@@ -214,7 +214,7 @@ include '../layout/header.php';
                                     </li>
                                     <li>
                                        <div class="d-flex align-items-center pt-2">
-                                          <img src="assets/images/profile/service/06.png" class="img-fluid" alt="image">
+                                          <img src="../assets/images/profile/service/06.png" class="img-fluid" alt="image">
                                           <div class="ml-3 w-100">
                                              <div class="media align-items-center justify-content-between">
                                                 <p class="mb-0">Adobe Photoshop</p>
@@ -824,22 +824,22 @@ include '../layout/header.php';
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="assets/js/backend-bundle.min.js"></script>
+    <script src="../assets/js/backend-bundle.min.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="assets/js/table-treeview.js"></script>
+    <script src="../assets/js/table-treeview.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/customizer.js"></script>
+    <script src="../assets/js/customizer.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/chart-custom.js"></script>
+    <script async src="../assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script async src="assets/js/slider.js"></script>
+    <script async src="../assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/vendor/moment.min.js"></script>
+    <script src="../assets/vendor/moment.min.js"></script>
   </body>
 </html>

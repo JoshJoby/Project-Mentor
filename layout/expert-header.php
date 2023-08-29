@@ -1,7 +1,7 @@
 <div class="iq-sidebar  sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center">
-        <a href="/Project-Mentor/" class="header-logo">
-            <!-- <img src="../assets/images/logo.svg" alt="logo"> -->
+        <a href="/ProjectMentor/expert" class="header-logo">
+            <!-- <img src="../../assets/images/logo.svg" alt="logo"> -->
             <h5 class="logo-title light-logo mt-1">Project Mentor</h5>
         </a>
         <div class="iq-menu-bt-sidebar ml-0">
@@ -12,7 +12,7 @@
         <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="iq-menu">
                 <li class="">
-                    <a href="/ProjectMentor/" class="svg-icon">
+                    <a href="/ProjectMentor/expert" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -22,31 +22,12 @@
                         <span class="ml-4">Dashboards</span>
                     </a>
                 </li>
-                <li class="">
-                    <a href="page-project" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                            <rect x="6" y="14" width="12" height="8"></rect>
-                        </svg>
-                        <span class="ml-4">Projects</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="page-task" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                        </svg>
-                        <span class="ml-4">Task</span>
-                    </a>
-                </li>
+                
+                
+                
+                
                 <li class=" ">
-                    <a href="page-employee" class="svg-icon">
+                    <a href="/ProjectMentor/expert/page-employee" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -155,7 +136,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/01.jpg" alt="01">
+                                                                  src="../../assets/images/user/01.jpg" alt="01">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -170,7 +151,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/02.jpg" alt="02">
+                                                                  src="../../assets/images/user/02.jpg" alt="02">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -185,7 +166,7 @@
                                                       <div class="media align-items-center cust-card py-3">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/03.jpg" alt="03">
+                                                                  src="../../assets/images/user/03.jpg" alt="03">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -230,7 +211,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/01.jpg" alt="01">
+                                                                  src="../../assets/images/user/01.jpg" alt="01">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -245,7 +226,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/02.jpg" alt="02">
+                                                                  src="../../assets/images/user/02.jpg" alt="02">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -260,7 +241,7 @@
                                                       <div class="media align-items-center cust-card py-3">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/03.jpg" alt="03">
+                                                                  src="../../assets/images/user/03.jpg" alt="03">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -284,7 +265,7 @@
                             <a href="#" class="search-toggle dropdown-toggle  d-flex align-items-center"
                                 id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <img src="assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
+                                <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
                                 <div class="caption ml-1">
                                     <h6 class="mb-0 line-height">Savannah Nguyen<i class="las la-angle-down ml-2"></i>
                                     </h6>
@@ -337,7 +318,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                     </svg>
-                                    <a href="auth-sign-in">Logout</a>
+                                    <a href="/ProjectMentor/landing">Logout</a>
                                 </li>
                             </ul>
                         </li>

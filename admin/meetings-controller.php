@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gridproject1";
+$dbname = "projectmentor";
 date_default_timezone_set('Asia/Kolkata');
 
 // Create a connection
@@ -17,7 +17,7 @@ $currentDate = date("Y-m-d");
 $current_time = date("H:i:s");
 
 $sql = "SELECT *
-FROM meeting
+FROM meetings
 WHERE CONCAT(meeting_date, ' ', start_time) >= '" . $currentDate . " " . $current_time . "'
 ORDER BY CONCAT(meeting_date, ' ', start_time) ASC;";
 

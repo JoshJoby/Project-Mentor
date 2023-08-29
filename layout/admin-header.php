@@ -1,7 +1,7 @@
 <div class="iq-sidebar  sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center">
-        <a href="/Project-Mentor/" class="header-logo">
-            <!-- <img src="../assets/images/logo.svg" alt="logo"> -->
+        <a href="/ProjectMentor/admin" class="header-logo">
+            <!-- <img src="../../assets/images/logo.svg" alt="logo"> -->
             <h5 class="logo-title light-logo mt-1">Project Mentor</h5>
         </a>
         <div class="iq-menu-bt-sidebar ml-0">
@@ -12,7 +12,7 @@
         <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="iq-menu">
                 <li class="">
-                    <a href="/ProjectMentor/" class="svg-icon">
+                    <a href="/ProjectMentor/admin" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="page-project" class="svg-icon">
+                    <a href="/ProjectMentor/admin/page-project" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="page-task" class="svg-icon">
+                    <a href="/ProjectMentor/admin/page-task" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class=" ">
-                    <a href="page-employee" class="svg-icon">
+                    <a href="/ProjectMentor/admin/page-employee" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -155,7 +155,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/01.jpg" alt="01">
+                                                                  src="../../assets/images/user/01.jpg" alt="01">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -170,7 +170,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/02.jpg" alt="02">
+                                                                  src="../../assets/images/user/02.jpg" alt="02">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -185,7 +185,7 @@
                                                       <div class="media align-items-center cust-card py-3">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/03.jpg" alt="03">
+                                                                  src="../../assets/images/user/03.jpg" alt="03">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -230,7 +230,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/01.jpg" alt="01">
+                                                                  src="../../assets/images/user/01.jpg" alt="01">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -245,7 +245,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/02.jpg" alt="02">
+                                                                  src="../../assets/images/user/02.jpg" alt="02">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -260,7 +260,7 @@
                                                       <div class="media align-items-center cust-card py-3">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/03.jpg" alt="03">
+                                                                  src="../../assets/images/user/03.jpg" alt="03">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -284,7 +284,7 @@
                             <a href="#" class="search-toggle dropdown-toggle  d-flex align-items-center"
                                 id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <img src="assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
+                                <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
                                 <div class="caption ml-1">
                                     <h6 class="mb-0 line-height">Savannah Nguyen<i class="las la-angle-down ml-2"></i>
                                     </h6>
@@ -337,7 +337,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                     </svg>
-                                    <a href="auth-sign-in">Logout</a>
+                                    <a href="/ProjectMentor/landing">Logout</a>
                                 </li>
                             </ul>
                         </li>
