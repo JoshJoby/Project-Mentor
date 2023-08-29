@@ -1,11 +1,9 @@
 <?php
-session_start();
-
 // Database credentials
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "projectmentor";
+$dbname = "gridproject1";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,10 +13,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$email = $_POST['loginemail']; // Assuming the email input field has the name attribute set to "loginemail"
-$password = $_POST['loginpassword'];
-
-$sql = "SELECT * FROM student WHERE email='$email'";
+$email = $_POST['email']; // Assuming the email input field has the name attribute set to "email"
+echo $email;
+$password = $_POST['password'];
+echo $password;
+$sql = "SELECT * FROM users WHERE email='$email'";
 
 // Execute the query
 $result = $conn->query($sql);
@@ -31,20 +30,16 @@ if ($result->num_rows > 0) {
     // Verify the entered password using a suitable method (e.g., password_verify)
     if ($password === $hashedPassword) {
         // Password is correct, user authentication successful
-
-        header("Location: ../"); // Redirect to the successful login page
+        echo "User authentication successful!";
+        header("Location: ../ProjectMentor");
         exit();
     } else {
         // Password is incorrect
-        $_SESSION['login_notification'] = 'Incorrect password!';
-        header("Location: index"); // Redirect back to the login page with notification
-        exit();
+        echo "Incorrect password!";
     }
 } else {
     // User does not exist
-    $_SESSION['login_notification'] = 'User not found!';
-    header("Location: index"); // Redirect back to the login page with notification
-    exit();
+    echo "User not found!";
 }
 
 // Close the connection

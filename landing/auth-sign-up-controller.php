@@ -5,7 +5,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = ""; 
-$dbname = "gridproject1";
+$dbname = "projectmentor";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -22,7 +22,7 @@ $phno = $_POST['phno'];
 $password = $_POST['password'];
 $confpassword = $_POST['confpassword'];
 
-$sql = "SELECT * FROM users WHERE email='$email'"; 
+$sql = "SELECT * FROM student WHERE email='$email'"; 
 
 // Execute the query
 $result = $conn->query($sql);
@@ -30,7 +30,7 @@ $result = $conn->query($sql);
 if ($result->num_rows == 0) {
     if ($password === $confpassword) {
         $randomNumber = rand(10000, 99999);
-        $sql = "INSERT INTO users (user_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+        $sql = "INSERT INTO student (student_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
 
         if (mysqli_query($conn, $sql)) {
             $_SESSION['signup_success'] = 'Registration successful!';
