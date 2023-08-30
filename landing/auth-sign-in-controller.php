@@ -18,10 +18,22 @@ if ($conn->connect_error) {
 $email = $_POST['loginemail']; // Assuming the email input field has the name attribute set to "loginemail"
 $password = $_POST['loginpassword'];
 
-$sql = "SELECT * FROM student WHERE email='$email'";
+$sql = '';
+
+if (isset($_POST['userType'])) {
+    $_SESSION['userType'] = $_POST['userType'];
+    if($_SESSION['userType'] == 'Student')
+        $sql = "SELECT * FROM student WHERE email='$email'";
+    else if($_SESSION['userType'] == 'Expert')
+        $sql = "SELECT * FROM expert WHERE email='$email'";
+}
+
+
 
 // Execute the query
 $result = $conn->query($sql);
+
+$conn->close();
 
 if ($result->num_rows > 0) {
     // User exists, now verify the password
@@ -31,8 +43,12 @@ if ($result->num_rows > 0) {
     // Verify the entered password using a suitable method (e.g., password_verify)
     if ($password === $hashedPassword) {
         // Password is correct, user authentication successful
-
-        header("Location: ../"); // Redirect to the successful login page
+        if(isset($_SESSION['userType'])){
+            if($_SESSION['userType'] == 'Student')
+                header("Location: /ProjectMentor/student"); // Redirect to the successful login page
+            else if($_SESSION['userType'] == 'Expert')
+                header("Location: /ProjectMentor/expert"); // Redirect to the successful login page
+        }
         exit();
     } else {
         // Password is incorrect
@@ -48,5 +64,4 @@ if ($result->num_rows > 0) {
 }
 
 // Close the connection
-$conn->close();
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 29, 2023 at 11:36 AM
+-- Generation Time: Aug 30, 2023 at 08:48 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gridproject2`
+-- Database: `projectmentor`
 --
 
 -- --------------------------------------------------------
@@ -29,15 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(45) NOT NULL,
-  `description` text DEFAULT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `phone_number` varchar(20) DEFAULT NULL,
-  `creation_date` date DEFAULT NULL
+  `phone_number` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `email`, `password`, `first_name`, `last_name`, `phone_number`) VALUES
+(12345, 'admin@gmail.com', '12345', 'Admin', '1', '9878767654');
 
 -- --------------------------------------------------------
 
@@ -76,15 +80,13 @@ CREATE TABLE `completed_tasks` (
 
 CREATE TABLE `expert` (
   `expert_id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(45) NOT NULL,
   `description` text DEFAULT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
-  `tech_stack` varchar(255) DEFAULT NULL,
-  `creation_date` date DEFAULT NULL
+  `profile` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -95,7 +97,7 @@ CREATE TABLE `expert` (
 
 CREATE TABLE `meetings` (
   `meeting_id` int(11) NOT NULL,
-  `admin_id` int(11) DEFAULT NULL,
+  `expert_id` int(11) DEFAULT NULL,
   `student_id` int(11) DEFAULT NULL,
   `meeting_title` varchar(255) NOT NULL,
   `meeting_link` varchar(255) DEFAULT NULL,
@@ -125,13 +127,20 @@ CREATE TABLE `prerequisites` (
 
 CREATE TABLE `projects` (
   `project_id` int(11) NOT NULL,
-  `project_creator` int(11) NOT NULL,
-  `project_name` varchar(255) NOT NULL,
-  `project_description` text DEFAULT NULL,
-  `project_creation_date` date DEFAULT NULL,
-  `est_duration` int(11) DEFAULT NULL,
-  `tech_stack` text DEFAULT NULL
+  `admin_id` int(11) NOT NULL,
+  `p_name` varchar(255) NOT NULL,
+  `p_desc` text DEFAULT NULL,
+  `p_creation_date` date DEFAULT NULL,
+  `p_duration` text DEFAULT NULL,
+  `p_technology` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `projects`
+--
+
+INSERT INTO `projects` (`project_id`, `admin_id`, `p_name`, `p_desc`, `p_creation_date`, `p_duration`, `p_technology`) VALUES
+(987, 12345, 'Project1', 'First Project]', '2023-08-29', 'Node.js', NULL);
 
 -- --------------------------------------------------------
 
@@ -161,22 +170,22 @@ CREATE TABLE `student` (
   `email` varchar(255) NOT NULL,
   `password` varchar(45) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
-  `completed_projects` text DEFAULT NULL,
   `current_project` int(11) DEFAULT NULL,
-  `completed_tasks` text DEFAULT NULL,
   `current_task` int(11) DEFAULT NULL,
   `creation_date` date DEFAULT NULL,
   `tech_stack` varchar(255) DEFAULT NULL,
   `date_of_birth` date DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
-  `contact_number` varchar(20) DEFAULT NULL,
   `gender` text DEFAULT NULL,
-  `nationality` varchar(255) DEFAULT NULL,
-  `father_name` varchar(255) DEFAULT NULL,
-  `father_contact` varchar(20) DEFAULT NULL,
-  `enrollment_date` date DEFAULT NULL,
-  `user_status` text DEFAULT NULL
+  `enrollment_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`student_id`, `first_name`, `last_name`, `email`, `password`, `phone_number`, `current_project`, `current_task`, `creation_date`, `tech_stack`, `date_of_birth`, `address`, `gender`, `enrollment_date`) VALUES
+(40496, 'Joshi', 'Joby', 'jobyjosh21@gmail.com', '12345', '9878767654', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -188,11 +197,28 @@ CREATE TABLE `submissions` (
   `submission_id` int(11) NOT NULL,
   `user_id` int(11) DEFAULT NULL,
   `task_id` int(11) DEFAULT NULL,
-  `submission_date` date DEFAULT NULL,
-  `submission_links` text DEFAULT NULL,
-  `submission_image_path` varchar(255) DEFAULT NULL,
-  `submission_pdf_path` varchar(255) DEFAULT NULL,
-  `approval_status` varchar(50) DEFAULT NULL
+  `s_date` datetime DEFAULT NULL,
+  `s_links` text DEFAULT NULL,
+  `s_image_path` varchar(255) DEFAULT NULL,
+  `s_pdf_path` varchar(255) DEFAULT NULL,
+  `s_approval` varchar(50) DEFAULT NULL,
+  `s_rating` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `super_admin`
+--
+
+CREATE TABLE `super_admin` (
+  `super_admin_id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `phone_number` varchar(20) DEFAULT NULL,
+  `admin_priviledge` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -202,12 +228,20 @@ CREATE TABLE `submissions` (
 --
 
 CREATE TABLE `tasks` (
-  `task_id` int(11) NOT NULL,
-  `project_id` int(11) NOT NULL,
   `task_name` varchar(255) NOT NULL,
-  `task_description` text DEFAULT NULL,
-  `est_duration` int(11) DEFAULT NULL
+  `project_id` int(11) NOT NULL,
+  `task_id` int(11) NOT NULL,
+  `task_desc` text DEFAULT NULL,
+  `task_duration` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tasks`
+--
+
+INSERT INTO `tasks` (`task_name`, `project_id`, `task_id`, `task_desc`, `task_duration`) VALUES
+('task-1', 987, 135, 'first task', 3),
+('task-2', 987, 137, 'second task', 3);
 
 --
 -- Indexes for dumped tables
@@ -247,8 +281,8 @@ ALTER TABLE `expert`
 --
 ALTER TABLE `meetings`
   ADD PRIMARY KEY (`meeting_id`),
-  ADD KEY `fk_meetings_student` (`student_id`),
-  ADD KEY `fk_meetings_admin` (`admin_id`);
+  ADD KEY `expert_id` (`expert_id`),
+  ADD KEY `student_id` (`student_id`);
 
 --
 -- Indexes for table `prerequisites`
@@ -261,7 +295,7 @@ ALTER TABLE `prerequisites`
 --
 ALTER TABLE `projects`
   ADD PRIMARY KEY (`project_id`),
-  ADD KEY `project_creator` (`project_creator`);
+  ADD KEY `project_creator` (`admin_id`);
 
 --
 -- Indexes for table `queries`
@@ -317,14 +351,14 @@ ALTER TABLE `completed_tasks`
 -- Constraints for table `meetings`
 --
 ALTER TABLE `meetings`
-  ADD CONSTRAINT `fk_meetings_admin` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`admin_id`),
-  ADD CONSTRAINT `fk_meetings_student` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`);
+  ADD CONSTRAINT `meetings_ibfk_1` FOREIGN KEY (`expert_id`) REFERENCES `expert` (`expert_id`),
+  ADD CONSTRAINT `meetings_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`);
 
 --
 -- Constraints for table `projects`
 --
 ALTER TABLE `projects`
-  ADD CONSTRAINT `projects_ibfk_1` FOREIGN KEY (`project_creator`) REFERENCES `admin` (`admin_id`);
+  ADD CONSTRAINT `projects_ibfk_1` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`admin_id`);
 
 --
 -- Constraints for table `queries`

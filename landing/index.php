@@ -132,6 +132,26 @@
         height: 100%;
         background-color: #ccc;
       }
+
+      .radio-container {
+        display: flex;
+        align-items: center;
+        /* Center radio button and label vertically */
+      }
+
+      .radio-container input[type="radio"] {
+        margin-right: 10px;
+        /* Adjust this value to control the space between radio button and label */
+        width: 20px;
+        /* Increase the width of the radio button */
+        height: 20px;
+        /* Increase the height of the radio button */
+      }
+
+      .radio-container label {
+        font-size: 18px;
+        /* Increase the font size of the label */
+      }
     </style>
   </head>
 
@@ -180,7 +200,7 @@
               <!-- Login Form -->
               <div class="contact-form-wrap modal-content">
                 <div class="d-flex justify-content-between align-items-center">
-                  <h4 class="title">Log In</h4>
+                  <h4 class="title">Sign In</h4>
                   <button id="exitFormBtn1" type="button" class="btn-close exit-button" aria-label="Close"
                     data-bs-dismiss="modal"></button>
                 </div>
@@ -191,6 +211,19 @@
                   <div class="form-grp">
                     <input name="loginpassword" type="password" placeholder="Password *" required />
                   </div>
+                  <p style="text-align: center" >Signing in as:</p>
+                  <div style="display: flex; gap: 30%; margin-left: 10%">
+                    <div class="radio-container">
+                      <input name="userType" type="radio" value="Student" id="student" required />
+                      <label for="student">Student</label>
+                    </div>
+                    <div class="radio-container">
+                      <input name="userType" type="radio" value="Expert" id="expert" required />
+                      <label for="expert">Expert</label>
+                    </div>
+
+                  </div>
+                  <br>
                   <div style="margin-left: 29%">
                     <a href="#">Forgot Password?</a><br />
                   </div>
@@ -1564,7 +1597,7 @@
         document.body.style.overflow = "auto"; // Prevent scrolling
 
       }
-    </script> 
+    </script>
 
   </body>
 
