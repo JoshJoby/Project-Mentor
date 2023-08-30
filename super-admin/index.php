@@ -36,13 +36,13 @@ if (isset($_GET['param'])) {
     <!-- Wrapper Start -->
     <div class="wrapper">
 
-        <?php include '../layout/admin-header.php'; ?>
+        <?php include '../layout/super-admin-header.php'; ?>
         <?php include 'meetings-controller.php'; ?>
 
         <div class="content-page">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-8">
+                    <div class="col-xl-12">
                         <div class="card-transparent card-block card-stretch card-height">
                             <div class="card-body p-0">
                                 <div class="card">
@@ -305,7 +305,7 @@ if (isset($_GET['param'])) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <!-- <div class="col-xl-4">
                         <div class="card card-block card-stretch card-height p-1">
                             <div class="card-body">
                                 <?php
@@ -353,7 +353,7 @@ if (isset($_GET['param'])) {
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-12">
                         <div class="card-transparent mb-0">
                             <div class="card-header d-flex align-items-center justify-content-between p-0 pb-3">

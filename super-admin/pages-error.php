@@ -1,5 +1,5 @@
 <?php
-include '../layout/admin-header.php';
+include '../layout/super-admin-header.php';
 ?>
 
 

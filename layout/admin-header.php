@@ -19,19 +19,18 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <span class="ml-4">Dashboards</span>
+                        <span class="ml-4">Dashboard</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="/ProjectMentor/admin/page-project" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                            <rect x="6" y="14" width="12" height="8"></rect>
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
                         </svg>
-                        <span class="ml-4">Projects</span>
+                        <span class="ml-4">View Projects</span>
                     </a>
                 </li>
                 <li class="">
@@ -42,18 +41,18 @@
                             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
                             <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
                         </svg>
-                        <span class="ml-4">Task</span>
+                        <span class="ml-4">Add Project</span>
                     </a>
                 </li>
                 <li class=" ">
                     <a href="/ProjectMentor/admin/page-employee" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
                         </svg>
-                        <span class="ml-4">Find Peers</span>
+                        <span class="ml-4">Add Task</span>
                     </a>
                 </li>
                 <!-- <li class="">

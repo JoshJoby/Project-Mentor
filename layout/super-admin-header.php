@@ -1,6 +1,6 @@
 <div class="iq-sidebar  sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center">
-        <a href="/ProjectMentor/student" class="header-logo">
+        <a href="/ProjectMentor/admin" class="header-logo">
             <!-- <img src="../../assets/images/logo.svg" alt="logo"> -->
             <h5 class="logo-title light-logo mt-1">Project Mentor</h5>
         </a>
@@ -12,61 +12,58 @@
         <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="iq-menu">
                 <li class="">
-                    <a href="/ProjectMentor/student" class="svg-icon">
+                    <a href="/ProjectMentor/super-admin" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-                        <span class="ml-4">Dashboards</span>
+                        <span class="ml-4">Dashboard</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="/ProjectMentor/student/page-project" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                    <a href="/ProjectMentor/super-admin/page-project" class="svg-icon">
+                    <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <span class="ml-4">Projects</span>
+                        <span class="ml-4">View Admins</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="/ProjectMentor/student/page-task" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                    <a href="/ProjectMentor/super-admin/page-task" class="svg-icon">
+                    <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <span class="ml-4">Tasks</span>
+                        <span class="ml-4">Add Admin</span>
                     </a>
                 </li>
                 <li class=" ">
-                    <a href="/ProjectMentor/student/page-employee" class="svg-icon">
-                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.86 11h10.98l2.74-7.39"></path>
-                        </svg>
-
-                        <span class="ml-4">Marketplace</span>
-                    </a>
-                </li>
-
-                <li class=" ">
-                    <a href="/ProjectMentor/student/page-desk" class="svg-icon">
+                    <a href="/ProjectMentor/super-admin/page-employee" class="svg-icon">
                         <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
-                        <span class="ml-4">Queries</span>
+                        <span class="ml-4">View Experts</span>
+                    </a>
+                </li>
+                <li class=" ">
+                    <a href="/ProjectMentor/super-admin/page-desk" class="svg-icon">
+                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span class="ml-4">Add Expert</span>
                     </a>
                 </li>
                 <!-- <li class="">
@@ -362,7 +359,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        const menuItems = document.querySelectorAll('.iq-menu li');
+       const menuItems = document.querySelectorAll('.iq-menu li');
         const currentUrl = window.location.href;
 
         // Loop through the menu items to find the active one
