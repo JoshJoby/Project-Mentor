@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gridproject1";
+$dbname = "projectmentor";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,7 +17,7 @@ $email = $_POST['email']; // Assuming the email input field has the name attribu
 echo $email;
 $password = $_POST['password'];
 echo $password;
-$sql = "SELECT * FROM users WHERE email='$email'";
+$sql = "SELECT * FROM super_admin WHERE email='$email'";
 
 // Execute the query
 $result = $conn->query($sql);
@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {
     if ($password === $hashedPassword) {
         // Password is correct, user authentication successful
         echo "User authentication successful!";
-        header("Location: ../ProjectMentor");
+        header("Location: /ProjectMentor/super-admin");
         exit();
     } else {
         // Password is incorrect
