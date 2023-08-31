@@ -1,5 +1,5 @@
 <?php
-// // Database credentials
+// Database credentials
 // $servername = "localhost";
 // $username = "root";
 // $password = "";
@@ -14,15 +14,12 @@
 //     die("Connection failed: " . $conn->connect_error);
 // }
 include '../config_local.php';
-date_default_timezone_set('Asia/Kolkata');
 
-$currentDate = date("Y-m-d");
-$current_time = date("H:i:s");
+// $currentDate = date("Y-m-d");
+// $current_time = date("H:i:s");
 
 $sql = "SELECT *
-FROM meetings
-WHERE CONCAT(meeting_date, ' ', start_time) >= '" . $currentDate . " " . $current_time . "'
-ORDER BY CONCAT(meeting_date, ' ', start_time) ASC;";
+FROM task";
 
 // echo $sql;   
 // Execute the query
@@ -37,10 +34,10 @@ if ($result->num_rows > 0) {
     }
     // Store the rows array in a session variable
     // session_start();
-    $_SESSION['meeting_rows'] = $rows;
+    $_SESSION['task_rows'] = $rows;
 }
 else{
-    unset($_SESSION['meeting_rows']);
+    unset($_SESSION['task_rows']);
 }
 
 // Close the connection

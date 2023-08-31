@@ -1,18 +1,21 @@
 <?php
 // Database credentials
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "projectmentor";
-date_default_timezone_set('Asia/Kolkata');
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "projectmentor";
+// date_default_timezone_set('Asia/Kolkata');
 
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// // Create a connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// // Check the connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
+
+include '../config_local.php';
+
 // $currentDate = date("Y-m-d");
 // $current_time = date("H:i:s");
 

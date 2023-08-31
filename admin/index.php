@@ -37,7 +37,6 @@ if (isset($_GET['param'])) {
     <div class="wrapper">
 
         <?php include '../layout/admin-header.php'; ?>
-        <?php include 'meetings-controller.php'; ?>
 
         <div class="content-page">
             <div class="container-fluid">

@@ -1,17 +1,20 @@
 <?php
 // Database credentials
-$servername = "localhost";
-$username = "root";
-$password = ""; 
-$dbname = "projectmentor";
+// $servername = "localhost";
+// $username = "root";
+// $password = ""; 
+// $dbname = "projectmentor";
 
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// // Create a connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// // Check the connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
+
+include '../config_local.php';
+
 
 $fname = $_POST['fname']; // Assuming the email input field has the name attribute set to "email"
 echo $fname;
