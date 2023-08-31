@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gridproject1";
+$dbname = "projectmentor";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
