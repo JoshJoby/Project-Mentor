@@ -4,7 +4,7 @@
 //     echo $_GET['param'];
 // }
 include '../layout/student-header.php';
-include 'task-controller.php';
+include 'query-controller.php';
 
 
 ?>
@@ -66,7 +66,7 @@ include 'task-controller.php';
                                                         class='ri-file-copy-line mr-2'></i>Category</a>
                                             </div>
                                         </div>
-                                        <a href='#' class='btn btn-primary' data-target='#new-task-modal'
+                                        <a href='#' class='btn btn-primary' data-target='#new-query-modal'
                                             data-toggle='modal'>New Queries</a>
                                     </div>
                                 </div>
@@ -78,34 +78,34 @@ include 'task-controller.php';
                             <div class='card-body'>
                                 <div class='row'>
                                     <?php
-                                    if (isset($_SESSION['task_rows'])) {
-                                        $taskRows = $_SESSION['task_rows'];
-                                        $inc=1;//counter variable to increment the number of tasks
-                                        foreach ($taskRows as $row) {
+                                    if (isset($_SESSION['query_rows'])) {
+                                        $queryRows = $_SESSION['query_rows'];
+                                        $inc=1;//counter variable to increment the number of querys
+                                        foreach ($queryRows as $row) {
                                               
                                             echo " <div id='card-onclick".$inc."' data-toggle='collapse' data-target='#collapseEdit".$inc."' class='col-lg-12'>
-                                <div class='card card-widget task-card'>
+                                <div class='card card-widget query-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
+                                                <div class='custom-control custom-query custom-checkbox custom-control-inline'>
                                                     <input type='checkbox' class='custom-control-input' id='customCheck01'>
                                                     <label class='custom-control-label' for='customCheck01'></label>
                                                 </div>
                                                 <div >
-                                                    <h5 class='mb-2'>".$row['task_name']."</h5>
+                                                    <h5 class='mb-2'>".$row['query_id']."</h5>
                                                   
                                                 </div>
                                             </div>
                                             <!-- <div class='media align-items-center mt-md-0 mt-3'>
                                                 <a href='#' class='btn bg-secondary-light mr-3'>Design</a>
-                                                <a class='btn bg-secondary-light' data-toggle='collapse' href='#collapseEdit1' role='button' aria-expanded='false' aria-controls='collapseEdit1'><i class='ri-edit-box-line m-0'></i></a>
+                                                <a class='btn bg-secondary-light' data-toggle='collapse show' href='#collapseEdit1' role='button' aria-expanded='false' aria-controls='collapseEdit1'><i class='ri-edit-box-line m-0'></i></a>
                                             </div> -->
                                         </div>  
                                     </div>
                                 </div>                                                                                                        
                                 <div class='collapse' id='collapseEdit".$inc."'>                                            
-                                    <div class='card card-list task-card'>
+                                    <div class='card card-list query-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div><a href='#' class='btn bg-secondary-light'>Done</a></div>
                                         </div>
@@ -138,11 +138,11 @@ include 'task-controller.php';
                                         }
                                     } ?>
                                     <!-- <div class='col-lg-12'>
-                                <div class='card card-widget task-card'>
+                                <div class='card card-widget query-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
+                                                <div class='custom-control custom-query custom-checkbox custom-control-inline'>
                                                     <input type='checkbox' class='custom-control-input' id='customCheck2'>
                                                     <label class='custom-control-label' for='customCheck2'></label>
                                                 </div>
@@ -162,7 +162,7 @@ include 'task-controller.php';
                                     </div>
                                 </div>                                                                                                       
                                 <div class='collapse' id='collapseEdit2'>                                            
-                                    <div class='card card-list task-card'>
+                                    <div class='card card-list query-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div class='header-title'>
                                                 <div class='custom-control custom-checkbox custom-control-inline'>
@@ -175,7 +175,7 @@ include 'task-controller.php';
                                         <div class='card-body'>
                                             <div class='form-group mb-3 position-relative'>
                                                 <input type='text' class='form-control bg-white' placeholder='Design landing page of webkit'>
-                                                <a href='#' class='task-edit task-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                                <a href='#' class='query-edit query-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
                                             </div>
                                             <div class='card mb-3'>
                                                 <div class='card-body'>
@@ -255,11 +255,11 @@ include 'task-controller.php';
                                 </div> 
                             </div>
                             <div class='col-lg-12'>
-                                <div class='card card-widget task-card'>
+                                <div class='card card-widget query-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
+                                                <div class='custom-control custom-query custom-checkbox custom-control-inline'>
                                                     <input type='checkbox' class='custom-control-input' id='customCheck10'>
                                                     <label class='custom-control-label' for='customCheck10'></label>
                                                 </div>
@@ -279,7 +279,7 @@ include 'task-controller.php';
                                     </div>
                                 </div>                                                                                                       
                                 <div class='collapse' id='collapseEdit3'>                                            
-                                    <div class='card card-list task-card'>
+                                    <div class='card card-list query-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div class='header-title'>
                                                 <div class='custom-control custom-checkbox custom-control-inline'>
@@ -292,7 +292,7 @@ include 'task-controller.php';
                                         <div class='card-body'>
                                             <div class='form-group mb-3 position-relative'>
                                                 <input type='text' class='form-control bg-white' placeholder='Design landing page of webkit'>
-                                                <a href='#' class='task-edit task-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                                <a href='#' class='query-edit query-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
                                             </div>
                                             <div class='card mb-3'>
                                                 <div class='card-body'>
@@ -372,11 +372,11 @@ include 'task-controller.php';
                                 </div> 
                             </div>
                             <div class='col-lg-12'>
-                                <div class='card card-widget task-card'>
+                                <div class='card card-widget query-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
+                                                <div class='custom-control custom-query custom-checkbox custom-control-inline'>
                                                     <input type='checkbox' class='custom-control-input' id='customCheck18'>
                                                     <label class='custom-control-label' for='customCheck18'></label>
                                                 </div>
@@ -396,7 +396,7 @@ include 'task-controller.php';
                                     </div>
                                 </div>                                                                                                       
                                 <div class='collapse' id='collapseEdit4'>                                            
-                                    <div class='card card-list task-card'>
+                                    <div class='card card-list query-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div class='header-title'>
                                                 <div class='custom-control custom-checkbox custom-control-inline'>
@@ -409,7 +409,7 @@ include 'task-controller.php';
                                         <div class='card-body'>
                                             <div class='form-group mb-3 position-relative'>
                                                 <input type='text' class='form-control bg-white' placeholder='Design landing page of webkit'>
-                                                <a href='#' class='task-edit task-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                                <a href='#' class='query-edit query-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
                                             </div>
                                             <div class='card mb-3'>
                                                 <div class='card-body'>
@@ -489,11 +489,11 @@ include 'task-controller.php';
                                 </div> 
                             </div>
                             <div class='col-lg-12'>
-                                <div class='card card-widget task-card mb-0'>
+                                <div class='card card-widget query-card mb-0'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
+                                                <div class='custom-control custom-query custom-checkbox custom-control-inline'>
                                                     <input type='checkbox' class='custom-control-input' id='customCheck26'>
                                                     <label class='custom-control-label' for='customCheck26'></label>
                                                 </div>
@@ -513,7 +513,7 @@ include 'task-controller.php';
                                     </div>
                                 </div>                                                                                                                                       
                                 <div class='collapse' id='collapseEdit5'>                                            
-                                    <div class='card card-list task-card'>
+                                    <div class='card card-list query-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div class='header-title'>
                                                 <div class='custom-control custom-checkbox custom-control-inline'>
@@ -526,7 +526,7 @@ include 'task-controller.php';
                                         <div class='card-body'>
                                             <div class='form-group mb-3 position-relative'>
                                                 <input type='text' class='form-control bg-white' placeholder='Design landing page of webkit'>
-                                                <a href='#' class='task-edit task-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                                <a href='#' class='query-edit query-simple-edit text-body'><i class='ri-edit-box-line'></i></a>
                                             </div>
                                             <div class='card mb-3'>
                                                 <div class='card-body'>
@@ -667,7 +667,7 @@ include 'task-controller.php';
             </div>
         </div>
     </div>
-    <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-task-modal'>
+    <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-query-modal'>
         <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
             <div class='modal-content'>
                 <div class='modal-header d-block text-center pb-3 border-bttom'>
@@ -677,10 +677,10 @@ include 'task-controller.php';
                     <div class='row'>
                         <div class='col-lg-12'>
                             <div class='form-group mb-3'>
-                                <label for='exampleInputText02' class='h5'>Task Name</label>
+                                <label for='exampleInputText02' class='h5'>query Name</label>
                                 <input type='text' class='form-control' id='exampleInputText02'
-                                    placeholder='Enter task Name'>
-                                <a href='#' class='task-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                    placeholder='Enter query Name'>
+                                <a href='#' class='query-edit text-body'><i class='ri-edit-box-line'></i></a>
                             </div>
                         </div>
                         <div class='col-lg-12'>
@@ -785,16 +785,16 @@ include 'task-controller.php';
         <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
             <div class='modal-content'>
                 <div class='modal-header d-block text-center pb-3 border-bttom'>
-                    <h3 class='modal-title' id='exampleModalCenterTitle03'>New Task </h3>
+                    <h3 class='modal-title' id='exampleModalCenterTitle03'>New query </h3>
                 </div>
                 <div class='modal-body'>
                     <div class='row'>
                         <div class='col-lg-12'>
                             <div class='form-group mb-3'>
-                                <label for='exampleInputText03' class='h5'>Task Name</label>
+                                <label for='exampleInputText03' class='h5'>query Name</label>
                                 <input type='text' class='form-control' id='exampleInputText03'
-                                    placeholder='Enter task Name'>
-                                <a href='#' class='task-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                    placeholder='Enter query Name'>
+                                <a href='#' class='query-edit text-body'><i class='ri-edit-box-line'></i></a>
                             </div>
                         </div>
                         <div class='col-lg-6'>
@@ -889,9 +889,9 @@ include 'task-controller.php';
     <script src='../assets/vendor/moment.min.js'></script>
 
     <?php
-        $inc=1;//counter variable to increment the number of tasks
-        $taskRows = $_SESSION['task_rows'];
-        foreach ($taskRows as $row) {
+        $inc=1;//counter variable to increment the number of querys
+        $queryRows = $_SESSION['query_rows'];
+        foreach ($queryRows as $row) {
             echo"
             <script>
         const myDiv".$inc." = document.getElementById('card-onclick".$inc."');
