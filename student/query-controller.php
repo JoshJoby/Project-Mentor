@@ -19,7 +19,7 @@ include '../config_local.php';
 // $current_time = date("H:i:s");
 
 $sql = "SELECT *
-FROM task";
+FROM queries";
 
 // echo $sql;   
 // Execute the query
@@ -34,10 +34,10 @@ if ($result->num_rows > 0) {
     }
     // Store the rows array in a session variable
     // session_start();
-    $_SESSION['task_rows'] = $rows;
+    $_SESSION['query_rows'] = $rows;
 }
 else{
-    unset($_SESSION['task_rows']);
+    unset($_SESSION['query_rows']);
 }
 
 // Close the connection
