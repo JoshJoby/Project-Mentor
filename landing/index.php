@@ -221,7 +221,6 @@
                       <input name="userType" type="radio" value="Expert" id="expert" required />
                       <label for="expert">Expert</label>
                     </div>
-
                   </div>
                   <br>
                   <div style="margin-left: 29%">
@@ -248,9 +247,14 @@
         </div>
       </div>
 
+
+
       <div class="modal" id="signupModal">
-        <div class="modal-content">
+
+        <div class="modal-content"  style="margin-top: 3%;">
+          
           <div class="row">
+            
             <div class="col-lg-6">
               <!-- Login Form -->
               <div class="contact-form-wrap modal-content">
@@ -260,6 +264,18 @@
                     data-bs-dismiss="modal"></button>
                 </div>
                 <form id="signup-form" action="auth-sign-up-controller" method="POST">
+                <p style="text-align: center; font-size: 110%" >Registering as:</p>
+                  <div style="display: flex; gap: 30%; margin-left: 10%">
+                    <div class="radio-container">
+                      <input name="userType" type="radio" value="Student" id="student" required />
+                      <label for="student">Student</label>
+                    </div>
+                    <div class="radio-container">
+                      <input name="userType" type="radio" value="Expert" id="expert" required />
+                      <label for="expert">Expert</label>
+                    </div>
+                  </div>
+                  <br>
                   <div class="form-grp">
                     <input name="fname" type="text" placeholder="First Name *" required />
                   </div>
@@ -267,11 +283,12 @@
                     <input name="lname" type="text" placeholder="Last Name *" required />
                   </div>
                   <div class="form-grp">
-                    <input name="email" type="text" placeholder="Email *" required />
-                  </div>
-                  <div class="form-grp">
                     <input name="phno" type="number" placeholder="Phone no. *" required />
                   </div>
+                  <div class="form-grp">
+                    <input name="email" type="text" placeholder="Email *" required />
+                  </div>
+
                   <div class="form-grp">
                     <input name="password" type="password" placeholder="Password *" required />
                   </div>

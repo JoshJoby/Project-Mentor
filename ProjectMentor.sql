@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 30, 2023 at 08:48 AM
+-- Generation Time: Sep 02, 2023 at 01:07 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -35,13 +35,6 @@ CREATE TABLE `admin` (
   `last_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`admin_id`, `email`, `password`, `first_name`, `last_name`, `phone_number`) VALUES
-(12345, 'admin@gmail.com', '12345', 'Admin', '1', '9878767654');
 
 -- --------------------------------------------------------
 
@@ -86,7 +79,28 @@ CREATE TABLE `expert` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
-  `profile` varchar(255) DEFAULT NULL
+  `profile` varchar(255) DEFAULT NULL,
+  `expert_pfp` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expert_requests`
+--
+
+CREATE TABLE `expert_requests` (
+  `expert_request_id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `description` text DEFAULT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `phone_number` varchar(20) DEFAULT NULL,
+  `profile` text DEFAULT NULL,
+  `expert_pfp` longblob NOT NULL,
+  `dob` date NOT NULL,
+  `gender` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -135,13 +149,6 @@ CREATE TABLE `projects` (
   `p_technology` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `projects`
---
-
-INSERT INTO `projects` (`project_id`, `admin_id`, `p_name`, `p_desc`, `p_creation_date`, `p_duration`, `p_technology`) VALUES
-(987, 12345, 'Project1', 'First Project]', '2023-08-29', 'Node.js', NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -170,6 +177,7 @@ CREATE TABLE `student` (
   `email` varchar(255) NOT NULL,
   `password` varchar(45) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
+  `student_pfp` longblob NOT NULL,
   `current_project` int(11) DEFAULT NULL,
   `current_task` int(11) DEFAULT NULL,
   `creation_date` date DEFAULT NULL,
@@ -177,15 +185,9 @@ CREATE TABLE `student` (
   `date_of_birth` date DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `gender` text DEFAULT NULL,
-  `enrollment_date` date DEFAULT NULL
+  `college` text DEFAULT NULL,
+  `passing_year` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`student_id`, `first_name`, `last_name`, `email`, `password`, `phone_number`, `current_project`, `current_task`, `creation_date`, `tech_stack`, `date_of_birth`, `address`, `gender`, `enrollment_date`) VALUES
-(40496, 'Joshi', 'Joby', 'jobyjosh21@gmail.com', '12345', '9878767654', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -236,14 +238,6 @@ CREATE TABLE `tasks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tasks`
---
-
-INSERT INTO `tasks` (`task_name`, `project_id`, `task_id`, `task_desc`, `task_duration`) VALUES
-('task-1', 987, 135, 'first task', 3),
-('task-2', 987, 137, 'second task', 3);
-
---
 -- Indexes for dumped tables
 --
 
@@ -275,6 +269,12 @@ ALTER TABLE `completed_tasks`
 --
 ALTER TABLE `expert`
   ADD PRIMARY KEY (`expert_id`);
+
+--
+-- Indexes for table `expert_requests`
+--
+ALTER TABLE `expert_requests`
+  ADD PRIMARY KEY (`expert_request_id`);
 
 --
 -- Indexes for table `meetings`

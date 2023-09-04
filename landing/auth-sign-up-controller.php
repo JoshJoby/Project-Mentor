@@ -17,15 +17,26 @@ session_start();
 
 include '../config_local.php';
 
-
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
 $phno = $_POST['phno'];
 $password = $_POST['password'];
 $confpassword = $_POST['confpassword'];
+$userType = $_POST['userType']; // Add a userType field to the form
 
-$sql = "SELECT * FROM student WHERE email='$email'"; 
+if ($userType === 'Student') {
+    $table = 'student';
+} elseif ($userType === 'Expert') {
+    $table = 'expert_requests';
+} else {
+    // Handle invalid userType
+    $_SESSION['signup_error'] = 'Invalid user type!';
+    header("Location: index");
+    exit();
+}
+
+$sql = "SELECT * FROM $table WHERE email='$email'"; 
 
 // Execute the query
 $result = $conn->query($sql);
@@ -33,11 +44,21 @@ $result = $conn->query($sql);
 if ($result->num_rows == 0) {
     if ($password === $confpassword) {
         $randomNumber = rand(10000, 99999);
-        $sql = "INSERT INTO student (student_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+        $_SESSION['user_id'] = $randomNumber;
+        // Use a conditional query based on the userType
+        if ($userType === 'Student') {
+            $sql = "INSERT INTO student (student_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+        } elseif ($userType === 'Expert') {
+            $sql = "INSERT INTO expert_requests (expert_request_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+        }
 
         if (mysqli_query($conn, $sql)) {
-            $_SESSION['signup_success'] = 'Registration successful!';
-            header("Location: index");
+            // $_SESSION['signup_success'] = 'Registration successful!';
+            if ($userType === 'Student') {
+                header("Location: student-regn");
+            } elseif ($userType === 'Expert') {
+                header("Location: expert-regn");
+            }
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
