@@ -18,7 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "company" => $company,
         "experience" => $experience,
         "state" => $state,
-        "expertiseAreas" => $expertiseAreas
+        "expertiseAreas" => $expertiseAreas,
+        "date_of_birth" => $dob,
+        "gender" => $gender
     );
     
     // Convert the array to a JSON string
