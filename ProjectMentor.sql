@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 02, 2023 at 01:07 PM
+-- Generation Time: Sep 06, 2023 at 01:43 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -33,7 +33,10 @@ CREATE TABLE `admin` (
   `password` varchar(45) NOT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
-  `phone_number` varchar(20) DEFAULT NULL
+  `phone_number` varchar(20) DEFAULT NULL,
+  `admin_photo` longblob DEFAULT NULL,
+  `admin_tech_stack` text DEFAULT NULL,
+  `admin_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -80,7 +83,8 @@ CREATE TABLE `expert` (
   `last_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
   `profile` varchar(255) DEFAULT NULL,
-  `expert_pfp` longblob NOT NULL
+  `expert_pfp` longblob NOT NULL,
+  `expert_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
