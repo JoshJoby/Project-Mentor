@@ -115,7 +115,7 @@ include 'query-controller.php';
                                                     <div class='row'>
                                                         <div class='col-lg-6'>                                                        
                                                             <h5 class='mb-2'>Querie </h5>
-                                                            <p class='mb-0'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                            <p class='mb-0'> ".$row['querie']."</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -125,7 +125,7 @@ include 'query-controller.php';
                                                     <div class='row'>
                                                         <div class='col-lg-6'>                                                        
                                                             <h5 class='mb-2'>Response </h5>
-                                                            <p class='mb-0'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                            <p class='mb-0'>".$row['message']."</p>
                                                         </div>
                                                     </div>
                                                 </div>
