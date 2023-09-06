@@ -251,7 +251,7 @@
 
       <div class="modal" id="signupModal">
 
-        <div class="modal-content"  style="margin-top: 3%;">
+        <div class="modal-content">
           
           <div class="row">
             
@@ -281,9 +281,6 @@
                   </div>
                   <div class="form-grp">
                     <input name="lname" type="text" placeholder="Last Name *" required />
-                  </div>
-                  <div class="form-grp">
-                    <input name="phno" type="number" placeholder="Phone no. *" required />
                   </div>
                   <div class="form-grp">
                     <input name="email" type="text" placeholder="Email *" required />

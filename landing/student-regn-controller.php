@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $photo = $_FILES["photo"]["name"];
     $dob = $_POST["dob"];
+    $phno = $_POST["phno"];
     $gender = $_POST["gender"];
     $address = $_POST["address"];
     $college = $_POST["college"];
@@ -25,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $imageData = file_get_contents($file["tmp_name"]);
 
             // Prepare the SQL statement to insert data into the students table
-            $stmt = $conn->prepare("UPDATE student SET student_pfp = ?, date_of_birth = ?, gender = ?, address = ?, college = ?, passing_year = ?, tech_stack = ? WHERE student_id = ?");
+            $stmt = $conn->prepare("UPDATE student SET student_pfp = ?, date_of_birth = ?, phone_number = ?, gender = ?, address = ?, college = ?, passing_year = ?, tech_stack = ? WHERE student_id = ?");
             
             // Bind parameters with the correct data types
-            $stmt->bind_param("sssssssi", $imageData, $dob, $gender, $address, $college, $passingYear, $selectedSkills, $user_i);
+            $stmt->bind_param("ssssssssi", $imageData, $dob, $phno, $gender, $address, $college, $passingYear, $selectedSkills, $user_id);
 
             if ($stmt->execute()) {
                 echo "Student record inserted successfully.";

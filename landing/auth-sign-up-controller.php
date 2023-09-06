@@ -20,7 +20,7 @@ include '../config_local.php';
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
-$phno = $_POST['phno'];
+// $phno = $_POST['phno'];
 $password = $_POST['password'];
 $confpassword = $_POST['confpassword'];
 $userType = $_POST['userType']; // Add a userType field to the form
@@ -36,20 +36,20 @@ if ($userType === 'Student') {
     exit();
 }
 
-$sql = "SELECT * FROM $table WHERE email='$email'"; 
+$sql = "SELECT * FROM $table WHERE email='$email' AND phone_number IS NOT NULL";
 
 // Execute the query
 $result = $conn->query($sql);
 
 if ($result->num_rows == 0) {
     if ($password === $confpassword) {
-        $randomNumber = rand(10000, 99999);
+        $randomNumber = random_int(100000,999999);
         $_SESSION['user_id'] = $randomNumber;
         // Use a conditional query based on the userType
         if ($userType === 'Student') {
-            $sql = "INSERT INTO student (student_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+            $sql = "INSERT INTO student (student_id, first_name, last_name, email, password) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password')";
         } elseif ($userType === 'Expert') {
-            $sql = "INSERT INTO expert_requests (expert_request_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+            $sql = "INSERT INTO expert_requests (expert_request_id, first_name, last_name, email, password) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password')";
         }
 
         if (mysqli_query($conn, $sql)) {

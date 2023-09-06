@@ -6,6 +6,7 @@ include '../config_local.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $photo = $_FILES["photo"]["name"];
     $dob = $_POST["dob"];
+    $phno = $_POST["phno"];
     $gender = $_POST["gender"];
     $company = $_POST["company"];
     $experience = $_POST["experience"];
@@ -32,8 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $imageData = file_get_contents($file["tmp_name"]);
 
             // Prepare the SQL statement to insert data into the expert_requests table
-            $stmt = $conn->prepare("UPDATE expert_requests SET expert_pfp = ?, dob = ?, gender = ?, profile = ? WHERE expert_request_id = ?");
-            $stmt->bind_param("ssssi", $imageData, $dob, $gender, $jsonData, $user_id);
+            $stmt = $conn->prepare("UPDATE expert_requests SET expert_pfp = ?, dob = ?, phone_number = ?, gender = ?, profile = ? WHERE expert_request_id = ?");
+            $stmt->bind_param("sssssi", $imageData, $dob, $phno, $gender, $jsonData, $user_id);
 
             if ($stmt->execute()) {
                 echo "Form data inserted successfully.";
