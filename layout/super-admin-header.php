@@ -24,7 +24,7 @@
                 </li>
                 <li class="">
                     <a href="/ProjectMentor/super-admin/page-project" class="svg-icon">
-                    <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -35,7 +35,7 @@
                 </li>
                 <li class="">
                     <a href="/ProjectMentor/super-admin/page-task" class="svg-icon">
-                    <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -64,6 +64,20 @@
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                         <span class="ml-4">Add Expert</span>
+                    </a>
+                </li>
+                <li class=" ">
+                    <a href="/ProjectMentor/super-admin/page-calender" class="svg-icon">
+                        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"
+                            style="width: 25px; height: 25px; transform: scale(1.8);">
+                            <!-- Add inline styles for width, height, and transform -->
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+
+                        </svg>
+                        <span class="ml-4">Add Super Admin</span>
                     </a>
                 </li>
                 <!-- <li class="">
@@ -359,7 +373,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-       const menuItems = document.querySelectorAll('.iq-menu li');
+        const menuItems = document.querySelectorAll('.iq-menu li');
         const currentUrl = window.location.href;
 
         // Loop through the menu items to find the active one

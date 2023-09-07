@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $imageData = file_get_contents($file["tmp_name"]);
 
             // Prepare the SQL statement to insert data into the expert_requests table
-            $stmt = $conn->prepare("UPDATE expert_requests SET expert_pfp = ?, dob = ?, phone_number = ?, gender = ?, profile = ? WHERE expert_request_id = ?");
-            $stmt->bind_param("sssssi", $imageData, $dob, $phno, $gender, $jsonData, $user_id);
+            $stmt = $conn->prepare("UPDATE expert_requests SET expert_pfp = ?, phone_number = ?, profile = ? WHERE expert_request_id = ?");
+            $stmt->bind_param("sssi", $imageData, $phno, $jsonData, $user_id);
 
             if ($stmt->execute()) {
                 echo "Form data inserted successfully.";
