@@ -1,10 +1,12 @@
 <?php
- session_start();
+session_start();
 // if (isset($_GET['param'])) {
 //     echo $_GET['param'];
 // }
 include '../layout/admin-header.php';
 include 'task-controller.php';
+include 'project-controller.php';
+include 'add-task.php';
 
 
 ?>
@@ -53,37 +55,44 @@ include 'task-controller.php';
                                         <div class='dropdown dropdown-project mr-3'>
                                             <div class='dropdown-toggle' id='dropdownMenuButton03'
                                                 data-toggle='dropdown'>
-                                                <div class='btn bg-body'><span class='h6'>Project :</span> webkit
+                                                <div class='btn bg-body'><span class='h6'>Project :</span> List Of
                                                     Project<i class='ri-arrow-down-s-line ml-2 mr-0'></i></div>
                                             </div>
-                                            <div class='dropdown-menu dropdown-menu-right'
-                                                aria-labelledby='dropdownMenuButton03'>
-                                                <a class='dropdown-item' href='#'><i class='ri-mic-line mr-2'></i>In
-                                                    Progress</a>
-                                                <a class='dropdown-item' href='#'><i
-                                                        class='ri-attachment-line mr-2'></i>Priority</a>
-                                                <a class='dropdown-item' href='#'><i
-                                                        class='ri-file-copy-line mr-2'></i>Category</a>
-                                            </div>
+                                            <?php
+                                            if (isset($_SESSION['project_rows'])) {
+                                                $projectRows = $_SESSION['project_rows'];
+
+                                                echo '<div class="dropdown">
+            
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton03">';
+
+                                                foreach ($projectRows as $row) {
+                                                    echo '<a class="dropdown-item" href="#">' . $row['p_name'] . '</a>';
+                                                }
+                                                echo '</div>
+        </div>';
+                                            }
+                                            ?>
+                                            
+                                           
+                                            <a href='#' class='btn btn-primary' data-target='#new-task-modal'
+                                                data-toggle='modal'>New Task</a>
                                         </div>
-                                        <a href='#' class='btn btn-primary' data-target='#new-task-modal'
-                                            data-toggle='modal'>New Task</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class='col-lg-12'>
-                        <div class='card'>
-                            <div class='card-body'>
-                                <div class='row'>
-                                    <?php
-                                    if (isset($_SESSION['task_rows'])) {
-                                        $taskRows = $_SESSION['task_rows'];
-                                        $inc=1;//counter variable to increment the number of tasks
-                                        foreach ($taskRows as $row) {
-                                              
-                                            echo " <div id='card-onclick".$inc."' data-toggle='collapse' data-target='#collapseEdit".$inc."' class='col-lg-12'>
+                        <div class='col-lg-12'>
+                            <div class='card'>
+                                <div class='card-body'>
+                                    <div class='row'>
+                                        <?php
+                                        if (isset($_SESSION['task_rows'])) {
+                                            $taskRows = $_SESSION['task_rows'];
+                                            $inc = 1; //counter variable to increment the number of tasks
+                                            foreach ($taskRows as $row) {
+
+                                                echo " <div id='card-onclick" . $inc . "' data-toggle='collapse' data-target='#collapseEdit" . $inc . "' class='col-lg-12'>
                                 <div class='card card-widget task-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
@@ -93,7 +102,7 @@ include 'task-controller.php';
                                                     <label class='custom-control-label' for='customCheck01'></label>
                                                 </div>
                                                 <div >
-                                                    <h5 class='mb-2'>".$row['task_name']."</h5>
+                                                    <h5 class='mb-2'>" . $row['task_name'] . "</h5>
                                                   
                                                 </div>
                                             </div>
@@ -104,7 +113,7 @@ include 'task-controller.php';
                                         </div>  
                                     </div>
                                 </div>                                                                                                        
-                                <div class='collapse' id='collapseEdit".$inc."'>                                            
+                                <div class='collapse' id='collapseEdit" . $inc . "'>                                            
                                     <div class='card card-list task-card'>
                                         <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
                                             <div class='header-title'>
@@ -197,10 +206,10 @@ include 'task-controller.php';
                                     </div>
                                 </div>      
                             </div>";
-                            $inc++;
-                                        }
-                                    } ?>
-                                    <!-- <div class='col-lg-12'>
+                                                $inc++;
+                                            }
+                                        } ?>
+                                        <!-- <div class='col-lg-12'>
                                 <div class='card card-widget task-card'>
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
@@ -668,341 +677,346 @@ include 'task-controller.php';
                                     </div>
                                 </div> 
                             </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page end  -->
+                </div>
+            </div>
+        </div>
+        <!-- Wrapper End-->
+
+        <!-- Modal list start -->
+        <div class='modal fade' role='dialog' aria-modal='true' id='new-project-modal'>
+            <div class='modal-dialog  modal-dialog-centered' role='document'>
+                <div class='modal-content'>
+                    <div class='modal-header d-block text-center pb-3 border-bttom'>
+                        <h3 class='modal-title' id='exampleModalCenterTitle01'>New Project</h3>
+                    </div>
+                    <div class='modal-body'>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText01' class='h5'>Project Name*</label>
+                                    <input type='text' class='form-control' id='exampleInputText01'
+                                        placeholder='Project Name'>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Categories *</label>
+                                    <select name='type' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Category</option>
+                                        <option>Android</option>
+                                        <option>IOS</option>
+                                        <option>Ui/Ux Design</option>
+                                        <option>Development</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText004' class='h5'>Due Dates*</label>
+                                    <input type='date' class='form-control' id='exampleInputText004' value=''>
+                                </div>
+                            </div>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText07' class='h5'>Assign Members*</label>
+                                    <input type='text' class='form-control' id='exampleInputText07'>
+                                </div>
+                            </div>
+                            <div class='col-lg-12'>
+                                <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-2'>
+                                    <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
+                                    <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Page end  -->
             </div>
         </div>
-    </div>
-    <!-- Wrapper End-->
-
-    <!-- Modal list start -->
-    <div class='modal fade' role='dialog' aria-modal='true' id='new-project-modal'>
-        <div class='modal-dialog  modal-dialog-centered' role='document'>
-            <div class='modal-content'>
-                <div class='modal-header d-block text-center pb-3 border-bttom'>
-                    <h3 class='modal-title' id='exampleModalCenterTitle01'>New Project</h3>
-                </div>
-                <div class='modal-body'>
-                    <div class='row'>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText01' class='h5'>Project Name*</label>
-                                <input type='text' class='form-control' id='exampleInputText01'
-                                    placeholder='Project Name'>
-                            </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Categories *</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Category</option>
-                                    <option>Android</option>
-                                    <option>IOS</option>
-                                    <option>Ui/Ux Design</option>
-                                    <option>Development</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText004' class='h5'>Due Dates*</label>
-                                <input type='date' class='form-control' id='exampleInputText004' value=''>
-                            </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText07' class='h5'>Assign Members*</label>
-                                <input type='text' class='form-control' id='exampleInputText07'>
-                            </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-2'>
-                                <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
-                                <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
-                            </div>
-                        </div>
+        <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-task-modal'>
+            <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
+                <div class='modal-content'>
+                    <div class='modal-header d-block text-center pb-3 border-bttom'>
+                        <h3 class='modal-title' id='exampleModalCenterTitle'>New Task</h3>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-task-modal'>
-        <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
-            <div class='modal-content'>
-                <div class='modal-header d-block text-center pb-3 border-bttom'>
-                    <h3 class='modal-title' id='exampleModalCenterTitle'>New Task</h3>
-                </div>
-                <div class='modal-body'>
-                    <div class='row'>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText02' class='h5'>Task Name</label>
-                                <input type='text' class='form-control' id='exampleInputText02'
-                                    placeholder='Enter task Name'>
-                                <a href='#' class='task-edit text-body'><i class='ri-edit-box-line'></i></a>
+                    <div class='modal-body'>
+                    <form action="add-task.php" method="post" enctype="multipart/form-data">
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText02' class='h5'>Task Name</label>
+                                    <input type='text' class='form-control' id='exampleInputText02' name='task_name'
+                                        placeholder='Enter task Name'>
+                                    <a href='#' class='task-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-4'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Assigned to</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Memebers</option>
-                                    <option>Kianna Septimus</option>
-                                    <option>Jaxson Herwitz</option>
-                                    <option>Ryan Schleifer</option>
-                                </select>
+                            <div class='col-lg-4'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Assigned to</label>
+                                    <select name='assigned_to' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Memebers</option>
+                                        <option>Kianna Septimus</option>
+                                        <option>Jaxson Herwitz</option>
+                                        <option>Ryan Schleifer</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-4'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText05' class='h5'>Due Dates*</label>
-                                <input type='date' class='form-control' id='exampleInputText05' value=''>
+                            <div class='col-lg-4'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText05' class='h5'>Due Dates*</label>
+                                    <input type='date' name='due_date' class='form-control' id='exampleInputText05' value=''>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-4'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Category</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Design</option>
-                                    <option>Android</option>
-                                    <option>IOS</option>
-                                    <option>Ui/Ux Design</option>
-                                    <option>Development</option>
-                                </select>
+                            <div class='col-lg-4'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Category</label>
+                                    <select name='category' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Design</option>
+                                        <option>Android</option>
+                                        <option>IOS</option>
+                                        <option>Ui/Ux Design</option>
+                                        <option>Development</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText040' class='h5'>Description</label>
-                                <textarea class='form-control' id='exampleInputText040' rows='2'></textarea>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText040' class='h5'>Description</label>
+                                    <textarea class='form-control' name='description' id='exampleInputText040' rows='2'></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText005' class='h5'>Checklist</label>
-                                <input type='text' class='form-control' id='exampleInputText005' placeholder='Add List'>
+                            <!-- <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText005' class='h5'>Checklist</label>
+                                    <input type='text' class='form-control' id='exampleInputText005'
+                                        placeholder='Add List'>
+                                </div>
+                            </div> -->
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-0'>
+                                    <label for='exampleInputText01' class='h5'>Attachments</label>
+                                    <div class='custom-file'>
+                                        <input type='file' class='custom-file-input' name='attached' id='inputGroupFile003'>
+                                        <label class='custom-file-label' for='inputGroupFile003'>Upload media</label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-0'>
-                                <label for='exampleInputText01' class='h5'>Attachments</label>
-                                <div class='custom-file'>
-                                    <input type='file' class='custom-file-input' id='inputGroupFile003'>
-                                    <label class='custom-file-label' for='inputGroupFile003'>Upload media</label>
+                            <div class='col-lg-12'>
+                                <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-4'>
+                                    <!-- <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
+                                    <div class='btn btn-primary' data-dismiss='modal'>Cancel</div> -->
+                                    <input type="submit" name='save' class='btn btn-primary mr-3' value='Save'>
                                 </div>
                             </div>
                         </div>
-                        <div class='col-lg-12'>
-                            <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-4'>
-                                <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
-                                <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
-                            </div>
-                        </div>
+                    </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-user-modal'>
-        <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
-            <div class='modal-content'>
-                <div class='modal-header d-block text-center pb-3 border-bttom'>
-                    <h3 class='modal-title' id='exampleModalCenterTitle02'>New User</h3>
-                </div>
-                <div class='modal-body'>
-                    <div class='row'>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3 custom-file-small'>
-                                <label for='exampleInputText01' class='h5'>Upload Profile Picture</label>
-                                <div class='custom-file'>
-                                    <input type='file' class='custom-file-input' id='inputGroupFile02'>
-                                    <label class='custom-file-label' for='inputGroupFile02'>Choose file</label>
+        <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-user-modal'>
+            <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
+                <div class='modal-content'>
+                    <div class='modal-header d-block text-center pb-3 border-bttom'>
+                        <h3 class='modal-title' id='exampleModalCenterTitle02'>New User</h3>
+                    </div>
+                    <div class='modal-body'>
+                        <div class='row'>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3 custom-file-small'>
+                                    <label for='exampleInputText01' class='h5'>Upload Profile Picture</label>
+                                    <div class='custom-file'>
+                                        <input type='file' class='custom-file-input' id='inputGroupFile02'>
+                                        <label class='custom-file-label' for='inputGroupFile02'>Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Full Name</label>
+                                    <input type='text' class='form-control' id='exampleInputText2'
+                                        placeholder='Enter your full name'>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText04' class='h5'>Phone Number</label>
+                                    <input type='text' class='form-control' id='exampleInputText04'
+                                        placeholder='Enter phone number'>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText006' class='h5'>Email</label>
+                                    <input type='text' class='form-control' id='exampleInputText006'
+                                        placeholder='Enter your Email'>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Type</label>
+                                    <select name='type' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Type</option>
+                                        <option>Trainee</option>
+                                        <option>Employee</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Role</label>
+                                    <select name='type' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Role</option>
+                                        <option>Designer</option>
+                                        <option>Developer</option>
+                                        <option>Manager</option>
+                                        <option>BDE</option>
+                                        <option>SEO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class='col-lg-12'>
+                                <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-2'>
+                                    <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
+                                    <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
                                 </div>
                             </div>
                         </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Full Name</label>
-                                <input type='text' class='form-control' id='exampleInputText2'
-                                    placeholder='Enter your full name'>
-                            </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText04' class='h5'>Phone Number</label>
-                                <input type='text' class='form-control' id='exampleInputText04'
-                                    placeholder='Enter phone number'>
-                            </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText006' class='h5'>Email</label>
-                                <input type='text' class='form-control' id='exampleInputText006'
-                                    placeholder='Enter your Email'>
-                            </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Type</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Type</option>
-                                    <option>Trainee</option>
-                                    <option>Employee</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Role</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Role</option>
-                                    <option>Designer</option>
-                                    <option>Developer</option>
-                                    <option>Manager</option>
-                                    <option>BDE</option>
-                                    <option>SEO</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-2'>
-                                <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
-                                <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-create-modal'>
-        <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
-            <div class='modal-content'>
-                <div class='modal-header d-block text-center pb-3 border-bttom'>
-                    <h3 class='modal-title' id='exampleModalCenterTitle03'>New Task</h3>
-                </div>
-                <div class='modal-body'>
-                    <div class='row'>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText03' class='h5'>Task Name</label>
-                                <input type='text' class='form-control' id='exampleInputText03'
-                                    placeholder='Enter task Name'>
-                                <a href='#' class='task-edit text-body'><i class='ri-edit-box-line'></i></a>
+        <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-create-modal'>
+            <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
+                <div class='modal-content'>
+                    <div class='modal-header d-block text-center pb-3 border-bttom'>
+                        <h3 class='modal-title' id='exampleModalCenterTitle03'>New Task</h3>
+                    </div>
+                    <div class='modal-body'>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText03' class='h5'>Task Name</label>
+                                    <input type='text' class='form-control' id='exampleInputText03'
+                                        placeholder='Enter task Name'>
+                                    <a href='#' class='task-edit text-body'><i class='ri-edit-box-line'></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Assigned to</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Memebers</option>
-                                    <option>Kianna Septimus</option>
-                                    <option>Jaxson Herwitz</option>
-                                    <option>Ryan Schleifer</option>
-                                </select>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Assigned to</label>
+                                    <select name='type' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Memebers</option>
+                                        <option>Kianna Septimus</option>
+                                        <option>Jaxson Herwitz</option>
+                                        <option>Ryan Schleifer</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-6'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText2' class='h5'>Project Name</label>
-                                <select name='type' class='selectpicker form-control' data-style='py-0'>
-                                    <option>Enter your project Name</option>
-                                    <option>Ui/Ux Design</option>
-                                    <option>Dashboard Templates</option>
-                                    <option>Wordpress Themes</option>
-                                </select>
+                            <div class='col-lg-6'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText2' class='h5'>Project Name</label>
+                                    <select name='type' class='selectpicker form-control' data-style='py-0'>
+                                        <option>Enter your project Name</option>
+                                        <option>Ui/Ux Design</option>
+                                        <option>Dashboard Templates</option>
+                                        <option>Wordpress Themes</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText40' class='h5'>Description</label>
-                                <textarea class='form-control' id='exampleInputText40' rows='2'
-                                    placeholder='Textarea'></textarea>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText40' class='h5'>Description</label>
+                                    <textarea class='form-control' id='exampleInputText40' rows='2'
+                                        placeholder='Textarea'></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText8' class='h5'>Checklist</label>
-                                <input type='text' class='form-control' id='exampleInputText8' placeholder='Add List'>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-3'>
+                                    <label for='exampleInputText8' class='h5'>Checklist</label>
+                                    <input type='text' class='form-control' id='exampleInputText8'
+                                        placeholder='Add List'>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-0'>
-                                <label for='exampleInputText01' class='h5'>Attachments</label>
-                                <div class='custom-file'>
-                                    <input type='file' class='custom-file-input' id='inputGroupFile01'>
-                                    <label class='custom-file-label' for='inputGroupFile01'>Upload media</label>
+                            <div class='col-lg-12'>
+                                <div class='form-group mb-0'>
+                                    <label for='exampleInputText01' class='h5'>Attachments</label>
+                                    <div class='custom-file'>
+                                        <input type='file' class='custom-file-input' id='inputGroupFile01'>
+                                        <label class='custom-file-label' for='inputGroupFile01'>Upload media</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-lg-12'>
+                                <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-4'>
+                                    <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
+                                    <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
                                 </div>
                             </div>
                         </div>
-                        <div class='col-lg-12'>
-                            <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-4'>
-                                <div class='btn btn-primary mr-3' data-dismiss='modal'>Save</div>
-                                <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class='iq-footer'>
-        <div class='container-fluid'>
-            <div class='row'>
-                <div class='col-lg-6'>
-                    <ul class='list-inline mb-0'>
-                        <li class='list-inline-item'><a href='privacy-policy'>Privacy Policy</a></li>
-                        <li class='list-inline-item'><a href='terms-of-service'>Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div class='col-lg-6 text-right'>
-                    <span class='mr-1'>
-                        <script>document.write(new Date().getFullYear())</script>©
-                    </span> <a href='#' class=''>Webkit</a>.
+        <footer class='iq-footer'>
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-lg-6'>
+                        <ul class='list-inline mb-0'>
+                            <li class='list-inline-item'><a href='privacy-policy'>Privacy Policy</a></li>
+                            <li class='list-inline-item'><a href='terms-of-service'>Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class='col-lg-6 text-right'>
+                        <span class='mr-1'>
+                            <script>document.write(new Date().getFullYear())</script>©
+                        </span> <a href='#' class=''>Webkit</a>.
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- Backend Bundle JavaScript -->
-    <script src='../assets/js/backend-bundle.min.js'></script>
+        </footer>
+        <!-- Backend Bundle JavaScript -->
+        <script src='../assets/js/backend-bundle.min.js'></script>
 
-    <!-- Table Treeview JavaScript -->
-    <script src='../assets/js/table-treeview.js'></script>
+        <!-- Table Treeview JavaScript -->
+        <script src='../assets/js/table-treeview.js'></script>
 
-    <!-- Chart Custom JavaScript -->
-    <script src='../assets/js/customizer.js'></script>
+        <!-- Chart Custom JavaScript -->
+        <script src='../assets/js/customizer.js'></script>
 
-    <!-- Chart Custom JavaScript -->
-    <script async src='../assets/js/chart-custom.js'></script>
-    <!-- Chart Custom JavaScript -->
-    <script async src='../assets/js/slider.js'></script>
+        <!-- Chart Custom JavaScript -->
+        <script async src='../assets/js/chart-custom.js'></script>
+        <!-- Chart Custom JavaScript -->
+        <script async src='../assets/js/slider.js'></script>
 
-    <!-- app JavaScript -->
-    <script src='../assets/js/app.js'></script>
+        <!-- app JavaScript -->
+        <script src='../assets/js/app.js'></script>
 
-    <script src='../assets/vendor/moment.min.js'></script>
+        <script src='../assets/vendor/moment.min.js'></script>
 
-    <?php
-        $inc=1;//counter variable to increment the number of tasks
+        <?php
+        $inc = 1; //counter variable to increment the number of tasks
         $taskRows = $_SESSION['task_rows'];
         foreach ($taskRows as $row) {
-            echo"
+            echo "
             <script>
-        const myDiv".$inc." = document.getElementById('card-onclick".$inc."');
+        const myDiv" . $inc . " = document.getElementById('card-onclick" . $inc . "');
         
-        myDiv".$inc.".addEventListener('click', function() {
+        myDiv" . $inc . ".addEventListener('click', function() {
             // Replace 'https://www.example.com' with the actual URL you want to open
-            window.location.href = '#collapseEdit".$inc."';
+            window.location.href = '#collapseEdit" . $inc . "';
           });
     </script>";
-    $inc++;
-    }
-    ?>
-   
+            $inc++;
+        }
+        ?>
+
 </body>
 
 </html>
