@@ -302,7 +302,7 @@ include 'expert-requests-controller.php';
                             echo "<tr>
                                     <td>
                                         <div class='media align-items-center'>
-                                            <img src='../assets/images/user/01.jpg'
+                                            <img src='data:image/jpeg;base64," . base64_encode($row['expert_pfp']) . "' alt='Image' 
                                                 class='img-fluid rounded-circle avatar-40 ' alt='image'>
                                             <h5 class='ml-3'>".$row['first_name']." ".$row['last_name']."</h5>
                                         </div>

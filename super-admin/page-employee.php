@@ -113,7 +113,7 @@ include 'experts-controller.php';
                         <div class='card-body text-center p-0'>                            
                             <div class='item'>
                                 <div class='odr-img'>
-                                    <img src='../assets/images/user/01.jpg' class='img-fluid rounded-circle avatar-90 m-auto " . ($row['expert_status'] == 0 ? 'disabled-card' : '') . "' alt='image'>
+                                    <img src='" . ($row['expert_pfp'] != '' ? 'data:image/jpeg;base64,' . base64_encode($row['expert_pfp']) : '../assets/images/user/01.jpg') . "' class='img-fluid rounded-circle avatar-90 m-auto " . ($row['expert_status'] == 0 ? 'disabled-card' : '') . "' alt='Image'>
                                 </div>                        
                                 <div class='odr-content rounded '>                                          
                                     <h4 class='mb-2'>" . $row['first_name'] . " " . $row['last_name'] . "</h4>
@@ -154,7 +154,7 @@ include 'experts-controller.php';
                                             echo "<tr>
                                     <td>
                                         <div class='media align-items-center'>
-                                            <img src='../assets/images/user/01.jpg'
+                                            <img src='" . ($row['expert_pfp'] != '' ? 'data:image/jpeg;base64,' . base64_encode($row['expert_pfp']) : '../assets/images/user/01.jpg') . "'
                                                 class='img-fluid rounded-circle avatar-40 " . ($row['expert_status'] == 0 ? 'disabled-card' : '') . "' alt='image'>
                                             <h5 class='ml-3'>" . $row['first_name'] . " " . $row['last_name'] . "</h5>
                                         </div>
