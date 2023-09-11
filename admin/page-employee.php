@@ -1,5 +1,9 @@
 <?php
+session_start();
 include '../layout/admin-header.php';
+if(!isset($_SESSION["admin_id"])){
+    header("Location: admin-sign-in");
+}
 ?>
 
 <!doctype html>

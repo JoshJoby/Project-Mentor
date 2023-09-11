@@ -1,3 +1,4 @@
+
 <div class="iq-sidebar  sidebar-default ">
     <div class="iq-sidebar-logo d-flex align-items-center">
         <a href="/ProjectMentor/admin" class="header-logo">
@@ -75,18 +76,6 @@
 
             </ul>
         </nav>
-        <div id="sidebar-bottom" class="position-relative sidebar-bottom" style="padding-top:30px !important">
-            <div class="card border-none mb-0 shadow-none">
-                <div class="card-body p-0">
-                    <div class="sidebarbottom-content">
-                        <h5 class="mb-3">Task Performed</h5>
-                        <div id="circle-progress-6" class="sidebar-circle circle-progress circle-progress-primary mb-4"
-                            data-min-value="0" data-max-value="100" data-value="55" data-type="percent"></div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="pt-5 pb-2"></div>
     </div>
 </div>
@@ -285,7 +274,7 @@
                                 aria-expanded="false">
                                 <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
                                 <div class="caption ml-1">
-                                    <h6 class="mb-0 line-height">Savannah Nguyen<i class="las la-angle-down ml-2"></i>
+                                    <h6 class="mb-0 line-height"><?php echo $_SESSION["admin_name"]; ?><i class="las la-angle-down ml-2"></i>
                                     </h6>
                                 </div>
                             </a>

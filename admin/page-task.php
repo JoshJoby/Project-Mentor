@@ -8,7 +8,9 @@ include 'task-controller.php';
 include 'project-controller.php';
 include 'add-task.php';
 
-
+if(!isset($_SESSION["admin_id"])){
+    header("Location: admin-sign-in");
+}
 ?>
 <!doctype html>
 <html lang='en'>
