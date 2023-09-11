@@ -5,7 +5,7 @@ $task_name = $_POST['task_name'] ?? '';
 $task_duration = $_POST['task_duration'] ?? '';
 $task_skills = $_POST['category'] ?? '';
 $description = isset($_POST['description']) ? $_POST['description'] : ''; // Check if 'description' is set
-
+ 
 if (isset($_FILES["attached"]) && $_FILES["attached"]["error"] == 0) {
     $fileContent = file_get_contents($_FILES["attached"]["tmp_name"]);
 
@@ -25,7 +25,7 @@ if (isset($_FILES["attached"]) && $_FILES["attached"]["error"] == 0) {
             echo "Task added successfully.";
             header("Location: page-task"); 
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Error: ";
         }
 
         // Close the prepared statement
