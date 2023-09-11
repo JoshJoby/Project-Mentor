@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the form container */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style for the headings */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the form elements */
+        label {
+            font-size: 16px;
+            color: #444;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>NEW PROJECT</h1>
+       <form action="submit.php" method="post">
+            <h2>PROJECT DETAILS</h2>
+            <label for="project_ID">project ID</label>
+            <input type="text" id="project_ID" name="project_ID" required>
+
+            <label for="ADMIN_ID">ADMIN ID</label>
+            <input type="text" id="ADMIN_ID" name="ADMIN_ID" required>
+
+            <label for="PROJECT_NAME">PROJECT NAME</label>
+            <input type="text" id="project_NAME" name="project_NAME" required>
+
+           
+
+            <label for="PROJECT DESCRIPTION">PROJECT DESCRIPTION</label>
+            <input type="text" id="PROJECT DESCRIPTION" name="PROJECT DESCRIPTION">
+
+            <label for="p_creation_date">PROJECT CREATION DATE</label>
+            <input type="text" id="p_creation_date" name="p_creation_date">
+			
+			
+            <label for="p_duration">PROJECT DURATION</label>
+            <input type="text" id="p_duration" name="p_duration">
+			
+			
+            <label for="p_technology">PROJECT TECHNOLOGY</label>
+            <input type="text" id="p_technology" name="p_technology">
+			
+
+            <h1>SUBMIT</h1>
+            
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

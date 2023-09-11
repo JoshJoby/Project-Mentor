@@ -67,7 +67,8 @@ include '../layout/super-admin-header.php';
                                     </div>
                                 </div>
                                 <div class="pl-3 border-left btn-new">
-                                    <a href="#" class="btn btn-primary" data-target="#new-project-modal" data-toggle="modal">New Project</a>
+                                    <a href="student\project_details.html" class="btn btn-primary">New Project</a>
+                                    <!-- data-target="#new-project-modal" data-toggle="modal" -->
                                 </div>
                             </div>
                         </div>

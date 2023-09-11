@@ -94,8 +94,9 @@ include 'project-controller.php';
                                             </div>
                                         </div>
                                         <div class='pl-3 border-left btn-new'>
-                                            <a href='#' class='btn btn-primary' data-target='#new-project-modal'
-                                                data-toggle='modal'>New Project</a>
+                                            <a href='project_details.php'>New Project</a>
+                                            <!-- class='btn btn-primary' data-target='#new-project-modal'
+                                                data-toggle='modal' -->
                                         </div>
                                     </div>
                                 </div>
