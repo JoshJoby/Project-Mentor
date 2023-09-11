@@ -30,7 +30,7 @@
          margin-bottom: -10px;
          /* Adjust the value as needed */
       }
-      
+
 
       @keyframes fade-in {
          from {
@@ -42,6 +42,8 @@
          }
       }
    </style>
+
+   
 </head>
 
 <body class=" "
@@ -60,76 +62,72 @@
          </div>
          <div class="container">
             <div class="row align-items-center justify-content-center height-self-center">
-               <div class="col-lg-8">
+               <div class="col-lg-9">
                   <div class="card auth-card">
                      <div class="card-body p-0">
                         <div class="d-flex align-items-center auth-content">
-                           <div class="col-lg-6 bg-primary content-left">
+                           <div class="col-lg-6 bg-primary">
                               <div class="p-3">
-                                 <h2 class="mb-2 text-white">Sign Up</h2>
-                                 <p>Create your Webkit account.</p>
+                                 <h2 class="mb-2 text-white">Create Account</h2>
+                                 <br>
                                  <form action="auth-sign-up-controller" method="post">
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="text" placeholder=" "
-                                                name="fname">
-                                             <label>First Name</label>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="text" placeholder=" "
-                                                name="lname">
-                                             <label>Last Name</label>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="email" placeholder=" "
-                                                name="email">
-                                             <label>Email</label>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="text" placeholder=" "
-                                                name="phno">
-                                             <label>Phone No.</label>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="password" placeholder=" "
-                                                name="password">
-                                             <label>Password</label>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-6">
-                                          <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="password" placeholder=" "
-                                                name="confpassword">
-                                             <label>Confirm Password</label>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-12">
-                                          <div class="custom-control custom-checkbox mb-3">
-                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                             <label class="custom-control-label text-white" for="customCheck1">I agree
-                                                with the terms of use</label>
-                                          </div>
+                                    <div class="col-lg-12">
+                                       <div class="floating-label form-group">
+                                          <!-- <label>First Name</label> -->
+                                          <input class="floating-input form-control" type="text" placeholder="First Name" required
+                                             name="fname">
                                        </div>
                                     </div>
-                                    <button type="submit" class="btn btn-white" id="signupButton" disabled>Sign
-                                       Up</button>
-                                    <p class="mt-3">
-                                       Already have an Account <a href="auth-sign-in"
-                                          class="text-white text-underline">Sign In</a>
-                                    </p>
+                                    <div class="col-lg-12">
+                                       <div class="floating-label form-group">
+                                          <!-- <label>Last Name</label> -->
+                                          <input class="floating-input form-control" type="text" placeholder="Last Name" required
+                                             name="lname">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="floating-label form-group">
+                                          <!-- <label>Email</label> -->
+                                          <input class="floating-input form-control" type="email" placeholder="Email" required
+                                             name="email">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="floating-label form-group">
+                                          <!-- <label>Phone No.</label> -->
+                                          <input class="floating-input form-control" type="text" placeholder="Phone No." required
+                                             name="phno">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="floating-label form-group">
+                                          <!-- <label>Password</label> -->
+                                          <input class="floating-input form-control" type="password" placeholder="Password" required
+                                             name="password">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="floating-label form-group">
+                                          <!-- <label>Confirm Password</label> -->
+                                          <input class="floating-input form-control" type="password" placeholder="Confirm Password" required 
+                                             name="confpassword">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <button type="submit" class="btn btn-white" id="signupButton">Sign
+                                          Up</button>
+                                    </div>
+                                    <div class="col-lg-12 mt-3">
+                                       <p>
+                                          Already have an Account <a href="auth-sign-in"
+                                             class="text-white text-underline">Sign In</a>
+                                       </p>
+                                    </div>
                                  </form>
                               </div>
+
                            </div>
-                           <div class="col-lg-6 content-right">
+                           <div class="col-lg-12 content-right">
                               <img src="../assets/images/login/01.png" class="img-fluid image-right" alt="">
                            </div>
                         </div>
@@ -140,23 +138,6 @@
          </div>
       </section>
    </div>
-
-   <script>
-      var checkbox = document.getElementById('customCheck1');
-      var signupButton = document.getElementById('signupButton');
-      var authCard = document.querySelector('.auth-card');
-      var originalHeight = authCard.offsetHeight;
-
-      checkbox.addEventListener('change', function () {
-         if (checkbox.checked) {
-            signupButton.disabled = false;
-         } else {
-            signupButton.disabled = true;
-         }
-      });
-   </script>
-
-
 
    <!-- Backend Bundle JavaScript -->
    <script src="../assets/js/backend-bundle.min.js"></script>

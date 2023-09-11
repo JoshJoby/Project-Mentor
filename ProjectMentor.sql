@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 06, 2023 at 01:43 PM
+-- Generation Time: Sep 08, 2023 at 11:59 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -34,9 +34,22 @@ CREATE TABLE `admin` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
-  `admin_photo` longblob DEFAULT NULL,
-  `admin_tech_stack` text DEFAULT NULL,
   `admin_status` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin_requests`
+--
+
+CREATE TABLE `admin_requests` (
+  `admin_request_id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `phone_number` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -78,7 +91,6 @@ CREATE TABLE `expert` (
   `expert_id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(45) NOT NULL,
-  `description` text DEFAULT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
@@ -89,7 +101,7 @@ CREATE TABLE `expert` (
 
 -- --------------------------------------------------------
 
--- test
+--
 -- Table structure for table `expert_requests`
 --
 
@@ -97,14 +109,11 @@ CREATE TABLE `expert_requests` (
   `expert_request_id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(45) NOT NULL,
-  `description` text DEFAULT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
   `profile` text DEFAULT NULL,
-  `expert_pfp` longblob NOT NULL,
-  `dob` date NOT NULL,
-  `gender` text NOT NULL
+  `expert_pfp` longblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -249,7 +258,14 @@ CREATE TABLE `tasks` (
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
-  ADD PRIMARY KEY (`admin_id`);
+  ADD PRIMARY KEY (`admin_id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `admin_requests`
+--
+ALTER TABLE `admin_requests`
+  ADD PRIMARY KEY (`admin_request_id`);
 
 --
 -- Indexes for table `completed_projects`

@@ -19,7 +19,7 @@ include '../config_local.php';
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
-$email = $_POST['email'];
+$email = $_POST['email'];   
 // $phno = $_POST['phno'];
 $password = $_POST['password'];
 $confpassword = $_POST['confpassword'];
@@ -36,7 +36,7 @@ if ($userType === 'Student') {
     exit();
 }
 
-$sql = "SELECT * FROM $table WHERE email='$email' AND phone_number IS NOT NULL";
+$sql = "SELECT * FROM $table WHERE email='$email'";
 
 // Execute the query
 $result = $conn->query($sql);

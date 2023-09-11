@@ -1,460 +1,282 @@
 <?php
+session_start();
 include '../layout/super-admin-header.php';
+include 'expert-requests-controller.php';
+
 ?>
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Project Mentor</title>
-      
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
-      
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
-      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
-  <body class="  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Project Mentor</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
+    <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
+    <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">
+
+    <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
+    <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
+    <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">
+</head>
+
+<body class="  ">
     <!-- loader Start -->
     <div id="loading">
-          <div id="loading-center">
-          </div>
+        <div id="loading-center">
+        </div>
     </div>
     <!-- loader END -->
     <!-- Wrapper Start -->
     <div class="wrapper">
-      
-      
-          
-            <div class="content-page">
-     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex flex-wrap align-items-center justify-content-between breadcrumb-content">
-                            <h5>Desk</h5>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                                <div class="dropdown status-dropdown mr-3">
-                                    <div class="dropdown-toggle" id="dropdownMenuButton03" data-toggle="dropdown">
-                                    <div class="btn bg-body"><span class="h6">Status :</span> In Progress<i class="ri-arrow-down-s-line ml-2 mr-0"></i></div>
-                                    </div>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton03">
-                                        <a class="dropdown-item" href="#"><i class="ri-mic-line mr-2"></i>In Progress</a>
-                                        <a class="dropdown-item" href="#"><i class="ri-attachment-line mr-2"></i>Priority</a>
-                                        <a class="dropdown-item" href="#"><i class="ri-file-copy-line mr-2"></i>Category</a> 
-                                    </div>
-                                </div>
-                                <div class="list-grid-toggle d-flex align-items-center mr-3">
-                                    <div data-toggle-extra="tab" data-target-extra="#grid" class="active">
+
+
+
+        <div class="content-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div
+                                    class="d-flex flex-wrap align-items-center justify-content-between breadcrumb-content">
+                                    <h5>Add Projects Administrator</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="list-grid-toggle d-flex align-items-center mr-3">
+                                            <!-- <div data-toggle-extra="tab" data-target-extra="#grid" class="active">
                                         <div class="grid-icon mr-3">
-                                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <svg width="20" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
                                             </svg>
                                         </div>
-                                    </div>
-                                    <div data-toggle-extra="tab" data-target-extra="#list">
-                                        <div class="grid-icon">
-                                            <svg  width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>
-                                            </svg>
+                                    </div> -->
+                                            <div data-toggle-extra="tab" data-target-extra="#list" class="active">
+                                                <div class="grid-icon">
+                                                    <svg width="20" height="40" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <line x1="21" y1="10" x2="3" y2="10"></line>
+                                                        <line x1="21" y1="6" x2="3" y2="6"></line>
+                                                        <line x1="21" y1="14" x2="3" y2="14"></line>
+                                                        <line x1="21" y1="18" x2="3" y2="18"></line>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="pl-3 btn-new border-left">
-                                    <a href="#" class="btn btn-primary" data-target="#new-project-modal" data-toggle="modal">New Project</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
+                <!-- <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="card-transparent mb-0 desk-info">
-                        <div class="card-body p-0">                           
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body">                           
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <h5>Open Projects  ( 05 )</h5>
-                                                <div class="dropdown">
-                                                    <span class="dropdown-toggle py-2" id="dropdownMenuButton04" data-toggle="dropdown">
-                                                    <i class="ri-more-fill"></i>
-                                                    </span>
-                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton04">
-                                                        <a class="dropdown-item" href="#"><i class="ri-file-copy-2-line mr-2"></i>Duplicate</a>
-                                                        <a class="dropdown-item" href="#"><i class="ri-edit-2-line mr-2"></i>Rename</a>
-                                                        <a class="dropdown-item" href="#"><i class="ri-delete-bin-5-line mr-2"></i>Delete</a> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Hotel Management App UI Kit</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-secondary-light mb-4">
-                                                <span class="bg-secondary iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/01.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/02.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-secondary-light">Design</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">General Improvement in Landing pages</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-info-light mb-4">
-                                                <span class="bg-info iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/05.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/06.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/07.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/08.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-info-light">Testing</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Product list view changes</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-success-light mb-4">
-                                                <span class="bg-success iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/05.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/06.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-success-light">SEO</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Add Multiple theme options</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-warning-light mb-4">
-                                                <span class="bg-warning iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/01.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/02.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-warning-light">Development</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/01.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Ruben Franci</h4>
+                                    <p class="mb-3">rubenfranci@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card-transparent mb-0 desk-info">
-                        <div class="card-body p-0">                           
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body">                           
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <h5>In Progress ( 03 )</h5>
-                                                <div class="dropdown">
-                                                    <span class="dropdown-toggle py-2" id="dropdownMenuButton05" data-toggle="dropdown">
-                                                    <i class="ri-more-fill"></i>
-                                                    </span>
-                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton05">
-                                                        <a class="dropdown-item" href="#"><i class="ri-file-copy-2-line mr-2"></i>Duplicate</a>
-                                                        <a class="dropdown-item" href="#"><i class="ri-edit-2-line mr-2"></i>Rename</a>
-                                                        <a class="dropdown-item" href="#"><i class="ri-delete-bin-5-line mr-2"></i>Delete</a> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Product list view changes</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-success-light mb-4">
-                                                <span class="bg-success iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/05.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/06.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-success-light">SEO</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Admin Panel Customization</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-primary-light mb-4">
-                                                <span class="bg-primary iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/01.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/02.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-primary-light">Content</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Sidebar in dashboard plans</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="iq-progress-bar bg-secondary-light mb-4">
-                                                <span class="bg-secondary iq-progress progress-1" data-percent="65" style="transition: width 2s ease 0s; width: 65%;"></span>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/01.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/02.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-secondary-light">Design</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/02.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Kaylynn Press</h4>
+                                    <p class="mb-3">kaylynnpress@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card-transparent mb-0 desk-info">
-                        <div class="card-body p-0">                           
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body">                           
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <h5>Compeleted ( 05 )</h5>
-                                                <div class="dropdown">
-                                                    <span class="dropdown-toggle py-2" id="dropdownMenuButton06" data-toggle="dropdown">
-                                                    <i class="ri-more-fill"></i>
-                                                    </span>
-                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton06">
-                                                        <a class="dropdown-item" href="#"><i class="ri-file-copy-2-line mr-2"></i>Duplicate</a>
-                                                        <a class="dropdown-item" href="#"><i class="ri-edit-2-line mr-2"></i>Rename</a>
-                                                        <a class="dropdown-item" href="#"><i class="ri-delete-bin-5-line mr-2"></i>Delete</a> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/03.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Corey Press</h4>
+                                    <p class="mb-3">coreypress@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
                                 </div>
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Login screen updated in mobile </h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/01.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-secondary-light">Design</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/04.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Zain Carder</h4>
+                                    <p class="mb-3">zaincarder@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Helpdesk in dashboard plans</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/07.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/08.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-info-light">Testing</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/05.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Erin Donin</h4>
+                                    <p class="mb-3">erindonin@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Marketplace Admin Dashboard</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/05.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/06.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-success-light">SEO</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/06.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Mira Herwitz</h4>
+                                    <p class="mb-3">miraherwitz@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Multipurpose theme and design</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/02.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/03.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/04.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-primary-light">Content</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/07.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Kaiya George</h4>
+                                    <p class="mb-3">kaiyageorge@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                            <h5 class="mb-3">Minimal Design of IOT project</h5>
-                                            <p class="mb-3"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="iq-media-group">
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/01.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                    <a href="#" class="iq-media">
-                                                        <img src="../assets/images/user/02.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                                                    </a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="btn bg-warning-light">Development</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/08.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Lincoln George</h4>
+                                    <p class="mb-3">lincolngeorge@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-transparent card-block card-stretch card-height">
+                        <div class="card-body text-center p-0">                            
+                            <div class="item">
+                                <div class="odr-img">
+                                    <img src="../assets/images/user/09.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
+                                </div>                        
+                                <div class="odr-content rounded">                                          
+                                    <h4 class="mb-2">Paityn Siphron</h4>
+                                    <p class="mb-3">paitynsiphron@gmail.com</p>
+                                    <ul class="list-unstyled mb-3">
+                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
+                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
+                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
+                                    </ul>                                    
+                                    <div class="pt-3 border-top">
+                                        <a href="#" class="btn btn-primary">Message</a>
                                     </div>
                                 </div>
                             </div>
@@ -462,352 +284,63 @@ include '../layout/super-admin-header.php';
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="list" class="item-content animate__animated animate__fadeIn" data-toggle-extra="tab-content">
-            <div class="table-responsive rounded bg-white mb-4">
-                <table class="table mb-0 table-borderless tbl-server-info tble-min-width">
-                    <tbody>
-                        <tr>
-                            <td>Hotel Management App UI Kit</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-secondary-light">
-                                    <span class="bg-secondary iq-progress progress-1" data-percent="65"></span>
-                                </div>
+        </div> -->
+        <div id='list' class='item-content animate__animated animate__fadeIn active' data-toggle-extra='tab-content'>
+                    <div class='table-responsive rounded bg-white mb-4'>
+                        <table class='table mb-0 table-borderless tbl-server-info'>
+                            <tbody>
+                            <form action="expert-request-status-controller.php" method="POST">
+
+                            <?php
+                        if (isset($_SESSION['expert_request_rows'])) {
+                            // Access the stored array of rows
+                            $expertRequestRows = $_SESSION['expert_request_rows'];
+
+                            if (!empty($expertRequestRows)) {
+                                foreach ($expertRequestRows as $row) {
+
+                            echo "<tr>
+                                    <td>
+                                        <div class='media align-items-center'>
+                                            <img src='data:image/jpeg;base64," . base64_encode($row['expert_pfp']) . "' alt='Image' 
+                                                class='img-fluid rounded-circle avatar-40 ' alt='image'>
+                                            <h5 class='ml-3'>".$row['first_name']." ".$row['last_name']."</h5>
+                                        </div>
+                                    </td>
+                                    <td>".$row['email']."</td>
+                                    <td>
+                                        <div class='media align-items-center'>
+                                            <div class='bg-secondary-light rounded-circle iq-card-icon-small mr-3'><i
+                                                    class='ri-mail-open-line m-0'></i></div>
+                                            <div class='bg-primary-light rounded-circle iq-card-icon-small mr-3'><i
+                                                    class='ri-chat-3-line m-0'></i></div>
+                                            <div class='bg-success-light rounded-circle iq-card-icon-small'><i
+                                                    class='ri-phone-line m-0'></i></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                    <button type='submit' name='submitAcceptButton' id='submitAcceptButton' class='btn btn-success' value='" . $row['expert_request_id'] . "'>
+                                        Accept Req.
+                                    </button>                                    
+                                </td>
+                                <td>
+                                <button type='submit' name='submitRejectButton' id='submitRejectButton' class='btn btn-secondary' value='" . $row['expert_request_id'] . "'>
+                                    Reject Req.
+                                </button>                                    
                             </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-secondary-light">Design</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>General Improvement</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-info-light">
-                                    <span class="bg-info iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-info-light">Testing</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Product list view changes</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-success-light">
-                                    <span class="bg-success iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/05.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/06.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-success-light">SEO</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Add Multiple theme options</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-primary-light">
-                                    <span class="bg-primary iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-primary-light">Content</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Product list view changes</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-success-light">
-                                    <span class="bg-success iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-success-light">SEO</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Admin Panel Customization</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-primary-light">
-                                    <span class="bg-primary iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-primary-light">Content</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Sidebar in dashboard plans</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-secondary-light">
-                                    <span class="bg-secondary iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-secondary-light">Design</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Login screen updated in mobile</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-secondary-light">
-                                    <span class="bg-secondary iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <a href="#" class="iq-media">
-                                    <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                </a>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-secondary-light">Design</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Helpdesk in dashboard plans</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-info-light">
-                                    <span class="bg-info iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-info-light">Testing</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Marketplace Admin Dashboard</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-secondary-light">
-                                    <span class="bg-secondary iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/07.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/08.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-secondary-light">Design</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Multipurpose theme and design</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-primary-light">
-                                    <span class="bg-primary iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/03.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/04.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-primary-light">Content</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Minimal Design of IOT project</td>
-                            <td class="w-25">
-                                <div class="iq-progress-bar bg-warning-light">
-                                    <span class="bg-warning iq-progress progress-1" data-percent="65"></span>
-                                </div>
-                            </td>
-                            <td>
-                                <p class="mb-0"><i class="las la-calendar-check mr-2"></i>02 / 02 / 2021</p>
-                            </td>
-                            <td>
-                                <div class="iq-media-group">
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/01.jpg" alt="">
-                                    </a>
-                                    <a href="#" class="iq-media">
-                                        <img class="img-fluid avatar-40 rounded-circle" src="../assets/images/user/02.jpg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                               <a href="#" class="btn bg-warning-light">Development</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </tr>";
+                                }
+                            }
+                        }
+                            ?>  
+                            </form>      
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Page end  -->
             </div>
         </div>
-        <!-- Page end  -->
-    </div>
-      </div>
     </div>
     <!-- Wrapper End-->
 
@@ -823,7 +356,8 @@ include '../layout/super-admin-header.php';
                         <div class="col-lg-12">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText01" class="h5">Project Name*</label>
-                                <input type="text" class="form-control" id="exampleInputText01" placeholder="Project Name">
+                                <input type="text" class="form-control" id="exampleInputText01"
+                                    placeholder="Project Name">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -842,7 +376,7 @@ include '../layout/super-admin-header.php';
                             <div class="form-group mb-3">
                                 <label for="exampleInputText004" class="h5">Due Dates*</label>
                                 <input type="date" class="form-control" id="exampleInputText004" value="">
-                            </div>                        
+                            </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group mb-3">
@@ -860,7 +394,8 @@ include '../layout/super-admin-header.php';
                 </div>
             </div>
         </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-task-modal">
+    </div>
+    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-task-modal">
         <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header d-block text-center pb-3 border-bttom">
@@ -871,7 +406,8 @@ include '../layout/super-admin-header.php';
                         <div class="col-lg-12">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText02" class="h5">Task Name</label>
-                                <input type="text" class="form-control" id="exampleInputText02" placeholder="Enter task Name">
+                                <input type="text" class="form-control" id="exampleInputText02"
+                                    placeholder="Enter task Name">
                                 <a href="#" class="task-edit text-body"><i class="ri-edit-box-line"></i></a>
                             </div>
                         </div>
@@ -890,7 +426,7 @@ include '../layout/super-admin-header.php';
                             <div class="form-group mb-3">
                                 <label for="exampleInputText05" class="h5">Due Dates*</label>
                                 <input type="date" class="form-control" id="exampleInputText05" value="">
-                            </div>                        
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-group mb-3">
@@ -935,7 +471,8 @@ include '../layout/super-admin-header.php';
                 </div>
             </div>
         </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-user-modal">
+    </div>
+    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-user-modal">
         <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header d-block text-center pb-3 border-bttom">
@@ -955,19 +492,22 @@ include '../layout/super-admin-header.php';
                         <div class="col-lg-6">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText2" class="h5">Full Name</label>
-                                <input type="text" class="form-control" id="exampleInputText2" placeholder="Enter your full name">
+                                <input type="text" class="form-control" id="exampleInputText2"
+                                    placeholder="Enter your full name">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText04" class="h5">Phone Number</label>
-                                <input type="text" class="form-control" id="exampleInputText04" placeholder="Enter phone number">
+                                <input type="text" class="form-control" id="exampleInputText04"
+                                    placeholder="Enter phone number">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText006" class="h5">Email</label>
-                                <input type="text" class="form-control" id="exampleInputText006" placeholder="Enter your Email">
+                                <input type="text" class="form-control" id="exampleInputText006"
+                                    placeholder="Enter your Email">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -1003,7 +543,8 @@ include '../layout/super-admin-header.php';
                 </div>
             </div>
         </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-create-modal">
+    </div>
+    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-create-modal">
         <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header d-block text-center pb-3 border-bttom">
@@ -1014,7 +555,8 @@ include '../layout/super-admin-header.php';
                         <div class="col-lg-12">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText03" class="h5">Task Name</label>
-                                <input type="text" class="form-control" id="exampleInputText03" placeholder="Enter task Name">
+                                <input type="text" class="form-control" id="exampleInputText03"
+                                    placeholder="Enter task Name">
                                 <a href="#" class="task-edit text-body"><i class="ri-edit-box-line"></i></a>
                             </div>
                         </div>
@@ -1043,7 +585,8 @@ include '../layout/super-admin-header.php';
                         <div class="col-lg-12">
                             <div class="form-group mb-3">
                                 <label for="exampleInputText40" class="h5">Description</label>
-                                <textarea class="form-control" id="exampleInputText40" rows="2" placeholder="Textarea"></textarea>
+                                <textarea class="form-control" id="exampleInputText40" rows="2"
+                                    placeholder="Textarea"></textarea>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -1082,28 +625,31 @@ include '../layout/super-admin-header.php';
                     </ul>
                 </div>
                 <div class="col-lg-6 text-right">
-                    <span class="mr-1"><script>document.write(new Date().getFullYear())</script>©</span> <a href="#" class="">Webkit</a>.
+                    <span class="mr-1">
+                        <script>document.write(new Date().getFullYear())</script>©
+                    </span> <a href="#" class="">Webkit</a>.
                 </div>
             </div>
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
     <script src="../assets/js/backend-bundle.min.js"></script>
-    
+
     <!-- Table Treeview JavaScript -->
     <script src="../assets/js/table-treeview.js"></script>
-    
+
     <!-- Chart Custom JavaScript -->
     <script src="../assets/js/customizer.js"></script>
-    
+
     <!-- Chart Custom JavaScript -->
     <script async src="../assets/js/chart-custom.js"></script>
     <!-- Chart Custom JavaScript -->
     <script async src="../assets/js/slider.js"></script>
-    
+
     <!-- app JavaScript -->
     <script src="../assets/js/app.js"></script>
-    
+
     <script src="../assets/vendor/moment.min.js"></script>
-  </body>
+</body>
+
 </html>
