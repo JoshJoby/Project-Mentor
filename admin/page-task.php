@@ -8,7 +8,7 @@ include 'task-controller.php';
 include 'project-controller.php';
 include 'add-task.php';
 
-if(!isset($_SESSION["admin_id"])){
+if (!isset($_SESSION["admin_id"])) {
     header("Location: admin-sign-in");
 }
 ?>
@@ -94,73 +94,91 @@ if(!isset($_SESSION["admin_id"])){
                                             $taskRows = $_SESSION['task_rows'];
                                             $inc = 1; //counter variable to increment the number of tasks
                                             foreach ($taskRows as $row) {
+                                                $pdf_func = "onclick='openPdf" . $inc . "InNewTab()'";
+                                                echo "<div id='card-onclick" . $inc . "' data-toggle='collapse' data-target='#collapseEdit" . $inc . "' class='col-lg-12 toggle-collapse'>
+                                                <form action='update-task.php' method='POST' enctype='multipart/form-data'>
+                                                <div class='card card-widget task-card'>
+                                                    <div class='card-body'>
+                                                        <div class='d-flex flex-wrap align-items-center justify-content-between'>
+                                                            <div class='d-flex align-items-center'>
+                                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
+                                                                    <input type='checkbox' class='custom-control-input' id='customCheck01'>
+                                                                    <label class='custom-control-label' for='customCheck01'></label>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class='mb-2'>" . $row['task_name'] . "</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                </div>                                                                                                        
+                                                <div class='collapse' id='collapseEdit" . $inc . "'>                                            
+                                                    <div class='card card-list task-card'>
+                                                        <div class='card-body'>
+                                                            <div class='card mb-3'>
+                                                                <div class='card-body'>
+                                                                    <div class='row'>
+                                                                        <div class='col-lg-6'>
+                                                                            <div class='form-group mb-0'>
+                                                                                <label for='exampleInputText2' class='h5'>Task Name</label>
+                                                                                <div class='form-group mb-3 position-relative'>
+                                                                                    <input type='text' class='form-control bg-white' name='new_task_name' value='" . $row['task_name'] . "'>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class='col-lg-6'>
+                                                                            <div class='form-group mb-0'>
+                                                                                <label for='exampleInputText3' class='h5'>Task Duration</label>
+                                                                                <input type='text' class='form-control bg-white' name='new_task_duration' value='" . $row['task_duration'] . "'>
+                                                                            </div>                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class='card mb-3'>
+                                                                <div class='card-body'>
+                                                                    <div class='row'>
+                                                                        <div class='col-lg-12'>                                                        
+                                                                            <h5 class='mb-2'>Description</h5>
+                                                                            <input type='text' class='form-control bg-white' name='new_task_desc' value='" . $row['task_desc'] . "'>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class='card mb-3'>
+                                                                <div class='card-body'>
+                                                                    <div class='row'>
+                                                                        <div class='col-lg-12'>
+                                                                            <div class='form-group mb-0'>
+                                                                                <label for='exampleInputText3' class='h5'>Task Attachments</label>
+                                                                                <div class='custom-file'>
+                                                                                <input type='file' class='custom-file-input' name='attached'
+                                                                                    id='inputGroupFile003'>
+                                                                                <label class='custom-file-label' for='inputGroupFile003'>Upload media</label>
+                                                                            </div>
+                                                                            <br><br>
+                                                                                <div class='d-flex justify-content-center'>
+                                                                          
+                                                                                    <div class='btn-group'>
+                                                                                    
+                                                                                        <button type='button' class='btn " . (empty($row['task_content']) ? 'btn-secondary' : 'btn-primary') . " btn-xl rounded mx-2' " . (empty($row['task_content']) ? 'disabled' : $pdf_func) . ">Preview PDF</button>
+                                                                                        <input type='hidden' name='task_id' value='" . $row['task_id'] . "'>
+                                                                                        <button type='submit' name='del_task_pdf' class='btn " . (empty($row['task_content']) ? 'btn-secondary' : 'btn-primary') . " btn-xl rounded mx-2' " . (empty($row['task_content']) ? 'disabled' : '') . ">Delete PDF</button>
+                                                                                    </div>
+                                                                                </div>                                                                            
+                                                                            </div>                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button type='submit' name='save_changes' class='btn btn-primary btn-xl rounded mx-2 float-right'>Save Changes</button>
+                                                            </div>
+                                                    </div>
+                                                    </form>
 
-                                                echo " <div id='card-onclick" . $inc . "' data-toggle='collapse' data-target='#collapseEdit" . $inc . "' class='col-lg-12 toggle-collapse'>
-                                <div class='card card-widget task-card'>
-                                    <div class='card-body'>
-                                        <div class='d-flex flex-wrap align-items-center justify-content-between'>
-                                            <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
-                                                    <input type='checkbox' class='custom-control-input' id='customCheck01'>
-                                                    <label class='custom-control-label' for='customCheck01'></label>
-                                                </div>
-                                                <div >
-                                                    <h5 class='mb-2'>" . $row['task_name'] . "</h5>
-                                                  
-                                                </div>
-                                            </div>
-                                            <!-- <div class='media align-items-center mt-md-0 mt-3'>
-                                                <a href='#' class='btn bg-secondary-light mr-3'>Design</a>
-                                                <a class='btn bg-secondary-light' data-toggle='collapse' href='#collapseEdit1' role='button' aria-expanded='false' aria-controls='collapseEdit1'><i class='ri-edit-box-line m-0'></i></a>
-                                            </div> -->
-                                        </div>  
-                                    </div>
-                                </div>                                                                                                        
-                                <div class='collapse' id='collapseEdit" . $inc . "'>                                            
-                                    <div class='card card-list task-card'>
-                                        <div class='card-body'>
-                                            <div class='card mb-3'>
-                                                <div class='card-body'>
-                                                    <div class='row'>
-                                                        <div class='col-lg-6'>
-                                                            <div class='form-group mb-0'>
-                                                                <label for='exampleInputText2' class='h5'>Task Name</label>
-                                                                <div class='form-group mb-3 position-relative'>
-                                                                <input type='text' class='form-control bg-white' placeholder='" . $row['task_name'] . "'>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class='col-lg-6'>
-                                                            <div class='form-group mb-0'>
-                                                                <label for='exampleInputText3' class='h5'>Task Duration</label>
-                                                                <input type='text' class='form-control bg-white' placeholder='" . $row['task_duration'] . "'>
-                                                            </div>                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='card mb-3'>
-                                                <div class='card-body'>
-                                                    <div class='row'>
-                                                        <div class='col-lg-12'>                                                        
-                                                            <h5 class='mb-2'>Description</h5>
-                                                            <p class='mb-0'>" . $row['task_desc'] . "</p>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='form-group mb-0'>
-                                                <label for='exampleInputText01' class='h5'>Attachments</label>
-                                                <div class='custom-file'>
-                                                    <input type='file' class='custom-file-input' id='inputGroupFile001'>
-                                                    <label class='custom-file-label' for='inputGroupFile001'>Upload media</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>      
-                            </div>";
+                                                </div>      
+                                            </div>";
+
                                                 $inc++;
                                             }
                                         } ?>
@@ -176,8 +194,8 @@ if(!isset($_SESSION["admin_id"])){
         <!-- Wrapper End-->
 
         <!-- Modal list start -->
-        
-        
+
+
         <div class='modal fade bd-example-modal-lg' role='dialog' aria-modal='true' id='new-task-modal'>
             <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
                 <div class='modal-content'>
@@ -197,8 +215,8 @@ if(!isset($_SESSION["admin_id"])){
                                 <div class='col-lg-6'>
                                     <div class='form-group mb-3'>
                                         <label for='exampleInputText05' class='h5'>Task Duration</label>
-                                        <input type='text' class='form-control' id='exampleInputText03' name='task_duration'
-                                            placeholder='Enter task Duration'>
+                                        <input type='text' class='form-control' id='exampleInputText03'
+                                            name='task_duration' placeholder='Enter task Duration'>
                                     </div>
                                 </div>
                                 <div class='col-lg-6'>
@@ -211,7 +229,7 @@ if(!isset($_SESSION["admin_id"])){
                                             <option>Ui/Ux Design</option>
                                             <option>Mobile App Development</option>
                                             <option>Artificial Intelligence</option>
-                                            <option>Machine Learning</option>   
+                                            <option>Machine Learning</option>
                                         </select>
                                     </div>
                                 </div>
@@ -221,7 +239,7 @@ if(!isset($_SESSION["admin_id"])){
                                         <textarea class='form-control' name='description' id='exampleInputText040'
                                             rows='2'></textarea>
                                     </div>
-                                </div>                                                          
+                                </div>
                                 <!-- <div class='col-lg-12'>
                                 <div class='form-group mb-3'>
                                     <label for='exampleInputText005' class='h5'>Checklist</label>
@@ -234,7 +252,7 @@ if(!isset($_SESSION["admin_id"])){
                                         <label for='exampleInputText01' class='h5'>Attachments</label>
                                         <div class='custom-file'>
                                             <input type='file' class='custom-file-input' name='attached'
-                                                id='inputGroupFile003'>                                                                                             
+                                                id='inputGroupFile003'>
                                             <label class='custom-file-label' for='inputGroupFile003'>Upload
                                                 media</label>
                                         </div>
@@ -297,34 +315,48 @@ if(!isset($_SESSION["admin_id"])){
         $taskRows = $_SESSION['task_rows'];
 
         foreach ($taskRows as $row) {
-            echo "
-    <script>
-        const task" . $inc . " = document.getElementById('card-onclick" . $inc . "');
-        
-        task" . $inc . ".addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            toggleCollapse('#collapseEdit" . $inc . "');
-        });
-
-        function toggleCollapse(targetId) {
-            const target = $(targetId);
-            if (target.hasClass('show')) {
-                target.collapse('hide'); // Collapse if already open
+            $filePath = "task_content/".$row['task_name'] .".pdf";
+            if (file_put_contents($filePath, base64_decode($row['task_content'])) !== false) {
+                // echo "PDF file saved successfully";
             } else {
-                target.collapse('show'); // Open if closed
-                scrollToTarget(targetId);
+                // echo "Error saving PDF file.";
             }
-        }
+            echo "
+                <script>
+                    const task" . $inc . " = document.getElementById('card-onclick" . $inc . "');
+                    
+                    task" . $inc . ".addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent the default link behavior
+                        toggleCollapse('#collapseEdit" . $inc . "');
+                    });
 
-        function scrollToTarget(targetId) {
-            $('html, body').animate({
-                scrollTop: $(targetId).offset().top
-            }, 500); // Adjust the animation duration as needed
-        }
-    </script>";
+                    function toggleCollapse(targetId) {
+                        const target = $(targetId);
+                        if (target.hasClass('show')) {
+                            target.collapse('hide'); // Collapse if already open
+                        } else {
+                            target.collapse('show'); // Open if closed
+                            scrollToTarget(targetId);
+                        }
+                    }
+
+                    function scrollToTarget(targetId) {
+                        $('html, body').animate({
+                            scrollTop: $(targetId).offset().top
+                        }, 500); // Adjust the animation duration as needed
+                    }
+
+                    function openPdf" . $inc . "InNewTab() {
+                        // Replace 'pdf_url' with the actual URL or data URI of your PDF content
+                        console.log('".$filePath."');
+                        // Open the PDF in a new tab or window
+                        window.open('".$filePath."', '_blank');
+                    }
+                </script>";
             $inc++;
         }
         ?>
+
 
 
 
