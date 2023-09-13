@@ -101,13 +101,10 @@ if (!isset($_SESSION["admin_id"])) {
                                                     <div class='card-body'>
                                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                                             <div class='d-flex align-items-center'>
-                                                                <div class='custom-control custom-task custom-checkbox custom-control-inline'>
-                                                                    <input type='checkbox' class='custom-control-input' id='customCheck01'>
-                                                                    <label class='custom-control-label' for='customCheck01'></label>
-                                                                </div>
                                                                 <div>
-                                                                    <h5 class='mb-2'>" . $row['task_name'] . "</h5>
+                                                                    <h5 class='mb-2'>&nbsp;&nbsp;&nbsp;&nbsp" . $row['task_name'] . "</h5>
                                                                 </div>
+                                                                
                                                             </div>
                                                         </div>  
                                                     </div>
@@ -172,6 +169,7 @@ if (!isset($_SESSION["admin_id"])) {
                                                                 </div>
                                                             </div>
                                                             <button type='submit' name='save_changes' class='btn btn-primary btn-xl rounded mx-2 float-right'>Save Changes</button>
+                                                            <button type='submit' name='del_task' class='btn btn-primary btn-xl rounded mx-2 float-right'>Delete Task</button>
                                                             </div>
                                                     </div>
                                                     </form>
@@ -315,7 +313,7 @@ if (!isset($_SESSION["admin_id"])) {
         $taskRows = $_SESSION['task_rows'];
 
         foreach ($taskRows as $row) {
-            $filePath = "task_content/".$row['task_name'] .".pdf";
+            $filePath = "task_content/" . $row['task_name'] . ".pdf";
             if (file_put_contents($filePath, base64_decode($row['task_content'])) !== false) {
                 // echo "PDF file saved successfully";
             } else {
@@ -348,9 +346,9 @@ if (!isset($_SESSION["admin_id"])) {
 
                     function openPdf" . $inc . "InNewTab() {
                         // Replace 'pdf_url' with the actual URL or data URI of your PDF content
-                        console.log('".$filePath."');
+                        console.log('" . $filePath . "');
                         // Open the PDF in a new tab or window
-                        window.open('".$filePath."', '_blank');
+                        window.open('" . $filePath . "', '_blank');
                     }
                 </script>";
             $inc++;

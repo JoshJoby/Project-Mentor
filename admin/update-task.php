@@ -51,7 +51,25 @@ if (isset($_POST['task_id'])) {
 
         // Close the prepared statement
         $stmt->close();
-    } else {
+    } elseif (isset($_POST['del_task'])) {
+        // Handle deleting the PDF.
+        // Set task_content to NULL or an empty value, depending on your database schema.
+        $sql = "DELETE FROM tasks WHERE task_id = ?";
+
+        // Prepare the SQL statement with parameters
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('i', $task_id);
+
+        if ($stmt->execute()) {
+            echo "Task deleted successfully.";
+            header("Location: page-task"); 
+        } else {
+            echo "Error deleting Task: " . $stmt->error;
+        }
+
+        // Close the prepared statement
+        $stmt->close();
+    }else {
         echo "Invalid action.";
     }
 }

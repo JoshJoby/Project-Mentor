@@ -6,8 +6,8 @@ $task_duration = $_POST['task_duration'] ?? '';
 $task_skills = $_POST['category'] ?? '';
 $description = isset($_POST['description']) ? $_POST['description'] : ''; // Check if 'description' is set
  
-if (isset($_FILES["uploaded"]) && $_FILES["uploaded"]["error"] == 0) {
-    $fileContent = base64_encode(file_get_contents($_FILES["uploaded"]["tmp_name"]));
+if (isset($_FILES["attached"]) && $_FILES["attached"]["error"] == 0) {
+    $fileContent = base64_encode(file_get_contents($_FILES["attached"]["tmp_name"]));
 
     if ($fileContent !== false) {
         // Create a unique task_id
