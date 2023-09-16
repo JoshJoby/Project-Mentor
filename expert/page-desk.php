@@ -1,5 +1,9 @@
 <?php
+session_start();
 include '../layout/expert-header.php';
+if (!isset($_SESSION["expert_id"])) {
+    header("Location: ../landing");
+}
 ?>
 
 <!doctype html>

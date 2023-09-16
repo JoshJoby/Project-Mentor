@@ -47,10 +47,17 @@ if ($result->num_rows > 0) {
     if ($password === $hashedPassword) {
         // Password is correct, user authentication successful
         if(isset($_SESSION['userType'])){
-            if($_SESSION['userType'] == 'Student')
+            if($_SESSION['userType'] == 'Student'){
+                $_SESSION["student_id"] = $row['student_id'];
+                $_SESSION["student_name"] = $row['first_name'] . " " . $row['last_name'];
+
                 header("Location: /ProjectMentor/student"); // Redirect to the successful login page
-            else if($_SESSION['userType'] == 'Expert')
+            }
+            else if($_SESSION['userType'] == 'Expert'){
+                $_SESSION["expert_id"] = $row['expert_id'];
+                $_SESSION["expert_name"] = $row['first_name'] . " " . $row['last_name'];
                 header("Location: /ProjectMentor/expert"); // Redirect to the successful login page
+            }
         }
         exit();
     } else {
