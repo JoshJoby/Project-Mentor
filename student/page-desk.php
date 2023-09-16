@@ -115,7 +115,7 @@ include 'query-controller.php';
                                                     <div class='row'>
                                                         <div class='col-lg-6'>                                                        
                                                             <h5 class='mb-2'>Querie </h5>
-                                                            <p class='mb-0'> ".$row['querie']."</p>
+                                                            <p class='mb-0'> ".$row['query']."</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -125,7 +125,7 @@ include 'query-controller.php';
                                                     <div class='row'>
                                                         <div class='col-lg-6'>                                                        
                                                             <h5 class='mb-2'>Response </h5>
-                                                            <p class='mb-0'>".$row['message']."</p>
+                                                            <p class='mb-0'>".$row['response']."</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -673,39 +673,30 @@ include 'query-controller.php';
                 <div class='modal-header d-block text-center pb-3 border-bttom'>
                     <h3 class='modal-title' id='exampleModalCenterTitle'>New Querie</h3>
                 </div>
-                <div class='modal-body'>
-                    <div class='row'>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText02' class='h5'>query Name</label>
-                                <input type='text' class='form-control' id='exampleInputText02'
-                                    placeholder='Enter query Name'>
-                                <a href='#' class='query-edit text-body'><i class='ri-edit-box-line'></i></a>
-                            </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-3'>
-                                <label for='exampleInputText040' class='h5'>Querie</label>
-                                <textarea class='form-control' id='exampleInputText040' rows='2'></textarea>
-                            </div>
-                        </div>
-                        <div class='col-lg-12'>
-                            <div class='form-group mb-0'>
-                                <label for='exampleInputText01' class='h5'>Attachments</label>
-                                <div class='custom-file'>
-                                    <input type='file' class='custom-file-input' id='inputGroupFile003'>
-                                    <label class='custom-file-label' for='inputGroupFile003'>Upload media</label>
+                    <form method="post" action="submit_query.php" enctype="multipart/form-data">
+                        <div class='modal-body'>
+                            <div class='row'>
+                                <div class='col-lg-12'>
+                                    <div class='form-group mb-3'>
+                                        <label for='exampleInputText040' class='h5'>Query</label>
+                                        <textarea class='form-control' name='query' id='exampleInputText040' rows='2'></textarea>
+                                    </div>
+                                </div>
+                                <div class='col-lg-12'>
+                                    <div class='form-group mb-3'>
+                                        <label for='inputAttachments' class='h5'>Attachments</label>
+                                        <input type='file' class='form-control-file' name='attachments' id='inputAttachments'>
+                                    </div>
+                                </div>
+                                <div class='col-lg-12'>
+                                    <div class='d-flex flex-wrap align-items-center justify-content-center mt-4'>
+                                        <button class='btn btn-primary mr-3' type="submit" class='btn btn-primary' name="submit">Submit</button>
+                                        <button type="button" class='btn btn-secondary' onclick="cancelForm()">Cancel</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class='col-lg-12'>
-                            <div class='d-flex flex-wrap align-items-ceter justify-content-center mt-4'>
-                                <div class='btn btn-primary mr-3' data-dismiss='modal'>Submit</div>
-                                <div class='btn btn-primary' data-dismiss='modal'>Cancel</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </form>
             </div>
         </div>
     </div>
@@ -791,7 +782,7 @@ include 'query-controller.php';
                     <div class='row'>
                         <div class='col-lg-12'>
                             <div class='form-group mb-3'>
-                                <label for='exampleInputText03' class='h5'>query Name</label>
+                                <label for='exampleInputText03' class='h5'>query name</label>
                                 <input type='text' class='form-control' id='exampleInputText03'
                                     placeholder='Enter query Name'>
                                 <a href='#' class='query-edit text-body'><i class='ri-edit-box-line'></i></a>

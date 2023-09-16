@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Sep 08, 2023 at 11:59 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Host: 127.0.0.1
+-- Generation Time: Sep 16, 2023 at 12:38 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,6 +36,13 @@ CREATE TABLE `admin` (
   `phone_number` varchar(20) DEFAULT NULL,
   `admin_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `email`, `password`, `first_name`, `last_name`, `phone_number`, `admin_status`) VALUES
+(12345, 'admin@gmail.com', '12345', 'admin', 'one', '111111111111', 1);
 
 -- --------------------------------------------------------
 
@@ -98,6 +105,13 @@ CREATE TABLE `expert` (
   `expert_pfp` longblob NOT NULL,
   `expert_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `expert`
+--
+
+INSERT INTO `expert` (`expert_id`, `email`, `password`, `first_name`, `last_name`, `phone_number`, `profile`, `expert_pfp`, `expert_status`) VALUES
+(1, 'expert@gmail.com', '12345', 'expert', 'one', '111111111111', 'developer', '', 1);
 
 -- --------------------------------------------------------
 
@@ -171,11 +185,21 @@ CREATE TABLE `projects` (
 CREATE TABLE `queries` (
   `query_id` int(11) NOT NULL,
   `student_id` int(11) DEFAULT NULL,
-  `expert_id` int(11) DEFAULT NULL,
-  `message` text DEFAULT NULL,
+  `query_title` text NOT NULL,
+  `query` text NOT NULL,
+  `response` text DEFAULT NULL,
   `timestamp` datetime DEFAULT NULL,
-  `is_student_sender` tinyint(1) DEFAULT NULL
+  `is_solved` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `queries`
+--
+
+INSERT INTO `queries` (`query_id`, `student_id`, `query_title`, `query`, `response`, `timestamp`, `is_solved`) VALUES
+(1, 4, 'one', 'testing', 'testing', '2023-08-23 14:06:51', 1),
+(2, 4, 'two', 'test 2', 'test2', '2023-09-20 15:55:44', 1),
+(3, 4, 'three', 'jxchvcxhjgf', '', '2023-09-20 15:55:44', 1);
 
 -- --------------------------------------------------------
 
@@ -201,6 +225,13 @@ CREATE TABLE `student` (
   `college` text DEFAULT NULL,
   `passing_year` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`student_id`, `first_name`, `last_name`, `email`, `password`, `phone_number`, `student_pfp`, `current_project`, `current_task`, `creation_date`, `tech_stack`, `date_of_birth`, `address`, `gender`, `college`, `passing_year`) VALUES
+(4, 'student', 'one', 'studen@gmail.com', '12345', '123456789', '', NULL, NULL, '2023-09-01', 'nodejs', '2013-09-02', '560078', 'male', 'dsatm', 2024);
 
 -- --------------------------------------------------------
 
@@ -247,7 +278,8 @@ CREATE TABLE `tasks` (
   `project_id` int(11) NOT NULL,
   `task_id` int(11) NOT NULL,
   `task_desc` text DEFAULT NULL,
-  `task_duration` int(11) DEFAULT NULL
+  `task_duration` int(11) DEFAULT NULL,
+  `task_content` longblob DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -291,12 +323,6 @@ ALTER TABLE `expert`
   ADD PRIMARY KEY (`expert_id`);
 
 --
--- Indexes for table `expert_requests`
---
-ALTER TABLE `expert_requests`
-  ADD PRIMARY KEY (`expert_request_id`);
-
---
 -- Indexes for table `meetings`
 --
 ALTER TABLE `meetings`
@@ -322,8 +348,7 @@ ALTER TABLE `projects`
 --
 ALTER TABLE `queries`
   ADD PRIMARY KEY (`query_id`),
-  ADD KEY `student_id` (`student_id`),
-  ADD KEY `expert_id` (`expert_id`);
+  ADD KEY `student_id` (`student_id`);
 
 --
 -- Indexes for table `student`
@@ -384,8 +409,7 @@ ALTER TABLE `projects`
 -- Constraints for table `queries`
 --
 ALTER TABLE `queries`
-  ADD CONSTRAINT `queries_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`),
-  ADD CONSTRAINT `queries_ibfk_2` FOREIGN KEY (`expert_id`) REFERENCES `expert` (`expert_id`);
+  ADD CONSTRAINT `queries_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`);
 
 --
 -- Constraints for table `student`
