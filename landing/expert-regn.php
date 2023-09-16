@@ -311,6 +311,10 @@
             <label for="dob" class="sub-heading">Date of Birth</label>
             <input id="dob" name="dob" type="date" required />
           </div>
+          <div class="form-grp col-sm-6">
+            <label for="phno" class="sub-heading">Phone Number</label>
+            <input id="phno" name="phno" type="text" required />
+          </div>
           <div class="form-grp" >
             <label for="gender" class="sub-heading">Gender</label>
             <div class="radio-container">

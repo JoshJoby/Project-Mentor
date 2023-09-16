@@ -345,6 +345,10 @@
             <input id="dob" name="dob" type="date" required />
           </div>
           <div class="form-grp col-sm-6">
+            <label for="phno" class="sub-heading">Phone Number</label>
+            <input id="phno" name="phno" type="text" required />
+          </div>
+          <div class="form-grp col-sm-6">
             <label for="address" class="sub-heading">Address</label>
             <input id="address" name="address" type="text" required />
           </div>

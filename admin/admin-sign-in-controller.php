@@ -14,7 +14,7 @@
 // }
 
 include '../config_local.php';
-
+session_start();
 $email = $_POST['email']; // Assuming the email input field has the name attribute set to "email"
 echo $email;
 $password = $_POST['password'];
@@ -33,6 +33,9 @@ if ($result->num_rows > 0) {
     if ($password === $hashedPassword) {
         // Password is correct, user authentication successful
         echo "User authentication successful!";
+        $_SESSION["admin_id"] = $row['admin_id'];
+        $_SESSION["admin_name"] = $row['first_name'] . " " . $row["last_name"];
+
         header("Location: /ProjectMentor/admin");
         exit();
     } else {

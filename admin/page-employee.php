@@ -1,5 +1,9 @@
 <?php
+session_start();
 include '../layout/admin-header.php';
+if(!isset($_SESSION["admin_id"])){
+    header("Location: admin-sign-in");
+}
 ?>
 
 <!doctype html>
@@ -42,472 +46,120 @@ include '../layout/admin-header.php';
                             <div class="d-flex align-items-center">                                
                                 <div class="list-grid-toggle d-flex align-items-center mr-3">
                                     <div data-toggle-extra="tab" data-target-extra="#grid" class="active">
-                                        <div class="grid-icon mr-3">
-                                            <svg width="20" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
-                                            </svg>
-                                        </div>
+                                        
                                     </div>
-                                    <div data-toggle-extra="tab" data-target-extra="#list">
-                                        <div class="grid-icon">
-                                            <svg  width="20" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>
-                                            </svg>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
-                                <div class="pl-3 border-left btn-new">
-                                    <a href="#" class="btn btn-primary" data-target="#new-user-modal" data-toggle="modal">New Contact</a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/01.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Ruben Franci</h4>
-                                    <p class="mb-3">rubenfranci@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
+        <div>
+        <div class="col-lg-12">
+                        <div class="iq-edit-list-data">
+                            <div class="tab-content">
+                                <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <form action="super-admin-add-admin-controller.php" method="POST"
+                                                enctype="multipart/form-data">
+                                                <div class="form-group row align-items-center">
+                                                    <div class="form-grp col-sm-6">
+                                                        <label for="photo" class="sub-heading">Upload Photo:
+                                                        </label>
+                                                        <div class="circular-input-container">
+                                                            <input id="photo" name="photo" type="file"
+                                                                accept="image/*" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" row align-items-center">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="fname">First Name:</label>
+                                                        <input type="text" class="form-control"  name="fname">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="lname">Last Name:</label>
+                                                        <input type="text" class="form-control" id="lname" name="lname">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="phno">Phone Number:</label>
+                                                        <input type="text" class="form-control"  name="phno">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="email">Email-ID:</label>
+                                                        <input type="text" class="form-control"  id="email" name="email">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="password">Password:</label>
+                                                        <input type="text" class="form-control" id="password" name="password">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="confpassword">Repeat Password:</label>
+                                                        <input type="text" class="form-control" id="confpassword" name="confpassword">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="tech" class="sub-heading">Select Skills of
+                                                            Expertise</label>
+                                                        <div id="tech" class="multiselect">
+                                                            <div id="mySelectLabel" class="selectBox"
+                                                                onclick="toggleCheckboxArea()">
+                                                                <select class="form-select">
+                                                                    <option>somevalue</option>
+                                                                </select>
+                                                                <div class="overSelect"></div>
+                                                            </div>
+                                                            <div id="skills">
+                                                                <label for="python"><input type="checkbox" id="python"
+                                                                        onchange="checkboxStatusChange()"
+                                                                        value="Python" /> Python</label>
+                                                                <label for="java"><input type="checkbox" id="java"
+                                                                        onchange="checkboxStatusChange()"
+                                                                        value="Java" />
+                                                                    Java</label>
+                                                                <label for="javascript"><input type="checkbox"
+                                                                        id="javascript"
+                                                                        onchange="checkboxStatusChange()"
+                                                                        value="JavaScript" /> JavaScript</label>
+                                                                <label for="php"><input type="checkbox" id="php"
+                                                                        onchange="checkboxStatusChange()" value="PHP" />
+                                                                    PHP</label>
+                                                                <label for="mysql"><input type="checkbox" id="mysql"
+                                                                        onchange="checkboxStatusChange()"
+                                                                        value="MySQL" /> MySQL</label>
+                                                                <label for="kotlin"><input type="checkbox" id="kotlin"
+                                                                        onchange="checkboxStatusChange()"
+                                                                        value="Kotlin" /> Kotlin</label>
+                                                                <label for="c++"><input type="checkbox" id="c++"
+                                                                        onchange="checkboxStatusChange()" value="C++" />
+                                                                    C++</label>
+                                                                <label for="html"><input type="checkbox" id="html"
+                                                                        onchange="checkboxStatusChange()"
+                                                                        value="HTML" />
+                                                                    HTML</label>
+                                                                <label for="css"><input type="checkbox" id="css"
+                                                                        onchange="checkboxStatusChange()" value="CSS" />
+                                                                    CSS</label>
+                                                            </div>
+                                                            <input type="hidden" id="selectedValues"
+                                                                name="selectedValues">
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                                <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/02.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Kaylynn Press</h4>
-                                    <p class="mb-3">kaylynnpress@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/03.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Corey Press</h4>
-                                    <p class="mb-3">coreypress@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/04.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Zain Carder</h4>
-                                    <p class="mb-3">zaincarder@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/05.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Erin Donin</h4>
-                                    <p class="mb-3">erindonin@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/06.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Mira Herwitz</h4>
-                                    <p class="mb-3">miraherwitz@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/07.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Kaiya George</h4>
-                                    <p class="mb-3">kaiyageorge@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/08.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Lincoln George</h4>
-                                    <p class="mb-3">lincolngeorge@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-transparent card-block card-stretch card-height">
-                        <div class="card-body text-center p-0">                            
-                            <div class="item">
-                                <div class="odr-img">
-                                    <img src="../assets/images/user/09.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image">
-                                </div>                        
-                                <div class="odr-content rounded">                                          
-                                    <h4 class="mb-2">Paityn Siphron</h4>
-                                    <p class="mb-3">paitynsiphron@gmail.com</p>
-                                    <ul class="list-unstyled mb-3">
-                                        <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                                        <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                                        <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                                    </ul>                                    
-                                    <div class="pt-3 border-top">
-                                        <a href="#" class="btn btn-primary">Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="list" class="item-content animate__animated animate__fadeIn" data-toggle-extra="tab-content">
-            <div class="table-responsive rounded bg-white mb-4">
-                <table class="table mb-0 table-borderless tbl-server-info">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/01.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Paityn Siphron</h5>
-                                </div>
-                            </td>
-                            <td>paitynsiphron@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/02.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Kaylynn Press</h5>
-                                </div>
-                            </td>
-                            <td>kaylynnpress@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/03.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Corey Press</h5>
-                                </div>
-                            </td>
-                            <td>coreypress@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/04.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Zain Carder</h5>
-                                </div>
-                            </td>
-                            <td>zaincarder@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/05.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Erin Donin</h5>
-                                </div>
-                            </td>
-                            <td>erindonin@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/06.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Mira Herwitz</h5>
-                                </div>
-                            </td>
-                            <td>miraherwitz@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/07.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Kaiya George</h5>
-                                </div>
-                            </td>
-                            <td>kaiyageorge@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/08.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Lincoln George</h5>
-                                </div>
-                            </td>
-                            <td>lincolngeorge@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media align-items-center">
-                                    <img src="../assets/images/user/09.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
-                                    <h5 class="ml-3">Paityn Siphron</h5>
-                                </div>
-                            </td>
-                            <td>paitynsiphron@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-primary">Message</a>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
         <!-- Page end  -->
     </div>
@@ -516,266 +168,7 @@ include '../layout/admin-header.php';
     <!-- Wrapper End-->
 
     <!-- Modal list start -->
-    <div class="modal fade" role="dialog" aria-modal="true" id="new-project-modal">
-        <div class="modal-dialog  modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center pb-3 border-bttom">
-                    <h3 class="modal-title" id="exampleModalCenterTitle01">New Project</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText01" class="h5">Project Name*</label>
-                                <input type="text" class="form-control" id="exampleInputText01" placeholder="Project Name">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Categories *</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Category</option>
-                                    <option>Android</option>
-                                    <option>IOS</option>
-                                    <option>Ui/Ux Design</option>
-                                    <option>Development</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText004" class="h5">Due Dates*</label>
-                                <input type="date" class="form-control" id="exampleInputText004" value="">
-                            </div>                        
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText07" class="h5">Assign Members*</label>
-                                <input type="text" class="form-control" id="exampleInputText07">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="d-flex flex-wrap align-items-ceter justify-content-center mt-2">
-                                <div class="btn btn-primary mr-3" data-dismiss="modal">Save</div>
-                                <div class="btn btn-primary" data-dismiss="modal">Cancel</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-task-modal">
-        <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center pb-3 border-bttom">
-                    <h3 class="modal-title" id="exampleModalCenterTitle">New Task</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText02" class="h5">Task Name</label>
-                                <input type="text" class="form-control" id="exampleInputText02" placeholder="Enter task Name">
-                                <a href="#" class="task-edit text-body"><i class="ri-edit-box-line"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Assigned to</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Memebers</option>
-                                    <option>Kianna Septimus</option>
-                                    <option>Jaxson Herwitz</option>
-                                    <option>Ryan Schleifer</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText05" class="h5">Due Dates*</label>
-                                <input type="date" class="form-control" id="exampleInputText05" value="">
-                            </div>                        
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Category</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Design</option>
-                                    <option>Android</option>
-                                    <option>IOS</option>
-                                    <option>Ui/Ux Design</option>
-                                    <option>Development</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText040" class="h5">Description</label>
-                                <textarea class="form-control" id="exampleInputText040" rows="2"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText005" class="h5">Checklist</label>
-                                <input type="text" class="form-control" id="exampleInputText005" placeholder="Add List">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-0">
-                                <label for="exampleInputText01" class="h5">Attachments</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile003">
-                                    <label class="custom-file-label" for="inputGroupFile003">Upload media</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="d-flex flex-wrap align-items-ceter justify-content-center mt-4">
-                                <div class="btn btn-primary mr-3" data-dismiss="modal">Save</div>
-                                <div class="btn btn-primary" data-dismiss="modal">Cancel</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-user-modal">
-        <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center pb-3 border-bttom">
-                    <h3 class="modal-title" id="exampleModalCenterTitle02">New User</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3 custom-file-small">
-                                <label for="exampleInputText01" class="h5">Upload Profile Picture</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Full Name</label>
-                                <input type="text" class="form-control" id="exampleInputText2" placeholder="Enter your full name">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText04" class="h5">Phone Number</label>
-                                <input type="text" class="form-control" id="exampleInputText04" placeholder="Enter phone number">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText006" class="h5">Email</label>
-                                <input type="text" class="form-control" id="exampleInputText006" placeholder="Enter your Email">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Type</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Type</option>
-                                    <option>Trainee</option>
-                                    <option>Employee</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Role</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Role</option>
-                                    <option>Designer</option>
-                                    <option>Developer</option>
-                                    <option>Manager</option>
-                                    <option>BDE</option>
-                                    <option>SEO</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="d-flex flex-wrap align-items-ceter justify-content-center mt-2">
-                                <div class="btn btn-primary mr-3" data-dismiss="modal">Save</div>
-                                <div class="btn btn-primary" data-dismiss="modal">Cancel</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-create-modal">
-        <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center pb-3 border-bttom">
-                    <h3 class="modal-title" id="exampleModalCenterTitle03">New Task</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText03" class="h5">Task Name</label>
-                                <input type="text" class="form-control" id="exampleInputText03" placeholder="Enter task Name">
-                                <a href="#" class="task-edit text-body"><i class="ri-edit-box-line"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Assigned to</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Memebers</option>
-                                    <option>Kianna Septimus</option>
-                                    <option>Jaxson Herwitz</option>
-                                    <option>Ryan Schleifer</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText2" class="h5">Project Name</label>
-                                <select name="type" class="selectpicker form-control" data-style="py-0">
-                                    <option>Enter your project Name</option>
-                                    <option>Ui/Ux Design</option>
-                                    <option>Dashboard Templates</option>
-                                    <option>Wordpress Themes</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText40" class="h5">Description</label>
-                                <textarea class="form-control" id="exampleInputText40" rows="2" placeholder="Textarea"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-3">
-                                <label for="exampleInputText8" class="h5">Checklist</label>
-                                <input type="text" class="form-control" id="exampleInputText8" placeholder="Add List">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mb-0">
-                                <label for="exampleInputText01" class="h5">Attachments</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                    <label class="custom-file-label" for="inputGroupFile01">Upload media</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="d-flex flex-wrap align-items-ceter justify-content-center mt-4">
-                                <div class="btn btn-primary mr-3" data-dismiss="modal">Save</div>
-                                <div class="btn btn-primary" data-dismiss="modal">Cancel</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                
     <footer class="iq-footer">
         <div class="container-fluid">
             <div class="row">

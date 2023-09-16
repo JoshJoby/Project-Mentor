@@ -276,7 +276,7 @@
                                 aria-expanded="false">
                                 <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle" alt="user">
                                 <div class="caption ml-1">
-                                    <h6 class="mb-0 line-height">Savannah Nguyen<i class="las la-angle-down ml-2"></i>
+                                    <h6 class="mb-0 line-height"><?php echo $_SESSION['expert_name'];?><i class="las la-angle-down ml-2"></i>
                                     </h6>
                                 </div>
                             </a>

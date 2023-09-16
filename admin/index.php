@@ -5,6 +5,10 @@ if (isset($_GET['param'])) {
     echo $_GET['param'];
 }
 
+if(!isset($_SESSION["admin_id"])){
+    header("Location: admin-sign-in");
+}
+
 ?>
 <!doctype html>
 <html lang="en">

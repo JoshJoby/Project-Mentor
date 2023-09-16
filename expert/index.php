@@ -4,7 +4,9 @@ session_start();
 if (isset($_GET['param'])) {
     echo $_GET['param'];
 }
-
+if (!isset($_SESSION["expert_id"])) {
+    header("Location: ../landing");
+}
 ?>
 <!doctype html>
 <html lang="en">
