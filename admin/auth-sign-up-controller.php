@@ -1,18 +1,18 @@
 <?php
-// Database credentials
-// $servername = "localhost";
-// $username = "root";
-// $password = ""; 
-// $dbname = "gridproject1";
+/*// Database credentials
+ $servername = "localhost";
+ $username = "root";
+ $password = ""; 
+ $dbname = "gridproject1";
 
 // // Create a connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
+ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // // Check the connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
-
+ if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+ }
+*/
 include '../config_local.php';
 
 
@@ -38,12 +38,12 @@ if ($result->num_rows == 0) {
     if ($password === $confpassword) {
         $randomNumber = rand(10000, 99999);
         echo $randomNumber;
-        $sql = "INSERT INTO users (user_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
+        $sql = "INSERT INTO admin (admin_id, first_name, last_name, email, password, phone_number) VALUES ($randomNumber, '$fname', '$lname', '$email', '$password', '$phno')";
 
         if (mysqli_query($conn, $sql)) {
             echo "Data inserted successfully.";
             echo "User authentication successful!";
-            header("Location: auth-sign-in");
+            header("Location: admin-sign-in");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

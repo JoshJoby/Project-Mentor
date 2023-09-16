@@ -120,10 +120,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <button type="submit" class="btn btn-white" id="signupButton" disabled>Sign
-                                       Up</button>
+                                    <button type="submit" class="btn btn-white" id="signupButton" disabled>Sign Up</button>
                                     <p class="mt-3">
-                                       Already have an Account <a href="auth-sign-in"
+                                       Already have an Account <a href="admin-sign-in"
                                           class="text-white text-underline">Sign In</a>
                                     </p>
                                  </form>
