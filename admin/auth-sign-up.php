@@ -78,13 +78,6 @@
                                              name="fname">
                                        </div>
                                     </div>
-<<<<<<< HEAD
-                                    <button type="submit" class="btn btn-white" id="signupButton" disabled>Sign Up</button>
-                                    <p class="mt-3">
-                                       Already have an Account <a href="admin-sign-in"
-                                          class="text-white text-underline">Sign In</a>
-                                    </p>
-=======
                                     <div class="col-lg-12">
                                        <div class="floating-label form-group">
                                           <!-- <label>Last Name</label> -->
@@ -130,7 +123,6 @@
                                              class="text-white text-underline">Sign In</a>
                                        </p>
                                     </div>
->>>>>>> dc85f56e12fedc619ca4606fc5f461b6ff3a34e5
                                  </form>
                               </div>
 
