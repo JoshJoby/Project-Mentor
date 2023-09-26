@@ -28,7 +28,7 @@ include 'query-controller.php';
     <link rel='stylesheet' href='../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css'>
 </head>
 
-<body class='  '>
+<body class="  ">
     <!-- loader Start -->
     <div id='loading'>
         <div id='loading-center'>
@@ -37,9 +37,6 @@ include 'query-controller.php';
     <!-- loader END -->
     <!-- Wrapper Start -->
     <div class='wrapper'>
-
-
-
         <div class='content-page'>
             <div class='container-fluid'>
                 <div class='row'>
@@ -50,24 +47,8 @@ include 'query-controller.php';
                                     class='d-flex flex-wrap align-items-center justify-content-between breadcrumb-content'>
                                     <h5>Your Queries</h5>
                                     <div class='d-flex flex-wrap align-items-center'>
-                                        <div class='dropdown dropdown-project mr-3'>
-                                            <div class='dropdown-toggle' id='dropdownMenuButton03'
-                                                data-toggle='dropdown'>
-                                                <div class='btn bg-body'><span class='h6'>Project :</span> webkit
-                                                    Project<i class='ri-arrow-down-s-line ml-2 mr-0'></i></div>
-                                            </div>
-                                            <div class='dropdown-menu dropdown-menu-right'
-                                                aria-labelledby='dropdownMenuButton03'>
-                                                <a class='dropdown-item' href='#'><i class='ri-mic-line mr-2'></i>In
-                                                    Progress</a>
-                                                <a class='dropdown-item' href='#'><i
-                                                        class='ri-attachment-line mr-2'></i>Priority</a>
-                                                <a class='dropdown-item' href='#'><i
-                                                        class='ri-file-copy-line mr-2'></i>Category</a>
-                                            </div>
-                                        </div>
                                         <a href='#' class='btn btn-primary' data-target='#new-query-modal'
-                                            data-toggle='modal'>New Queries</a>
+                                            data-toggle='modal'>New Query</a>
                                     </div>
                                 </div>
                             </div>
@@ -88,27 +69,20 @@ include 'query-controller.php';
                                     <div class='card-body'>
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
-                                                <div class='custom-control custom-query custom-checkbox custom-control-inline'>
-                                                    <input type='checkbox' class='custom-control-input' id='customCheck01'>
-                                                    <label class='custom-control-label' for='customCheck01'></label>
-                                                </div>
+                                               
                                                 <div >
                                                     <h5 class='mb-2'>".$row['query_id']."</h5>
                                                   
                                                 </div>
                                             </div>
-                                            <!-- <div class='media align-items-center mt-md-0 mt-3'>
-                                                <a href='#' class='btn bg-secondary-light mr-3'>Design</a>
-                                                <a class='btn bg-secondary-light' data-toggle='collapse show' href='#collapseEdit1' role='button' aria-expanded='false' aria-controls='collapseEdit1'><i class='ri-edit-box-line m-0'></i></a>
-                                            </div> -->
+                                             <div class='media align-items-center mt-md-0 mt-3'>
+                                                <a href='#' class='btn mr-3'>View</a>
+                                            </div> 
                                         </div>  
                                     </div>
                                 </div>                                                                                                        
-                                <div class='collapse' id='collapseEdit".$inc."'>                                            
-                                    <div class='card card-list query-card'>
-                                        <div class='card-header d-flex align-items-center justify-content-between px-0 mx-3'>
-                                            <div><a href='#' class='btn bg-secondary-light'>Done</a></div>
-                                        </div>
+                                <div class='collapse' id='collapseEdit".$inc."'>                                           
+                                    <div class='card card-list query-card'>   
                                         <div class='card-body'>
                                             <div class='card mb-3'>
                                                 <div class='card-body'>
@@ -124,9 +98,13 @@ include 'query-controller.php';
                                                 <div class='card-body'>
                                                     <div class='row'>
                                                         <div class='col-lg-6'>                                                        
-                                                            <h5 class='mb-2'>Response </h5>
-                                                            <p class='mb-0'>".$row['response']."</p>
-                                                        </div>
+                                                            <h5 class='mb-2'>Response </h5>";
+                                                            if (empty($row['response'])) {
+                                                                echo "<p class='mb-0'>pending.....</p>";
+                                                            } else {
+                                                                echo "<p class='mb-0'>".$row['response']."</p>";
+                                                            }
+                                                        echo "</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -683,12 +661,6 @@ include 'query-controller.php';
                                     </div>
                                 </div>
                                 <div class='col-lg-12'>
-                                    <div class='form-group mb-3'>
-                                        <label for='inputAttachments' class='h5'>Attachments</label>
-                                        <input type='file' class='form-control-file' name='attachments' id='inputAttachments'>
-                                    </div>
-                                </div>
-                                <div class='col-lg-12'>
                                     <div class='d-flex flex-wrap align-items-center justify-content-center mt-4'>
                                         <button class='btn btn-primary mr-3' type="submit" class='btn btn-primary' name="submit">Submit</button>
                                         <button type="button" class='btn btn-secondary' onclick="cancelForm()">Cancel</button>
@@ -697,6 +669,7 @@ include 'query-controller.php';
                             </div>
                         </div>
                     </form>
+                </div>
             </div>
         </div>
     </div>

@@ -263,7 +263,7 @@ if (!isset($_SESSION["expert_id"])) {
                                 </div>                        
                                 <div class="odr-content rounded">                                          
                                     <h4 class="mb-2">Paityn Siphron</h4>
-                                    <p class="mb-3">paitynsiphron@gmail.com</p>
+                                    <p class="mb-3">paitynsiphron@gmail</p>
                                     <ul class="list-unstyled mb-3">
                                         <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
                                         <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
