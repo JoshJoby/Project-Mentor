@@ -166,8 +166,6 @@ CREATE TABLE `projects` (
 -- Dumping data for table `projects`
 --
 
-INSERT INTO `projects` (`project_id`, `admin_id`, `p_name`, `p_desc`, `p_creation_date`, `p_duration`, `p_technology`) VALUES
-(987, 12345, 'Project1', 'First Project]', '2023-08-29', 'Node.js', NULL);
 
 -- --------------------------------------------------------
 
@@ -178,8 +176,9 @@ INSERT INTO `projects` (`project_id`, `admin_id`, `p_name`, `p_desc`, `p_creatio
 CREATE TABLE `queries` (
   `query_id` INT AUTO_INCREMENT PRIMARY KEY,
   `student_id` int(11) DEFAULT NULL,
-  `expert_id` int(11) DEFAULT NULL,
-  `message` text DEFAULT NULL,
+  `query_title` int(11) DEFAULT NULL,
+  `query` text DEFAULT NULL,
+  `response` text DEFAULT NULL,
   `timestamp` datetime DEFAULT NULL,
   `is_solved` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -188,10 +187,6 @@ CREATE TABLE `queries` (
 -- Dumping data for table `queries`
 --
 
-INSERT INTO `queries` (`query_id`, `student_id`, `query_title`, `query`, `response`, `timestamp`, `is_solved`) VALUES
-(1, 4, 'one', 'testing', 'testing', '2023-08-23 14:06:51', 1),
-(2, 4, 'two', 'test 2', 'test2', '2023-09-20 15:55:44', 1),
-(3, 4, 'three', 'jxchvcxhjgf', '', '2023-09-20 15:55:44', 1);
 
 -- --------------------------------------------------------
 
@@ -256,8 +251,6 @@ CREATE TABLE `super_admin` (
 -- Dumping data for table `super_admin`
 --
 
-INSERT INTO `super_admin` (`super_admin_id`, `email`, `password`, `first_name`, `last_name`, `phone_number`, `admin_priviledge`) VALUES
-(345345, 'superadmin@gmail.com', '9878767654', 'super', 'admin', '9878767654', 'GOD');
 
 -- --------------------------------------------------------
 
@@ -277,10 +270,13 @@ CREATE TABLE `tasks` (
 --
 -- Dumping data for table `tasks`
 --
+<<<<<<< HEAD
 
 INSERT INTO `tasks` (`task_name`, `project_id`, `task_id`, `task_desc`, `task_duration`, `task_content`) VALUES
 ('taskTest', 987, 668980, 'Testing 123', 50, 'task_contents');
 
+=======
+>>>>>>> 8f1b00952410ccccc06919cd2f380d95df5d6ef8
 --
 -- Indexes for dumped tables
 --

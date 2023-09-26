@@ -6,6 +6,7 @@ if (isset($_POST["submit"])) {
     // Retrieve the query text from the form
     $queryText = $_POST["query"];
 
+    $randomNumber = rand(10000, 99999);
 
     // Define the SQL query to insert the query text into the database table
     $sql = "INSERT INTO `queries` ( `student_id`, `query`, `response`, `timestamp`, `is_solved`) VALUES ('4', '$queryText','', '2023-09-20 15:55:44', '1')";
