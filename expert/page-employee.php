@@ -22,7 +22,7 @@ if (!isset($_SESSION["expert_id"])) {
       <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css">
       <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css">
       <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css">  </head>
-  <body class="  ">
+     <body class="  ">
     <!-- loader Start -->
     <div id="loading">
           <div id="loading-center">
@@ -44,15 +44,15 @@ if (!isset($_SESSION["expert_id"])) {
                             <h5>Your Projects</h5>
                             <div class="d-flex align-items-center">                                
                                 <div class="list-grid-toggle d-flex align-items-center mr-3">
-                                    <div data-toggle-extra="tab" data-target-extra="#grid" class="active">
+                                     <div data-toggle-extra="tab" data-target-extra="#grid" >
                                         <div class="grid-icon mr-3">
                                             <svg width="20" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
                                             </svg>
                                         </div>
-                                    </div>
-                                    <div data-toggle-extra="tab" data-target-extra="#list">
-                                        <div class="grid-icon">
+                                    </div> 
+                                    <div data-toggle-extra="tab" data-target-extra="#list" class="active">
+                                        <div class="grid-icon ">
                                             <svg  width="20" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>
                                             </svg>
@@ -68,7 +68,7 @@ if (!isset($_SESSION["expert_id"])) {
                 </div>
             </div>
         </div>
-        <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
+        <!-- <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card-transparent card-block card-stretch card-height">
@@ -278,37 +278,88 @@ if (!isset($_SESSION["expert_id"])) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="list" class="item-content animate__animated animate__fadeIn" data-toggle-extra="tab-content">
-            <div class="table-responsive rounded bg-white mb-4">
+                <div class='col-lg-12'>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <div class='row'>
+                                    <?php
+                                    if (isset($_SESSION['query_rows'])) {
+                                        $queryRows = $_SESSION['query_rows'];
+                                        $inc=1;//counter variable to increment the number of querys
+                                        foreach ($queryRows as $row) {
+                                              
+                                            echo " <div id='card-onclick".$inc."' data-toggle='collapse' data-target='#collapseEdit".$inc."' class='col-lg-12'>
+                                <div class='card card-widget query-card'>
+                                    <div class='card-body'>
+                                        <div class='d-flex flex-wrap align-items-center justify-content-between'>
+                                            <div class='d-flex align-items-center'>
+                                                <div>
+                                                    <h5 class='mb-2'>".$row['query_id']."</h5>
+                                                </div>
+                                            </div>
+                                             <div class='media align-items-center mt-md-0 mt-3'>
+                                                <a href='#' class='btn mr-3'>View</a>
+                                            </div> 
+                                        </div>  
+                                    </div>
+                                </div>                                                                                                        
+                                <div class='collapse' id='collapseEdit".$inc."'>                                           
+                                    <div class='card card-list query-card'>   
+                                        <div class='card-body'>
+                                            <div class='card mb-3'>
+                                                <div class='card-body'>
+                                                    <div class='row'>
+                                                        <div class='col-lg-6'>                                                        
+                                                            <h5 class='mb-2'>Querie </h5>
+                                                            <p class='mb-0'> ".$row['query']."</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='card mb-3'>
+                                                <div class='card-body'>
+                                                    <div class='row'>
+                                                        <div class='col-lg-6'>                                                        
+                                                            <h5 class='mb-2'>Response </h5>";
+                                                            if (empty($row['response'])) {
+                                                                echo "<div style=\"text-align: left !important; \" class=\"pl-3  btn-new\">
+                                                                <a href=\"#\" class=\"btn btn-primary\" data-target=\"#query-responce\" data-toggle=\"modal\">New Contact</a>
+                                                            </div>";
+                                                            } else {
+                                                                echo "<p class='mb-0'>".$row['response']."</p>";
+                                                            }
+                                                        echo "</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>";
+                            $inc++;
+                                        }
+                                    } ?>
+            <!--<div class="table-responsive rounded bg-white mb-4">
                 <table class="table mb-0 table-borderless tbl-server-info">
                     <tbody>
                         <tr>
                             <td>
                                 <div class="media align-items-center">
-                                    <img src="../assets/images/user/01.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
+                                    
                                     <h5 class="ml-3">Paityn Siphron</h5>
                                 </div>
                             </td>
                             <td>paitynsiphron@gmail.com</td>
-                            <td>
-                                <div class="media align-items-center">
-                                    <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                                    <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                                    <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                                </div>
-                            </td>
-                            <td>
+                            
+                            
+                            <td class="text-right">
                                 <a href="#" class="btn btn-primary">Message</a>
                             </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                                    <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                                </div>
-                            </td>
+                            
                         </tr>
-                        <tr>
+                         <tr>
                             <td>
                                 <div class="media align-items-center">
                                     <img src="../assets/images/user/02.jpg" class="img-fluid rounded-circle avatar-40" alt="image">
@@ -507,7 +558,7 @@ if (!isset($_SESSION["expert_id"])) {
                                     <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
                                 </div>
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -516,7 +567,7 @@ if (!isset($_SESSION["expert_id"])) {
     </div>
       </div>
     </div>
-    <!-- Wrapper End-->
+    <!-- Wrapper End  -->
 
     <!-- Modal list start -->
     <div class="modal fade" role="dialog" aria-modal="true" id="new-project-modal">
@@ -567,7 +618,60 @@ if (!isset($_SESSION["expert_id"])) {
                 </div>
             </div>
         </div>
-    </div>    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-task-modal">
+    </div>  
+    <div class="modal fade" role="dialog" aria-modal="true" id="query-responce">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center pb-3 border-bttom">
+                    <h3 class="modal-title" id="exampleModalCenterTitle01">New Project</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class=" d-block text-center pb-3">
+                    <h5 >New Project</h5>
+                </div>
+                        <!-- <div class="col-lg-12">
+                            <div class="form-group mb-3">
+                                <label for="exampleInputText01" class="h5">Project Name*</label>
+                                <input type="text" class="form-control" id="exampleInputText01" placeholder="Project Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="exampleInputText2" class="h5">Categories *</label>
+                                <select name="type" class="selectpicker form-control" data-style="py-0">
+                                    <option>Category</option>
+                                    <option>Android</option>
+                                    <option>IOS</option>
+                                    <option>Ui/Ux Design</option>
+                                    <option>Development</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="exampleInputText004" class="h5">Due Dates*</label>
+                                <input type="date" class="form-control" id="exampleInputText004" value="">
+                            </div>                        
+                        </div> -->
+                        <div class="col-lg-12">
+                            <div class="form-group mb-3">
+                                <label for="exampleInputText07" class="h5">responce</label>
+                                <input type="text" class="form-control" id="exampleInputText07">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="d-flex flex-wrap align-items-ceter justify-content-center mt-2">
+                                <div class="btn btn-primary mr-3" data-dismiss="modal">Submit</div>
+                                <div class="btn btn-primary" data-dismiss="modal">Cancel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="new-task-modal">
         <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header d-block text-center pb-3 border-bttom">
@@ -779,7 +883,7 @@ if (!isset($_SESSION["expert_id"])) {
             </div>
         </div>
     </div>
-    <footer class="iq-footer">
+    <!-- <footer class="iq-footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
@@ -793,7 +897,7 @@ if (!isset($_SESSION["expert_id"])) {
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- Backend Bundle JavaScript -->
     <script src="../assets/js/backend-bundle.min.js"></script>
     
