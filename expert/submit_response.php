@@ -4,16 +4,14 @@ include '../config_local.php';
 // Check if the form was submitted
 if (isset($_POST["submit"])) {
     // Retrieve the query text from the form
-    $queryText = $_POST["query"];
-
-    $randomNumber = rand(10000, 99999);
-
+    $queryID = $_POST["query_id"];
+    $queryResponse = $_POST["response_message"];
     // Define the SQL query to insert the query text into the database table
-    $sql = "INSERT INTO `queries` ( `student_id`, `query`, `response`, `timestamp`, `is_solved`) VALUES ('" . $_SESSION['student_id'] . "', '$queryText','', '2023-09-20 15:55:44', '0')";
+    $sql = "UPDATE `queries` SET `response` = '$queryResponse', `is_solved` = '1' WHERE `query_id` = '" . $queryID. "'";
 
     // Execute the SQL query
     if ($conn->query($sql) === TRUE) {
-        header("Location: page-desk.php");
+        header("Location: page-employee.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
