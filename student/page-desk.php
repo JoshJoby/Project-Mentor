@@ -649,7 +649,7 @@ include 'query-controller.php';
         <div class='modal-dialog  modal-dialog-centered modal-lg' role='document'>
             <div class='modal-content'>
                 <div class='modal-header d-block text-center pb-3 border-bttom'>
-                    <h3 class='modal-title' id='exampleModalCenterTitle'>New Querie</h3>
+                    <h3 class='modal-title' id='exampleModalCenterTitle'>New Query</h3>
                 </div>
                     <form method="post" action="submit_query.php" enctype="multipart/form-data">
                         <div class='modal-body'>
@@ -661,7 +661,7 @@ include 'query-controller.php';
                                     </div>
                                 </div>
                                 <div class='col-lg-12'>
-                                    <div class='d-flex flex-wrap align-items-center justify-content-center mt-4'>
+                                    <div class='d-flex flex-wrap  mt-4'>
                                         <button class='btn btn-primary mr-3' type="submit" class='btn btn-primary' name="submit">Submit</button>
                                         <button type="button" class='btn btn-secondary' onclick="cancelForm()">Cancel</button>
                                     </div>

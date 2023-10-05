@@ -98,7 +98,7 @@ if (!isset($_SESSION["expert_id"])) {
                                                             <h5 class='mb-2'>Response </h5>";
                                             if (empty($row['response'])) {
                                                 echo "<div style=\"text-align: left !important; \" class=\"pl-3  btn-new\">
-                                                                    <a href=\"#\" class=\"btn btn-primary\" data-target=\"#query-responce\" data-toggle=\"modal\" data-query-id=\"" . $row['query_id'] . "\">New Contact</a>
+                                                                    <a href=\"#\" class=\"btn btn-primary\" data-target=\"#query-responce\" data-toggle=\"modal\" data-query-id=\"" . $row['query_id'] . "\">Respond</a>
                                                                 </div>";
                                             } else {
                                                 echo "<p class='mb-0'>" . $row['response'] . "</p>";
@@ -129,8 +129,8 @@ if (!isset($_SESSION["expert_id"])) {
                 <!-- Modal list start -->
 
 
-                <div class="modal fade" role="dialog" aria-modal="true" id="query-responce">
-                    <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal fade bd-example-modal-lg" role="dialog" aria-modal="true" id="query-responce">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header d-block text-center pb-3 border-bttom">
                                 <h3 class="modal-title" id="exampleModalCenterTitle01">New Response</h3>
@@ -140,29 +140,25 @@ if (!isset($_SESSION["expert_id"])) {
                                     <form method="POST" action="submit_response.php">
                                         <input type="hidden" name="query_id">
                                         <div class="col-lg-12">
-                                            <div class="form-group mb-4">
-                                                <label for="exampleInputText07" class="h5">Response Message</label>
-                                                <textarea class="form-control" id="exampleInputText07"
-                                                    name="response_message"></textarea>
-
+                                            <div class="form-group mb-3">
+                                                <label for="exampleInputText040" class="h5">Response Message</label>
+                                                <textarea class="form-control" id="exampleInputText040" name="response_message"
+                                                style="width: 390%;" ></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <div
-                                                class="d-flex flex-wrap align-items-center justify-content-center mt-2">
-                                                <button type="submit" name="submit"
-                                                    class="btn btn-primary mr-3">Submit</button>
-                                                <button type="button" class="btn btn-primary"
-                                                    data-dismiss="modal">Cancel</button>
+                                            <div class="d-flex flex-wrap align-items-center justify-content-center mt-4">
+                                                <button type="submit" name="submit" class="btn btn-primary mr-3">Submit</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
 
 

@@ -25,4 +25,4 @@ if (isset($_POST["submit"])) {
     // If the form was not submitted, show an error message or redirect as needed
     echo "Form not submitted.";
 }
-?>
+
