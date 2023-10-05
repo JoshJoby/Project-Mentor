@@ -75,6 +75,15 @@ if (!isset($_SESSION["expert_id"])) {
                                                     <h5 class='mb-2'>" . $row['query_id'] . "</h5>
                                                 </div>
                                             </div>
+                                            <div class='media align-items-center mt-md-0 mt-3'>";
+                                             if (empty($row['response'])) {
+                                                 echo "<a href='#' class='btn mr-3'>pending</a>";
+                                             } else {
+                                                 echo "<a href='#' class='btn mr-3'>done</a>";
+                                             }
+                                         echo "
+                                                
+                                            </div>
                                         </div>  
                                     </div>
                                 </div>                                                                                                        
@@ -158,10 +167,6 @@ if (!isset($_SESSION["expert_id"])) {
                         </div>
                     </div>
                 </div>
-
-
-
-
 
 
                 <!-- Backend Bundle JavaScript -->
