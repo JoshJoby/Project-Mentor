@@ -105,15 +105,14 @@ if (!isset($_SESSION["expert_id"])) {
                                                     <div class='row'>
                                                         <div class='col-lg-6'>                                                        
                                                             <h5 class='mb-2'>Response </h5>";
-                                            if (empty($row['response'])) {
-                                                echo "<div style=\"text-align: left !important; \" class=\"pl-3  btn-new\">
-                                                                    <a href=\"#\" class=\"btn btn-primary\" data-target=\"#query-responce\" data-toggle=\"modal\" data-query-id=\"" . $row['query_id'] . "\">Respond</a>
-                                                                </div>";
-                                            } else {
-                                                echo "<p class='mb-0'>" . $row['response'] . "</p>";
-                                            }
-
-                                            echo "</div>
+                                                                if (empty($row['response'])) {
+                                                                    echo "<div style=\"text-align: left !important; \" class=\"pl-3  btn-new\">
+                                                                                        <a href=\"#\" class=\"btn btn-primary\" data-target=\"#query-responce\" data-toggle=\"modal\" data-query-id=\"" . $row['query_id'] . "\">Respond</a>
+                                                                                    </div>";
+                                                                } else {
+                                                                    echo "<p class='mb-0'>" . $row['response'] . "</p>";
+                                                                }
+                                                         echo "</div>
                                                     </div>
                                                 </div>
                                             </div>
