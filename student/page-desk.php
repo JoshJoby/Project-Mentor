@@ -71,7 +71,7 @@ include 'query-controller.php';
                                             <div class='d-flex align-items-center'>
                                                
                                                 <div >
-                                                    <h5 class='mb-2'>".$row['query_id']."</h5>
+                                                    <h5 class='mb-2'>".$row['query']."</h5>
                                                   
                                                 </div>
                                             </div>

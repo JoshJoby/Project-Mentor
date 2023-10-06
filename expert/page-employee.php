@@ -72,7 +72,7 @@ if (!isset($_SESSION["expert_id"])) {
                                         <div class='d-flex flex-wrap align-items-center justify-content-between'>
                                             <div class='d-flex align-items-center'>
                                                 <div>
-                                                    <h5 class='mb-2'>" . $row['query_id'] . "</h5>
+                                                    <h5 class='mb-2'>" .$row['query']. "</h5>
                                                 </div>
                                             </div>
                                             <div class='media align-items-center mt-md-0 mt-3'>";
