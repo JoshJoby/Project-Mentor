@@ -119,7 +119,7 @@
                                     </div>
                                     <div class="col-lg-12 mt-3">
                                        <p>
-                                          Already have an Account <a href="auth-sign-in"
+                                          Already have an Account <a href="admin-sign-in"
                                              class="text-white text-underline">Sign In</a>
                                        </p>
                                     </div>

@@ -4,6 +4,9 @@ session_start();
 if (isset($_GET['param'])) {
     echo $_GET['param'];
 }
+if (!isset($_SESSION["student_id"])) {
+    header("Location: ../landing");
+}
 
 ?>
 <!doctype html>
